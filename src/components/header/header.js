@@ -9,6 +9,10 @@ import {ButtonGroup, Button} from "@material-ui/core"
 import css from "./header.module.css"
 import Toggle from "../Toggle/Toggle";
 import useDarkMode from "../Mode/useDarkMode";
+import Example from "./carusel/springCarusel";
+import uk from "../../assets/images/ukukpng.png"
+import ru from "../../assets/images/ru.png"
+import arm from "../../assets/images/arm.png"
 
 
 const Header = () => {
@@ -24,9 +28,9 @@ const Header = () => {
 
     //languages
     const languages = [
-        {id: 1, lang: 'en'},
-        {id: 2, lang: 'am'},
-        {id: 3, lang: 'ru'}
+        {id: 1, lang: 'en',img:<img src={uk} alt={"flag"} width={'50px'} height={'20px'}/>},
+        {id: 2, lang: 'am',img:<img src={arm} alt={"flag"} width={'50px'} height={'20px'}  />},
+        {id: 3, lang: 'ru',img:<img src={ru} alt={"flag"} width={'50px'} height={'20px'} /> }
     ]
 
     const currentLang = cookies.get('i18next')
@@ -63,12 +67,12 @@ const Header = () => {
                 </div>
                 <ButtonGroup className="languages">
                     {
-                        languages.map(({id, lang}) => {
+                        languages.map(({id, lang,img}) => {
                             return <Button
                                 key={id}
                                 onClick={() => selectlanguages(lang, id)}
                             >
-                                {lang}
+                                {img}
                             </Button>
                         })
                     }
@@ -93,6 +97,7 @@ const Header = () => {
                 </div>
 
                 <div className="parallaxEffects">
+                    <Example/>
                     {/*<div><img src={parallax1}/></div>*/}
                     {/*<div><img src={parallax2}/></div>*/}
                     {/*<motion.div*/}

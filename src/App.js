@@ -11,6 +11,10 @@ import ScrollToTopBtn from "../src/components/scrollToTop/ScrollToTop";
 
 function App() {
     return (
+
+        // pwa
+
+
         <div className="App">
             <Header/>
             <section id="digital">
