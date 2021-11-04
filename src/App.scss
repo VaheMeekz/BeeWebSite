@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+@import './styles/header';
+@import './styles/digital';
+@import './styles/about';
+@import './styles/services';
+@import './styles/portfolio';
+@import './styles/tecnologies';
+@import './styles/team';
+@import './styles/footer';
+
+// @import './styles/about';
+// @import './styles/blogs';
+// @import './styles/contact';
+// @import './styles/layout';
+// @import './styles/typography';
+// @import './styles/navbar';
+// @import './styles/services';
+// @import './styles/title';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body::-webkit-scrollbar{
+    width: 8px;
+}
+
+body.dark-mode {
+    background-color: #232323;
+    color: #dfdfdf;
+    .dark-mode-toggle > button {
+        color: #999;
+        &:last-child {
+            color: #ffffff;
+        }
+    }
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    animation: fadeIn 700ms ease-in-out 1s both;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
