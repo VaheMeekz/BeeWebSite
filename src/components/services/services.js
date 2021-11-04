@@ -16,22 +16,22 @@ const Services = () => {
 
             <div className="servicesAll">
                 <div className="servicesBox">
-                    <img src={servicesIcon1}/>
+                    <img src={servicesIcon1}  alt="img"/>
                     <p>WEB APPLICATION</p>
                     <p>DEVELOPMENT</p>
                 </div>
                 <div className="servicesBox">
-                <img src={servicesIcon2} />
+                <img src={servicesIcon2}  alt="img"/>
                     <p>MOBILE APPLICATION</p>
                     <p>DEVELOPMENT</p>
                 </div>
                 <div className="servicesBox">
-                <img src={servicesIcon3} />
+                <img src={servicesIcon3} alt="img" />
                     <p>CUSTOM SOFTWARE</p>
                     <p>DEVELOPMENT</p>
                 </div>
                 <div className="servicesBox">
-                <img src={servicesIcon4} />
+                <img src={servicesIcon4}  alt="img"/>
                     <p>AI & ML</p>
                 </div>
             </div>
@@ -40,22 +40,22 @@ const Services = () => {
 
             <div className="servicesAll">
                 <div className="servicesBox">
-                    <img src={servicesIcon5} />
+                    <img src={servicesIcon5} alt="img" />
                     <p>SAAS</p>
                     <p>PLATFORMS</p>
                 </div>
                 <div className="servicesBox">
-                <img src={servicesIcon6} />
+                <img src={servicesIcon6} alt="img" />
                     <p>IT</p>
                     <p>CONSULTING</p>
                 </div>
                 <div className="servicesBox">
-                <img src={servicesIcon7} />
+                <img src={servicesIcon7} alt="img" />
                     <p>BIG DATA</p>
                     <p>MANAGEMENT</p>
                 </div>
                 <div className="servicesBox">
-                <img src={servicesIcon8} />
+                <img src={servicesIcon8} alt="img" />
                     <p>DEDICATED TEAM &</p>
                     <p>OUT-STAFFING</p>
                 </div>

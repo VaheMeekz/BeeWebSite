@@ -27,8 +27,7 @@ export default function useMedia(queries, values, defaultValue) {
             //remove listeners on cleanup
             return () => mediaQueryLists.forEach(mql => mql.removeListener(handler));
         },
-        [] //empty array ensures effect is only run on mount and unmount
-    );
+        []);
 
     return value;
 }

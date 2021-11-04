@@ -9,7 +9,6 @@ import {ButtonGroup, Button} from "@material-ui/core"
 import css from "./header.module.css"
 import Toggle from "../Toggle/Toggle";
 import useDarkMode from "../Mode/useDarkMode";
-// import { motion } from 'framer-motion';
 
 
 const Header = () => {
@@ -93,36 +92,36 @@ const Header = () => {
                     <br/>
                 </div>
 
-                {/*<div className="parallaxEffects">*/}
-                {/*    /!*<div><img src={parallax1}/></div>*!/*/}
-                {/*    /!*<div><img src={parallax2}/></div>*!/*/}
-                {/*    <motion.div*/}
-                {/*        initial={{*/}
-                {/*            x: -300,*/}
-                {/*            y: -300*/}
-                {/*        }}*/}
-                {/*        animate={{*/}
-                {/*            x: 0,*/}
-                {/*            y: 0*/}
-                {/*        }}*/}
-                {/*        transition={{ duration: 0.5 }}*/}
-                {/*    >*/}
-                {/*        <img src={parallax1}/>*/}
-                {/*    </motion.div>*/}
-                {/*    <motion.div*/}
-                {/*        initial={{*/}
-                {/*            x: -300,*/}
-                {/*            y: -300*/}
-                {/*        }}*/}
-                {/*        animate={{*/}
-                {/*            x: 0,*/}
-                {/*            y: 0*/}
-                {/*        }}*/}
-                {/*        transition={{ duration: 0.5 }}*/}
-                {/*    >*/}
-                {/*        <img src={parallax2}/>*/}
-                {/*    </motion.div>*/}
-                {/*</div>*/}
+                <div className="parallaxEffects">
+                    {/*<div><img src={parallax1}/></div>*/}
+                    {/*<div><img src={parallax2}/></div>*/}
+                    {/*<motion.div*/}
+                    {/*    initial={{*/}
+                    {/*        x: -300,*/}
+                    {/*        y: -300*/}
+                    {/*    }}*/}
+                    {/*    animate={{*/}
+                    {/*        x: 0,*/}
+                    {/*        y: 0*/}
+                    {/*    }}*/}
+                    {/*    transition={{ duration: 0.5 }}*/}
+                    {/*>*/}
+                    {/*    <img src={parallax1}/>*/}
+                    {/*</motion.div>*/}
+                    {/*<motion.div*/}
+                    {/*    initial={{*/}
+                    {/*        x: -300,*/}
+                    {/*        y: -300*/}
+                    {/*    }}*/}
+                    {/*    animate={{*/}
+                    {/*        x: 0,*/}
+                    {/*        y: 0*/}
+                    {/*    }}*/}
+                    {/*    transition={{ duration: 0.5 }}*/}
+                    {/*>*/}
+                    {/*    <img src={parallax2}/>*/}
+                    {/*</motion.div>*/}
+                </div>
 
             </div>
             <div className="getStartBox">

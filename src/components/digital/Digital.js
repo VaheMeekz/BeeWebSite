@@ -9,7 +9,6 @@ import digitalIcon7 from '../../assets/images/digitalIcon7.svg'
 import arrowDigital from '../../assets/images/arrowDigital.svg'
 
 
-
 function digital() {
     return (
         <div className="digital">
@@ -18,45 +17,45 @@ function digital() {
 
             <div className="digitalContentsMain">
                 <div className="digitalContent">
-                    <img src={digitalIcon1} />
+                    <img src={digitalIcon1}   alt={"img"}/>
                     <p>Strategy</p>
-                    <br />
+                    <br/>
                 </div>
-                <div className="arrow"><img src={arrowDigital} /></div>
+                <div className="arrow"><img src={arrowDigital}   alt={"img"}/></div>
                 <div className="digitalContent">
-                <img src={digitalIcon2} />
+                    <img src={digitalIcon2}  alt="img"/>
                     <p>requirements</p>
                     <p>gathering</p>
                 </div>
-                <div className="arrow"><img src={arrowDigital} /></div>
+                <div className="arrow"><img src={arrowDigital}   alt={"img"}/></div>
                 <div className="digitalContent">
-                <img src={digitalIcon3} />
+                    <img src={digitalIcon3}  alt="img"/>
                     <p>concept and</p>
                     <p>documentation</p>
                 </div>
-                <div className="arrow"><img src={arrowDigital} /></div>
+                <div className="arrow"><img src={arrowDigital}   alt={"img"}/></div>
                 <div className="digitalContent">
-                <img src={digitalIcon4} />
+                    <img src={digitalIcon4} alt="img"/>
                     <p>planing</p>
-                    <br />
+                    <br/>
                 </div>
-                <div className="arrow"><img src={arrowDigital} /></div>
+                <div className="arrow"><img src={arrowDigital}   alt={"img"}/></div>
                 <div className="digitalContent">
-                <img src={digitalIcon5} />
+                    <img src={digitalIcon5} alt="img"/>
                     <p>aglle software</p>
                     <p>development</p>
                 </div>
-                <div className="arrow"><img src={arrowDigital} /></div>
+                <div className="arrow"><img src={arrowDigital}   alt={"img"}/></div>
                 <div className="digitalContent">
-                <img src={digitalIcon6} />
+                    <img src={digitalIcon6} alt={"img"}/>
                     <p>release</p>
-                    <br />
+                    <br/>
                 </div>
-                <div className="arrow"><img src={arrowDigital} /></div>
+                <div className="arrow"><img src={arrowDigital}   alt={"img"}/></div>
                 <div className="digitalContent">
-                <img src={digitalIcon7} />
+                    <img src={digitalIcon7}    alt={"img"}/>
                     <p>maintenance</p>
-                    <br />
+                    <br/>
                 </div>
 
             </div>

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import arowUp from "../../assets/images/arrow-up.svg"
+
 
 export default class ScrollToTop extends Component {
     constructor(props) {
