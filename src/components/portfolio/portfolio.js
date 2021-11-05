@@ -16,6 +16,7 @@ SwiperCore.use([EffectCoverflow, Pagination, Navigation]);
 
 
 
+
 const Portfolio = ({darkMode, setDarkMode}) => {
 
     return (
@@ -69,9 +70,6 @@ const Portfolio = ({darkMode, setDarkMode}) => {
           <img src={image1} width={800} />
         </SwiperSlide>
       </Swiper>
-
-
-
         </div>
     );
 };

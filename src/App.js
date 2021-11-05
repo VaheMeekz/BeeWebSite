@@ -7,11 +7,10 @@ import Tecnologies from "./components/tecnologise/tecnologies";
 import Team from "./components/team/team";
 import Footer from "./components/footer/footer";
 import Digital from './components/digital/Digital';
-import ScrollToTopBtn from "../src/components/scrollToTop/ScrollToTop";
 import {useSelector} from "react-redux";
-import useDarkMode from "./components/Mode/useDarkMode";
 import React, {useState} from "react";
-import Toggle from "./components/Toggle/Toggle";
+import ScrollToTopBtn from "./components/scrollToTop/ScrollToTop";
+
 
 function App() {
 
@@ -20,10 +19,6 @@ function App() {
 
 
     return (
-
-        // pwa
-
-
         <div className="App">
             <Header/>
 
@@ -47,7 +42,7 @@ function App() {
                 <Team/>
             </section>
             <Footer/>
-            <ScrollToTopBtn />
+            <ScrollToTopBtn/>
         </div>
     );
 }

@@ -14,6 +14,7 @@ import uk from "../../assets/images/ukukpng.png"
 import ru from "../../assets/images/ru.png"
 import arm from "../../assets/images/arm.png"
 import {Button} from "@material-ui/core";
+import caruselSwiper from "./carusel/carusel";
 
 
 
@@ -99,7 +100,7 @@ const Header = () => {
                 </div>
 
                 <div className="parallaxEffects">
-
+                    {/*<caruselSwiper/>*/}
                     {/*<div><img src={parallax1}/></div>*/}
                     {/*<div><img src={parallax2}/></div>*/}
                     {/*<motion.div*/}
