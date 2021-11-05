@@ -14,11 +14,10 @@ import SwiperCore, {
 
 SwiperCore.use([EffectCoverflow, Pagination, Navigation]);
 
-<<<<<<< HEAD
-const Portfolio = () => {
-=======
+
+
 const Portfolio = ({darkMode, setDarkMode}) => {
->>>>>>> 665e6d2a3ee67cb2c2b4fd7e58452e345a82e2f5
+
     return (
         <div className="portfolio">
             {/*<div className="port">*/}

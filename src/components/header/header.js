@@ -8,14 +8,13 @@ import OrderModal from "./orderModal/OrderModal";
 import css from "./header.module.css"
 import Toggle from "../Toggle/Toggle";
 import useDarkMode from "../Mode/useDarkMode";
-<<<<<<< HEAD
 import {useSelector} from "react-redux";
-=======
-import Example from "./carusel/springCarusel";
+
 import uk from "../../assets/images/ukukpng.png"
 import ru from "../../assets/images/ru.png"
 import arm from "../../assets/images/arm.png"
->>>>>>> f7a4e23b76af9d10e30749ba1dcc424e21d1ec5b
+import {Button} from "@material-ui/core";
+
 
 
 const Header = () => {
@@ -73,24 +72,14 @@ const Header = () => {
                     <i class="fab fa-linkedin-in"></i>
                 </div>
                 <ul className="languages">
-                    {
-<<<<<<< HEAD
-                        languages.map(({id, lang}) => {
-                            return <li
-                                key={id}
-                                onClick={() => selectlanguages(lang, id)}
-                            >
-                                {lang}
-                            </li>
-=======
-                        languages.map(({id, lang,img}) => {
+                    {languages.map(({id, lang,img}) => {
                             return <Button
                                 key={id}
                                 onClick={() => selectlanguages(lang, id)}
                             >
                                 {img}
                             </Button>
->>>>>>> f7a4e23b76af9d10e30749ba1dcc424e21d1ec5b
+
                         })
                     }
                 </ul>
@@ -110,7 +99,7 @@ const Header = () => {
                 </div>
 
                 <div className="parallaxEffects">
-                    <Example/>
+
                     {/*<div><img src={parallax1}/></div>*/}
                     {/*<div><img src={parallax2}/></div>*/}
                     {/*<motion.div*/}
