@@ -5,7 +5,7 @@ import img from "../../assets/portfolioImages/1.png"
 import {Carousel} from '3d-react-carousal';
 import {useTranslation} from "react-i18next";
 
-const About = () => {
+const About = ({darkMode, setDarkMode}) => {
     // const {t} = useTranslation()
 
     let slides = [

@@ -5,15 +5,19 @@ import i18next from "i18next";
 import cookies from "js-cookie"
 import {Link} from 'react-scroll'
 import OrderModal from "./orderModal/OrderModal";
-import {ButtonGroup, Button} from "@material-ui/core"
 import css from "./header.module.css"
 import Toggle from "../Toggle/Toggle";
 import useDarkMode from "../Mode/useDarkMode";
+import {useSelector} from "react-redux";
 
 
 const Header = () => {
 
+    //mode
     const [darkMode, setDarkMode] = useDarkMode();
+    const mode = useSelector(state => state.modeReducer.mode)
+    console.log(mode)
+
 
     // modal
     const [showModal, setShowModal] = useState(false);
@@ -61,24 +65,20 @@ const Header = () => {
                     <i class="fab fa-instagram"></i>
                     <i class="fab fa-linkedin-in"></i>
                 </div>
-                <ButtonGroup className="languages">
+                <ul className="languages">
                     {
                         languages.map(({id, lang}) => {
-                            return <Button
+                            return <li
                                 key={id}
                                 onClick={() => selectlanguages(lang, id)}
                             >
                                 {lang}
-                            </Button>
+                            </li>
                         })
                     }
-                </ButtonGroup>
+                </ul>
                 <div>
                     <Toggle darkMode={darkMode} setDarkMode={setDarkMode}/>
-                    {/*<ButtonGroup variant="outlined" aria-label="outlined button group">*/}
-                    {/*    <Button>Dark</Button>*/}
-                    {/*    <Button>Light</Button>*/}
-                    {/*</ButtonGroup>*/}
                 </div>
             </div>
 

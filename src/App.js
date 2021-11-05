@@ -8,27 +8,38 @@ import Team from "./components/team/team";
 import Footer from "./components/footer/footer";
 import Digital from './components/digital/Digital';
 import ScrollToTopBtn from "../src/components/scrollToTop/ScrollToTop";
+import {useSelector} from "react-redux";
+import useDarkMode from "./components/Mode/useDarkMode";
+import React, {useState} from "react";
+import Toggle from "./components/Toggle/Toggle";
 
 function App() {
+
+    const mode = useSelector(state => state.modeReducer.mode)
+    // const [darkMode, setDarkMode] = useState(mode)
+
+
     return (
         <div className="App">
             <Header/>
-            <section id="digital">
+
+            <section id="digital" className="digitalSection">
                 <Digital/>
             </section>
-            <section id="about">
+            <section id="about" className="aboutSection">
                 <About/>
             </section>
-            <section id="services">
+            <section id="services" className="servicesSection">
                 <Services/>
             </section>
-            <section id="portfolio">
+                {/*<Toggle darkMode={darkMode} setDarkMode={setDarkMode}/>*/}
+            <section id="portfolio" className="portfolioSection">
                 <Portfolio/>
             </section>
-            <section id="tecnologies">
+            <section id="tecnologies" className="tecnologiesSection">
                 <Tecnologies/>
             </section>
-            <section id="team">
+            <section id="team" className="teamSection">
                 <Team/>
             </section>
             <Footer/>
