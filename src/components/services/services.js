@@ -8,7 +8,7 @@ import servicesIcon6 from '../../assets/images/servicesIcon6.png'
 import servicesIcon7 from '../../assets/images/servicesIcon7.png'
 import servicesIcon8 from '../../assets/images/servicesIcon8.png'
 
-const Services = () => {
+const Services = ({darkMode, setDarkMode}) => {
     return (
 
         <div className="services">

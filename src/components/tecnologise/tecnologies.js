@@ -5,7 +5,7 @@ import angular from '../../assets/images/Angular.png'
 import pyton from '../../assets/images/Python.png'
 import vue from '../../assets/images/Vue.png'
 
-const Tecnologies = () => {
+const Tecnologies = ({darkMode, setDarkMode}) => {
     return (
         <section class="section">
 		<div class="container">

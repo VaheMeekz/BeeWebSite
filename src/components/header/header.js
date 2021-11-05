@@ -5,15 +5,26 @@ import i18next from "i18next";
 import cookies from "js-cookie"
 import {Link} from 'react-scroll'
 import OrderModal from "./orderModal/OrderModal";
-import {ButtonGroup, Button} from "@material-ui/core"
 import css from "./header.module.css"
 import Toggle from "../Toggle/Toggle";
 import useDarkMode from "../Mode/useDarkMode";
+<<<<<<< HEAD
+import {useSelector} from "react-redux";
+=======
+import Example from "./carusel/springCarusel";
+import uk from "../../assets/images/ukukpng.png"
+import ru from "../../assets/images/ru.png"
+import arm from "../../assets/images/arm.png"
+>>>>>>> f7a4e23b76af9d10e30749ba1dcc424e21d1ec5b
 
 
 const Header = () => {
 
+    //mode
     const [darkMode, setDarkMode] = useDarkMode();
+    const mode = useSelector(state => state.modeReducer.mode)
+    console.log(mode)
+
 
     // modal
     const [showModal, setShowModal] = useState(false);
@@ -24,9 +35,9 @@ const Header = () => {
 
     //languages
     const languages = [
-        {id: 1, lang: 'en'},
-        {id: 2, lang: 'am'},
-        {id: 3, lang: 'ru'}
+        {id: 1, lang: 'en',img:<img src={uk} alt={"flag"} width={'50px'} height={'20px'}/>},
+        {id: 2, lang: 'am',img:<img src={arm} alt={"flag"} width={'50px'} height={'20px'}  />},
+        {id: 3, lang: 'ru',img:<img src={ru} alt={"flag"} width={'50px'} height={'20px'} /> }
     ]
 
     const currentLang = cookies.get('i18next')
@@ -61,24 +72,30 @@ const Header = () => {
                     <i class="fab fa-instagram"></i>
                     <i class="fab fa-linkedin-in"></i>
                 </div>
-                <ButtonGroup className="languages">
+                <ul className="languages">
                     {
+<<<<<<< HEAD
                         languages.map(({id, lang}) => {
-                            return <Button
+                            return <li
                                 key={id}
                                 onClick={() => selectlanguages(lang, id)}
                             >
                                 {lang}
+                            </li>
+=======
+                        languages.map(({id, lang,img}) => {
+                            return <Button
+                                key={id}
+                                onClick={() => selectlanguages(lang, id)}
+                            >
+                                {img}
                             </Button>
+>>>>>>> f7a4e23b76af9d10e30749ba1dcc424e21d1ec5b
                         })
                     }
-                </ButtonGroup>
+                </ul>
                 <div>
                     <Toggle darkMode={darkMode} setDarkMode={setDarkMode}/>
-                    {/*<ButtonGroup variant="outlined" aria-label="outlined button group">*/}
-                    {/*    <Button>Dark</Button>*/}
-                    {/*    <Button>Light</Button>*/}
-                    {/*</ButtonGroup>*/}
                 </div>
             </div>
 
@@ -93,6 +110,7 @@ const Header = () => {
                 </div>
 
                 <div className="parallaxEffects">
+                    <Example/>
                     {/*<div><img src={parallax1}/></div>*/}
                     {/*<div><img src={parallax2}/></div>*/}
                     {/*<motion.div*/}

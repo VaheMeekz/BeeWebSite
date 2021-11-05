@@ -6,7 +6,7 @@ import Implement from "../../assets/images/implement.png"
 import {useTranslation} from "react-i18next";
 
 
-const Team = () => {
+const Team = ({darkMode, setDarkMode}) => {
     const {t} = useTranslation()
 
     return (

@@ -27,30 +27,105 @@ body::-webkit-scrollbar{
     width: 8px;
 }
 
-body.dark-mode {
-    background-color: #232323;
-    color: #dfdfdf;
-    .dark-mode-toggle > button {
-        color: #999;
-        &:last-child {
-            color: #ffffff;
-        }
-    }
-}
 
 .scroll-to-top {
-    position: fixed;
+    position: relative;
     bottom: 0.5rem;
     right: 0.5rem;
-    animation: fadeIn 700ms ease-in-out 1s both;
+    animation: fadeIn 700ms linear 1s both;
     cursor: pointer;
+    z-index: 80;
 }
 
 @keyframes fadeIn {
     from {
         opacity: 0;
+        margin-bottom: 0;
     }
     to {
         opacity: 1;
+       margin-bottom: 100px;
+    }
+}
+/*mode*/
+
+.dark-mode-toggle {
+    display: flex;
+    margin: 0 auto;
+    & > button {
+        font-size: 1.2em;
+        background: none;
+        border: none;
+        color: #ffe600;
+        cursor: pointer;
+        transition: color 0.3s ease;
+        &:last-child {
+            color: #666;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.toggle-control {
+    position: relative;
+    padding: 0 4px;
+    display: flex;
+    align-items: center;
+}
+
+input[type='checkbox'].dmcheck {
+    width: 30px;
+    height: 8px;
+    background: #555;
+    position: relative;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    vertical-align: 3px;
+    outline: none;
+
+    &:checked + label {
+        left: 20px;
+    }
+
+    &:focus-visible {
+        outline: solid 2px white;
+    }
+
+    & + label {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        position: absolute;
+        left: 2px;
+        background: #fff;
+        opacity: 0.9;
+        background-color: #f6f6f6;
+    }
+}
+
+body {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s ease;
+}
+
+body.dark-mode {
+    background: #282828;
+    color: #dfdfdf;
+
+    .dark-mode-toggle > button {
+        color: #999;
+        &:last-child {
+            color: #ffffff;
+        }
     }
 }

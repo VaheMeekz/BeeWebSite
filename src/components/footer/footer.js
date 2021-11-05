@@ -8,7 +8,7 @@ import insta from "../../assets/images/insta.png"
 import linkedin from "../../assets/images/linkedin.png"
 import local from "../../assets/images/local.png"
 
-const Footer = () => {
+const Footer = ({darkMode, setDarkMode}) => {
     const {t} = useTranslation()
     return (
         <div className='footer'>
