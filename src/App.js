@@ -20,6 +20,10 @@ function App() {
 
 
     return (
+
+        // pwa
+
+
         <div className="App">
             <Header/>
 
