@@ -21,7 +21,15 @@
     .outTeamImg {
         width: 1166px;
         height: 398px;
+        display: flex;
+        justify-content: center;
         margin: 0 auto;
+       img {
+        @media(max-width:1238px){
+            width:900px;
+            height:398px;
+        }
+       }
     }
     h3 {
         font-family: Montserrat;
@@ -73,3 +81,6 @@
         }
     }
 }
+
+
+

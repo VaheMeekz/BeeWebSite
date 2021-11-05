@@ -24,7 +24,6 @@
     justify-content: space-evenly;
     align-items: center;
 
-    n
     .logo {
       width: 150px;
       height: 19.01px;
@@ -47,12 +46,19 @@
         font-family: "Montserrat", sans-serif;
         font-weight: 400;
         color: white;
-      }
 
-      li:hover {
-        color: #0F3C92;
-        transition: .3s;
-      }
+      //   a {
+      //     @media(max-width:1420px) {
+      //       font-size: 14px;
+      //   }
+      // }
+        }
+  
+
+      // li:hover {
+      //   color: #0F3C92;
+      //   transition: .3s;
+      // }
     }
 
     .contactButton {
@@ -359,3 +365,4 @@ top: -0.000000001%;
   box-shadow: 1px 1px 1px #999;
   outline: 0;
 }
+

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:ital,wght@0,400;0,500;1,500&display=swap");
 .header {
   width: 100%;
   height: 538px;
@@ -20,8 +21,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center; }
-    .header .nav n
-    .logo {
+    .header .nav .logo {
       width: 150px;
       height: 19.01px; }
     .header .nav ul {
@@ -40,9 +40,6 @@
         font-family: "Montserrat", sans-serif;
         font-weight: 400;
         color: white; }
-      .header .nav ul li:hover {
-        color: #0F3C92;
-        transition: .3s; }
     .header .nav .contactButton {
       width: 160px;
       height: 32px;
@@ -338,14 +335,46 @@ input[type='checkbox'].dmcheck {
   display: flex;
   justify-content: space-evenly;
   align-items: center; }
+  @media (max-width: 970px) {
+    .about {
+      height: 700px;
+      background: black;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center; } }
   .about .aboutImg {
     width: 800px;
-    height: 400px; }
+    height: 74%; }
+    @media (max-width: 1360px) {
+      .about .aboutImg {
+        width: 700px; } }
+    @media (max-width: 1238px) {
+      .about .aboutImg {
+        width: 650px;
+        height: 70%; } }
+    @media (max-width: 1189px) {
+      .about .aboutImg {
+        width: 600px;
+        height: 63%; } }
+    @media (max-width: 1137px) {
+      .about .aboutImg {
+        width: 500px;
+        height: 53%; } }
   .about .aboutUsDivAll {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     grid-gap: 60px; }
+    @media (max-width: 1142px) {
+      .about .aboutUsDivAll {
+        grid-gap: 40px; } }
+    @media (max-width: 1090px) {
+      .about .aboutUsDivAll {
+        grid-gap: 30px; } }
+    @media (max-width: 1044px) {
+      .about .aboutUsDivAll {
+        grid-gap: 26px; } }
     .about .aboutUsDivAll .aboutUsDivs {
       display: flex; }
       .about .aboutUsDivAll .aboutUsDivs .aboutUsDiv p {
@@ -356,11 +385,27 @@ input[type='checkbox'].dmcheck {
         line-height: 24px;
         text-transform: capitalize;
         color: #ffffff; }
+        @media (max-width: 1490px) {
+          .about .aboutUsDivAll .aboutUsDivs .aboutUsDiv p {
+            font-size: 14px; } }
+        @media (max-width: 1394px) {
+          .about .aboutUsDivAll .aboutUsDivs .aboutUsDiv p {
+            font-size: 13px; } }
+        @media (max-width: 1066px) {
+          .about .aboutUsDivAll .aboutUsDivs .aboutUsDiv p {
+            font-size: 12px; } }
       .about .aboutUsDivAll .aboutUsDivs .aboutUsDiv img {
         width: 100px;
         height: 50px; }
       .about .aboutUsDivAll .aboutUsDivs span {
         padding: 0 40px 0 50px; }
+        @media (max-width: 1345px) {
+          .about .aboutUsDivAll .aboutUsDivs span {
+            padding: 0 40px 0 33px; } }
+        @media (max-width: 1360px) {
+          .about .aboutUsDivAll .aboutUsDivs span img {
+            width: 40px;
+            height: 40px; } }
     .about .aboutUsDivAll h3 {
       font-family: Montserrat;
       font-style: normal;
@@ -456,6 +501,77 @@ input[type='checkbox'].dmcheck {
 
 .caruselButtons {
   display: none; }
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 400px; }
+  @media (max-width: 768px) {
+    .swiper-slide {
+      width: 250px;
+      height: auto; } }
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 50vh; }
+  .container .swiper-container {
+    width: 70%;
+    position: absolute;
+    left: 50%;
+    bottom: -16vw;
+    transform: translateX(-50%);
+    z-index: 2;
+    padding-bottom: 3vw; }
+    @media (max-width: 768px) {
+      .container .swiper-container {
+        bottom: -58vw;
+        padding-bottom: 8vw; } }
+
+.title_wrapper {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 3vw 0 2vw 0; }
+  @media (max-width: 768px) {
+    .title_wrapper {
+      padding-top: 13vw; } }
+  .title_wrapper .reactLogo {
+    width: 5vw;
+    height: 5vw;
+    margin-right: 1vw; }
+    @media (max-width: 768px) {
+      .title_wrapper .reactLogo {
+        width: 25vw;
+        height: 25vw; } }
+    .title_wrapper .reactLogo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .title_wrapper .title_ {
+    color: #fff;
+    text-align: left;
+    font-size: 2vw; }
+    @media (max-width: 768px) {
+      .title_wrapper .title_ {
+        font-size: 7vw; } }
+    .title_wrapper .title_ span {
+      display: block; }
+
+.swiper-pagination-fraction {
+  bottom: 0; }
+
+.swiper-pagination-bullet {
+  width: 25px;
+  height: 5px;
+  border-radius: 5px; }
 
 * {
   margin: 0;
@@ -810,7 +926,13 @@ input[type='checkbox'].dmcheck {
   .team .outTeamImg {
     width: 1166px;
     height: 398px;
+    display: flex;
+    justify-content: center;
     margin: 0 auto; }
+    @media (max-width: 1238px) {
+      .team .outTeamImg img {
+        width: 900px;
+        height: 398px; } }
   .team h3 {
     font-family: Montserrat;
     font-style: normal;
@@ -859,23 +981,25 @@ input[type='checkbox'].dmcheck {
   width: 100%;
   height: 328px;
   background: #202020;
-  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   padding-top: 1%;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 30px;
-  line-height: 37px;
   text-transform: capitalize; }
+  .footerUp h2 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    text-transform: capitalize;
+    color: #ffffff; }
 
 .footerInfoBox {
   display: flex;
   justify-content: space-around;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -906,7 +1030,7 @@ input[type='checkbox'].dmcheck {
 .sendBtn {
   width: 100px;
   height: 32px;
-  background: #3975D1;
+  background: #3975d1;
   border: 0;
   border-radius: 0 5px 5px 0;
   font-size: 16px;
@@ -926,7 +1050,7 @@ input[type='checkbox'].dmcheck {
 .footerZrt {
   font-size: 12px; }
 
-footerZrtPrt {
+.footerZrtPrt {
   font-size: 23px; }
 
 .footerInfo {
@@ -950,6 +1074,8 @@ footerZrtPrt {
 
 .footerIcon {
   margin: 10px; }
+  .footerIcon img:hover {
+    color: #428dff; }
 
 .footerText {
   display: flex;

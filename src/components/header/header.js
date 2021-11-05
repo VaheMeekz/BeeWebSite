@@ -47,7 +47,7 @@ const Header = () => {
             <div className="nav">
                 <div className="logo"><NavLink to={'/'}><img src={logo}/></NavLink></div>
                 <ul>
-                    <li>Contact</li>
+                    <Link to="#" className={css.links}>Contact</Link>
                     <Link to="about" smooth={true} duration={1000} className={css.links}>About</Link>
                     <Link to="services" smooth={true} duration={1000} className={css.links}>Services</Link>
                     <Link to="portfolio" smooth={true} duration={1000} className={css.links}>Portfolio</Link>
