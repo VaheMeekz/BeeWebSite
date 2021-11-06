@@ -9,12 +9,10 @@ import css from "./header.module.css"
 import Toggle from "../Toggle/Toggle";
 import useDarkMode from "../Mode/useDarkMode";
 import {useSelector} from "react-redux";
-
 import uk from "../../assets/images/ukukpng.png"
 import ru from "../../assets/images/ru.png"
 import arm from "../../assets/images/arm.png"
 import {Button} from "@material-ui/core";
-import caruselSwiper from "./carusel/carusel";
 import CaruselCube from "./carusel/carusel";
 
 
@@ -49,15 +47,15 @@ const Header = () => {
         setActiveLang(lang)
     }
 
-    useEffect(() => {
-        console.log(activeLang)
-    }, [])
+    // useEffect(() => {
+    //     console.log(activeLang)
+    // }, [])
 
 
     return (
         <div className="header">
             <div className="nav">
-                <div className="logo"><NavLink to={'/'}><img src={logo}/></NavLink></div>
+                <div className="logo"><NavLink to={'/'}><img src={logo}  alt={"img"} /></NavLink></div>
                 <ul>
                     <Link to="#" className={css.links}>Contact</Link>
                     <Link to="about" smooth={true} duration={1000} className={css.links}>About</Link>

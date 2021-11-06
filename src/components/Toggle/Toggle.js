@@ -1,11 +1,11 @@
 import React from "react";
-import {useDispatch, useSelector} from "react-redux";
+import {useDispatch} from "react-redux";
 import {modeAC} from "../../redux/actions/modeAction";
-import moon from "../../assets/images/moon.svg"
+
 
 const Toggle = ({darkMode, setDarkMode , checked, onChange }) => {
 
-    const mode = useSelector(state => state.modeReducer.mode)
+    // const mode = useSelector(state => state.modeReducer.mode)
     const dispatch = useDispatch()
 
     const getModeT = () => {
