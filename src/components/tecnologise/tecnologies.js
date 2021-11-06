@@ -20,37 +20,37 @@ const Tecnologies = ({darkMode, setDarkMode}) => {
 				<span class="row3_span"></span>
 				<div class="row3_div1">
 					<div class="row3_div_img">
-						<img src={php} alt="no photo" />
+						<img src={php} alt={"img"} />
 					</div>
 					<p class="row3_p">PHP</p>
 				</div>
 				<div class="row3_div2">
 					<div class="row3_div_img">
-						<img src={javascript} alt="no photo" />
+						<img src={javascript} alt={"img"} />
 					</div>
 					<p class="row3_p">JavaScript</p>
 				</div>
 				<div class="row3_div3">
 					<div class="row3_div_img">
-						<img src={angular} alt="no photo" />
+						<img src={angular}  alt={"img"}  />
 					</div>
 					<p class="row3_p">Angular</p>
 				</div>
 				<div class="row3_div4">
 					<div class="row3_div_img">
-						<img src={vue} alt="no photo" />
+						<img src={vue} alt={"img"} />
 					</div>
 					<p class="row3_p">Vue.js</p>
 				</div>
 				<div class="row3_div5">
 					<div class="row3_div_img">
-						<img src={pyton} alt="no photo" />
+						<img src={pyton}  alt={"img"} />
 					</div>
 					<p class="row3_p">Python</p>
 				</div>
 				<div class="row3_div6">
 					<div class="row3_div_img">
-						<img src={angular} alt="no photo" />
+						<img src={angular}  alt={"img"} />
 					</div>
 					<p class="row3_p">Angular</p>
 				</div>
@@ -66,31 +66,31 @@ const Tecnologies = ({darkMode, setDarkMode}) => {
 				<span class="row4_span"></span>
 				<div class="row4_div1">
 					<div class="row4_div_img">
-						<img src={php} alt="no photo" />
+						<img src={php} alt={"img"} />
 					</div>
 					<p class="row4_p">PHP</p>
 				</div>
 				<div class="row4_div2">
 					<div class="row4_div_img">
-						<img src={javascript} alt="no photo" />
+						<img src={javascript}  alt={"img"} />
 					</div>
 					<p class="row4_p">JavaScript</p>
 				</div>
 				<div class="row4_div3">
 					<div class="row4_div_img">
-						<img src={angular} alt="no photo" />
+						<img src={angular}  alt={"img"} />
 					</div>
 					<p class="row4_p">Angular</p>
 				</div>
 				<div class="row4_div4">
 					<div class="row4_div_img">
-						<img src={vue} alt="no photo" />
+						<img src={vue}  alt={"img"} />
 					</div>
 					<p class="row4_p">Vue.js</p>
 				</div>
 				<div class="row4_div5">
 					<div class="row4_div_img">
-						<img src={pyton} alt="no photo" />
+						<img src={pyton}  alt={"img"} />
 					</div>
 					<p class="row4_p">Python</p>
 				</div>

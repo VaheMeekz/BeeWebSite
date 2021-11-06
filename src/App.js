@@ -7,14 +7,13 @@ import Tecnologies from "./components/tecnologise/tecnologies";
 import Team from "./components/team/team";
 import Footer from "./components/footer/footer";
 import Digital from './components/digital/Digital';
-import {useSelector} from "react-redux";
-import React, {useState} from "react";
+import React from "react";
 import ScrollToTopBtn from "./components/scrollToTop/ScrollToTop";
 
 
 function App() {
 
-    const mode = useSelector(state => state.modeReducer.mode)
+    // const mode = useSelector(state => state.modeReducer.mode)
     // const [darkMode, setDarkMode] = useState(mode)
 
 

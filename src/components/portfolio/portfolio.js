@@ -52,22 +52,22 @@ const Portfolio = ({darkMode, setDarkMode}) => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src={image1} width={800} />
+          <img src={image1} width={800} alt={"img"} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={image1}  width={800} />
+          <img src={image1}  width={800} alt={"img"} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={image1} width={800} />
+          <img src={image1} width={800} alt={"img"} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={image1} width={800} />
+          <img src={image1} width={800} alt={"img"} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={image1} width={800} />
+          <img src={image1} width={800} alt={"img"} />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={image1} width={800} />
+          <img src={image1} width={800}  alt={"img"}/>
         </SwiperSlide>
       </Swiper>
         </div>
