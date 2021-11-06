@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 import React from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
 import image1 from '../../assets/images/aboutUsImg.png';
@@ -77,4 +76,4 @@ const Portfolio = ({darkMode, setDarkMode}) => {
 };
 
 export default Portfolio;
->>>>>>> fbc2f095591c5b5894df07b708ee7ee741e2150e
+

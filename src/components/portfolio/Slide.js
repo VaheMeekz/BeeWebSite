@@ -56,7 +56,6 @@ export default function Slide({ slide, index, current, handleSlideClick }) {
 
       <article className="slide__content">
         <h2 className="slide__headline">{headline}</h2>
-        <button className="slide__action btn">{button}</button>
       </article>
     </li>
   );

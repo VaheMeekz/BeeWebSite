@@ -99,35 +99,9 @@ const Header = () => {
                 </div>
 
                 <div className="parallaxEffects">
-                <CaruselCube/>
-                    {/*<div><img src={parallax1}/></div>*/}
-                    {/*<div><img src={parallax2}/></div>*/}
-                    {/*<motion.div*/}
-                    {/*    initial={{*/}
-                    {/*        x: -300,*/}
-                    {/*        y: -300*/}
-                    {/*    }}*/}
-                    {/*    animate={{*/}
-                    {/*        x: 0,*/}
-                    {/*        y: 0*/}
-                    {/*    }}*/}
-                    {/*    transition={{ duration: 0.5 }}*/}
-                    {/*>*/}
-                    {/*    <img src={parallax1}/>*/}
-                    {/*</motion.div>*/}
-                    {/*<motion.div*/}
-                    {/*    initial={{*/}
-                    {/*        x: -300,*/}
-                    {/*        y: -300*/}
-                    {/*    }}*/}
-                    {/*    animate={{*/}
-                    {/*        x: 0,*/}
-                    {/*        y: 0*/}
-                    {/*    }}*/}
-                    {/*    transition={{ duration: 0.5 }}*/}
-                    {/*>*/}
-                    {/*    <img src={parallax2}/>*/}
-                    {/*</motion.div>*/}
+
+                {/*<CaruselCube/>*/}
+
                 </div>
 
             </div>
