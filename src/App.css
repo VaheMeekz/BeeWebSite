@@ -99,6 +99,10 @@
   font-family: "Montserrat", sans-serif;
   color: white; }
 
+Link:hover {
+  color: #0F3C92;
+  transition: .3s; }
+
 .navbar {
   display: flex;
   background-color: salmon;
@@ -285,10 +289,33 @@ input[type='checkbox'].dmcheck {
     opacity: 0.9;
     background-color: #f6f6f6; }
 
+.order {
+  margin-top: 150px;
+  margin-left: 150px;
+  font-family: "Montserrat"; }
+  .order span {
+    margin-top: 2%;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    text-transform: uppercase; }
+  .order p {
+    margin-top: 1%;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize; }
+
 /*swiper*/
+.parallaxEffects {
+  margin-top: 150px;
+  margin-right: 300px; }
+
 .digital {
   width: 100%;
-  height: 252px;
+  height: 300px;
   color: white; }
   .digital h3 {
     color: azure;
@@ -336,6 +363,26 @@ input[type='checkbox'].dmcheck {
     color: #999; }
     .digital.dark-mode .dark-mode-toggle > button:last-child {
       color: #ffffff; }
+
+.parallax-effect-glare-scale {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border: 2px solid;
+  border-radius: 20px;
+  transform-style: preserve-3d;
+  padding: 1%; }
+  .parallax-effect-glare-scale .inner-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-style: italic;
+    transform: translateZ(60px); }
 
 .about {
   width: 100%;
@@ -1076,6 +1123,24 @@ input[type='checkbox'].dmcheck {
       color: #888888;
       margin-top: 20px; }
 
+.parallax-effect-glare-scale {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 190px;
+  height: 190px;
+  transform-style: preserve-3d; }
+  .parallax-effect-glare-scale .inner-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-style: italic;
+    color: white;
+    transform: translateZ(60px); }
+
 .footer {
   width: 100%;
   height: 500px; }
@@ -1280,5 +1345,8 @@ body.dark-mode {
     color: #999; }
     body.dark-mode .dark-mode-toggle > button:last-child {
       color: #ffffff; }
+
+.cubeBox {
+  margin-top: 2%; }
 
 /*# sourceMappingURL=App.css.map */

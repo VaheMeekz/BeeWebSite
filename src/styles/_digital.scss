@@ -1,6 +1,6 @@
 .digital {
   width: 100%;
-  height: 252px;
+  height: 300px;
   color: white;
 
   h3 {
@@ -66,3 +66,27 @@
     }
   }
 }
+
+.parallax-effect-glare-scale {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border: 2px solid;
+  border-radius: 20px;
+  transform-style: preserve-3d;
+  padding: 1%;
+
+  .inner-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-style: italic;
+    transform: translateZ(60px);
+  }
+}
+

@@ -90,18 +90,19 @@ class CaruselCube extends React.Component {
                     direction={"horizontal"}
                     effect={"3d"}
                     index={0}
+                    className=""
                 >
                     <div style={{width: 300, height: 300}}>
-                        <img src={img} alt={"img"}/>
+                        <img src={img} alt={"img"} width={"300px"} height={"300px"}/>
                     </div>
                     <div style={{width: 300, height: 300}}>
-                        <img src={img} alt={"img"}/>
+                        <img src={img} alt={"img"} width={"300px"} height={"300px"}/>
                     </div>
                     <div style={{width: 300, height: 300}}>
-                        <img src={img} alt={"img"}/>
+                        <img src={img} alt={"img"} width={"300px"} height={"300px"}/>
                     </div>
                     <div style={{width: 300, height: 300}}>
-                        <img src={img} alt={"img"}/>
+                        <img src={img} alt={"img"}  width={"300px"} height={"300px"}/>
                     </div>
                 </Carousel>
             </div>

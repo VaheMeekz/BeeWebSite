@@ -4,6 +4,7 @@ import identify from "../../assets/images/identify.png"
 import manage from "../../assets/images/manage.png"
 import Implement from "../../assets/images/implement.png"
 import {useTranslation} from "react-i18next";
+import Tilt from "react-parallax-tilt";
 
 
 const Team = ({darkMode, setDarkMode}) => {
@@ -21,29 +22,54 @@ const Team = ({darkMode, setDarkMode}) => {
             </p>
             <p> {t('network')}</p>
             <div className="teamLogos">
-                <div className="teamLogo">
-                    <img src={identify} alt="img"/>
-                    <span>{t('identify')}</span>
-                </div>
+                <Tilt
+                    className="parallax-effect-glare-scale"
+                    perspective={500}
+                    glareEnable={true}
+                    glareMaxOpacity={0.45}
+                    scale={1.02}
+                    gyroscope={true}
+                >
+                    <div className="inner-element">
+                        <div className="teamLogo">
+                            <img src={identify} alt="img"/>
+                            <span>{t('identify')}</span>
+                        </div>
+                    </div>
+                </Tilt>
 
-                <div className="teamLogo">
-                    <img src={manage} alt="img"/>
-                    <span>{t('Implement')}</span>
-                </div>
-                {/*<motion.div*/}
-                {/*    className:container*/}
-                {/*    initial:"scale: 0"*/}
-                {/*    animate:"rotate: 180, scale: 1"*/}
-                {/*    transition={{*/}
-                {/*        type: "spring",*/}
-                {/*        stiffness: 260,*/}
-                {/*        damping: 20*/}
-                {/*    }}*/}
-                {/*/>*/}
-                <div className="teamLogo">
-                    <img src={Implement} alt="img"/>
-                    <span>{t('MANAGE')}</span>
-                </div>
+                <Tilt
+                    className="parallax-effect-glare-scale"
+                    perspective={500}
+                    glareEnable={true}
+                    glareMaxOpacity={0.45}
+                    scale={1.02}
+                    gyroscope={true}
+                >
+                    <div className="inner-element">
+                        <div className="teamLogo">
+                            <img src={manage} alt="img"/>
+                            <span>{t('Implement')}</span>
+                        </div>
+                    </div>
+                </Tilt>
+
+                <Tilt
+                    className="parallax-effect-glare-scale"
+                    perspective={500}
+                    glareEnable={true}
+                    glareMaxOpacity={0.45}
+                    scale={1.02}
+                    gyroscope={true}
+                >
+                    <div className="inner-element">
+                        <div className="teamLogo">
+                            <img src={Implement} alt="img"/>
+                            <span>{t('MANAGE')}</span>
+                        </div>
+                    </div>
+                </Tilt>
+
             </div>
         </div>
     );

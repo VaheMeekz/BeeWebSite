@@ -16,7 +16,6 @@ import {Button} from "@material-ui/core";
 import CaruselCube from "./carusel/carusel";
 
 
-
 const Header = () => {
 
     //mode
@@ -34,9 +33,9 @@ const Header = () => {
 
     //languages
     const languages = [
-        {id: 1, lang: 'en',img:<img src={uk} alt={"flag"} width={'50px'} height={'20px'}/>},
-        {id: 2, lang: 'am',img:<img src={arm} alt={"flag"} width={'50px'} height={'20px'}  />},
-        {id: 3, lang: 'ru',img:<img src={ru} alt={"flag"} width={'50px'} height={'20px'} /> }
+        {id: 1, lang: 'en', img: <img src={uk} alt={"flag"} width={'50px'} height={'20px'}/>},
+        {id: 2, lang: 'am', img: <img src={arm} alt={"flag"} width={'50px'} height={'20px'}/>},
+        {id: 3, lang: 'ru', img: <img src={ru} alt={"flag"} width={'50px'} height={'20px'}/>}
     ]
 
     const currentLang = cookies.get('i18next')
@@ -55,7 +54,7 @@ const Header = () => {
     return (
         <div className="header">
             <div className="nav">
-                <div className="logo"><NavLink to={'/'}><img src={logo}  alt={"img"} /></NavLink></div>
+                <div className="logo"><NavLink to={'/'}><img src={logo} alt={"img"}/></NavLink></div>
                 <ul>
                     <Link to="#" className={css.links}>Contact</Link>
                     <Link to="about" smooth={true} duration={1000} className={css.links}>About</Link>
@@ -72,15 +71,15 @@ const Header = () => {
                     <i class="fab fa-linkedin-in"></i>
                 </div>
                 <ul className="languages">
-                    {languages.map(({id, lang,img}) => {
-                            return <Button
-                                key={id}
-                                onClick={() => selectlanguages(lang, id)}
-                            >
-                                {img}
-                            </Button>
+                    {languages.map(({id, lang, img}) => {
+                        return <Button
+                            key={id}
+                            onClick={() => selectlanguages(lang, id)}
+                        >
+                            {img}
+                        </Button>
 
-                        })
+                    })
                     }
                 </ul>
                 <div>
@@ -90,20 +89,16 @@ const Header = () => {
 
             <div className="headerContent">
                 <div className="order">
-                    <span>order your website </span>
+                    <span>order your website </span><br/>
                     <span>from us</span>
                     <p>Lorem ipsum dolor sit amet, </p>
                     <p>consectetur adipiscing elit. Id urna proin</p>
                     <p> tortor eu ut tortor turpis accumsan.</p>
                     <br/>
                 </div>
-
                 <div className="parallaxEffects">
-
-                {/*<CaruselCube/>*/}
-
+                    <CaruselCube/>
                 </div>
-
             </div>
             <div className="getStartBox">
                 <button onClick={openModal} className="getStartBtn">get started</button>
