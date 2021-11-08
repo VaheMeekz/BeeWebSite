@@ -93,16 +93,16 @@ class CaruselCube extends React.Component {
                     className=""
                 >
                     <div style={{width: 300, height: 300}}>
-                        <img src={img} alt={"img"} width={"300px"} height={"300px"}/>
+                        <img src={img} alt={"img"} width={"300px"} height={"300px"}  style={{borderRadius:"4%"}}/>
                     </div>
                     <div style={{width: 300, height: 300}}>
-                        <img src={img} alt={"img"} width={"300px"} height={"300px"}/>
+                        <img src={img} alt={"img"} width={"300px"} height={"300px"} style={{borderRadius:"4%"}}/>
                     </div>
                     <div style={{width: 300, height: 300}}>
-                        <img src={img} alt={"img"} width={"300px"} height={"300px"}/>
+                        <img src={img} alt={"img"} width={"300px"} height={"300px"} style={{borderRadius:"4%"}}/>
                     </div>
                     <div style={{width: 300, height: 300}}>
-                        <img src={img} alt={"img"}  width={"300px"} height={"300px"}/>
+                        <img src={img} alt={"img"}  width={"300px"} height={"300px"} style={{borderRadius:"4%"}}/>
                     </div>
                 </Carousel>
             </div>

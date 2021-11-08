@@ -34,9 +34,9 @@ function App() {
                 <Services/>
             </section>
                 {/*<Toggle darkMode={darkMode} setDarkMode={setDarkMode}/>*/}
-            <section id="portfolio" className="portfolioSection">
+            {/* <section id="portfolio" className="portfolioSection">
                  <Slider slides={slideData} />
-            </section>
+            </section> */}
             <section id="tecnologies" className="tecnologiesSection">
                 <Tecnologies/>
             </section>

@@ -20,10 +20,12 @@
     color: white; }
   .header .nav {
     width: 100%;
-    height: 60px;
+    height: 9vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    background: black;
+    z-index: 10;
     position: fixed;
     border-radius: 5px; }
     .header .nav .logo {
@@ -315,8 +317,12 @@ input[type='checkbox'].dmcheck {
 
 .digital {
   width: 100%;
-  height: 300px;
-  color: white; }
+  height: 38vh;
+  color: white;
+  display: grid; }
+  @media screen and (max-width: 1024px) {
+    .digital {
+      display: none; } }
   .digital h3 {
     color: azure;
     margin: 0 auto;
@@ -335,25 +341,49 @@ input[type='checkbox'].dmcheck {
     justify-content: space-evenly;
     align-items: center;
     height: 22vh; }
-    .digital .digitalContentsMain .arrow {
-      margin-top: -3%; }
+    .digital .digitalContentsMain .digitalContentEven {
+      margin-top: 40%; }
     .digital .digitalContentsMain .digitalContent {
-      text-align: center; }
+      text-align: center;
+      display: grid;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      justify-items: center;
+      width: 13%; }
       .digital .digitalContentsMain .digitalContent p {
         text-align: center;
         margin: 0 auto;
         font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
-        font-size: 16px;
+        font-size: 15px;
         line-height: 20px;
         text-align: center;
         text-transform: uppercase;
         color: #ffffff; }
+        @media (max-width: 1504px) {
+          .digital .digitalContentsMain .digitalContent p {
+            font-size: 14px; } }
+        @media (max-width: 1441px) {
+          .digital .digitalContentsMain .digitalContent p {
+            font-size: 13px; } }
+        @media (max-width: 1313px) {
+          .digital .digitalContentsMain .digitalContent p {
+            font-size: 12px; } }
+        @media (max-width: 1209px) {
+          .digital .digitalContentsMain .digitalContent p {
+            font-size: 11px; } }
       .digital .digitalContentsMain .digitalContent img {
         padding-bottom: 10%; }
+        @media (max-width: 1249px) {
+          .digital .digitalContentsMain .digitalContent img {
+            padding: 6%; } }
+        @media (max-width: 1193px) {
+          .digital .digitalContentsMain .digitalContent img {
+            width: 70px; } }
       .digital .digitalContentsMain .digitalContent img:hover {
-        filter: invert(14%) sepia(96%) saturate(6441%) hue-rotate(215deg) brightness(87%) contrast(105%); }
+        filter: invert(25%) sepia(96%) saturate(6441%) hue-rotate(215deg) brightness(87%) contrast(105%); }
 
 /*mode*/
 .digital.dark-mode {
@@ -375,6 +405,15 @@ input[type='checkbox'].dmcheck {
   border-radius: 20px;
   transform-style: preserve-3d;
   padding: 1%; }
+  @media screen and (max-width: 1546px) {
+    .parallax-effect-glare-scale {
+      width: 11% !important; } }
+  @media screen and (max-width: 1209px) {
+    .parallax-effect-glare-scale {
+      height: 20vh !important; } }
+  @media screen and (max-width: 1193px) {
+    .parallax-effect-glare-scale {
+      height: 17vh !important; } }
   .parallax-effect-glare-scale .inner-element {
     display: flex;
     flex-direction: column;
@@ -391,7 +430,7 @@ input[type='checkbox'].dmcheck {
   display: flex;
   justify-content: space-evenly;
   align-items: center; }
-  @media (max-width: 970px) {
+  @media screen and (max-width: 1024px) {
     .about {
       height: 700px;
       background: black;
@@ -440,7 +479,7 @@ input[type='checkbox'].dmcheck {
         font-size: 16px;
         line-height: 24px;
         text-transform: capitalize;
-        color: #ffffff; }
+        color: #c4c4c4; }
         @media (max-width: 1490px) {
           .about .aboutUsDivAll .aboutUsDivs .aboutUsDiv p {
             font-size: 14px; } }
@@ -458,6 +497,9 @@ input[type='checkbox'].dmcheck {
         @media (max-width: 1345px) {
           .about .aboutUsDivAll .aboutUsDivs span {
             padding: 0 40px 0 33px; } }
+        @media screen and (max-width: 1024px) {
+          .about .aboutUsDivAll .aboutUsDivs span {
+            display: none; } }
         @media (max-width: 1360px) {
           .about .aboutUsDivAll .aboutUsDivs span img {
             width: 40px;
@@ -469,6 +511,35 @@ input[type='checkbox'].dmcheck {
       font-size: 24px;
       line-height: 24px;
       text-transform: capitalize; }
+
+.react-3d-carousel .slider-container .slider-left div {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  margin-top: -20 px;
+  color: #ffffff;
+  transform: translateY(-50%);
+  padding: 10px 10px;
+  border-top: 1px solid #fdc84b !important;
+  border-right: 1px solid #fdc84b !important;
+  border-bottom: 1px solid #fdc84b !important;
+  border-left: 1px solid #fdc84b !important; }
+
+.react-3d-carousel .slider-container .slider-right div {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  margin-top: -20 px;
+  color: #ffffff;
+  transform: translateY(-50%);
+  padding: 10px 10px;
+  border-top: 1px solid #fdc84b !important;
+  border-right: 1px solid #fdc84b !important;
+  border-bottom: 1px solid #fdc84b !important;
+  border-left: 1px solid #fdc84b !important; }
+  @media screen and (max-width: 1024px) {
+    .react-3d-carousel .slider-container .slider-right div {
+      text-align: -webkit-center; } }
 
 .services {
   width: 100%;

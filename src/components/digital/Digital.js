@@ -34,7 +34,7 @@ function digital({darkMode, setDarkMode}) {
                     gyroscope={true}
                 >
                     <div className="inner-element">
-                        <div className="digitalContent">
+                        <div className="digitalContent digitalContentEven">
                             <img src={digitalIcon1} alt={"img"}/>
                             <p>Strategy</p>
                             <br/>
@@ -87,7 +87,7 @@ function digital({darkMode, setDarkMode}) {
                     gyroscope={true}
                 >
                     <div className="inner-element">
-                        <div className="digitalContent">
+                        <div className="digitalContent digitalContentEven">
                             <img src={digitalIcon4} alt="img"/>
                             <p>planing</p>
                             <br/>
@@ -125,7 +125,7 @@ function digital({darkMode, setDarkMode}) {
                     gyroscope={true}
                 >
                     <div className="inner-element">
-                        <div className="digitalContent">
+                        <div className="digitalContent digitalContentEven">
                             <img src={digitalIcon6} alt={"img"}/>
                             <p>release</p>
                             <br/>
@@ -143,7 +143,7 @@ function digital({darkMode, setDarkMode}) {
                     gyroscope={true}
                 >
                     <div className="inner-element">
-                        <div className="digitalContent">
+                        <div className="digitalContent digitalContentEven">
                             <img src={digitalIcon7} alt={"img"}/>
                             <p>maintenance</p>
                             <br/>
