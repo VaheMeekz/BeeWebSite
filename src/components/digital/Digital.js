@@ -33,7 +33,7 @@ function digital({darkMode, setDarkMode}) {
                     <div className="inner-element">
                         <div className="digitalContent digitalContentEven">
                             <img src={digitalIcon1} alt={"img"}/>
-                            <p>Strategy</p>
+                            <p className={"diggitalText"}>Strategy</p>
                             <br/>
                         </div>
                     </div>
@@ -50,8 +50,8 @@ function digital({darkMode, setDarkMode}) {
                     <div className="inner-element">
                         <div className="digitalContent">
                             <img src={digitalIcon2} alt="img"/>
-                            <p>requirements</p>
-                            <p>gathering</p>
+                            <p className={"diggitalText"}>requirements</p>
+                            <p className={"diggitalText"}>gathering</p>
                         </div>
                     </div>
                 </Tilt>
@@ -67,8 +67,8 @@ function digital({darkMode, setDarkMode}) {
                     <div className="inner-element">
                         <div className="digitalContent">
                             <img src={digitalIcon3} alt="img"/>
-                            <p>concept and</p>
-                            <p>documentation</p>
+                            <p className={"diggitalText"}>concept and</p>
+                            <p className={"diggitalText"}>documentation</p>
                         </div>
                     </div>
                 </Tilt>
@@ -85,7 +85,7 @@ function digital({darkMode, setDarkMode}) {
                     <div className="inner-element">
                         <div className="digitalContent digitalContentEven">
                             <img src={digitalIcon4} alt="img"/>
-                            <p>planing</p>
+                            <p className={"diggitalText"}>planing</p>
                             <br/>
                         </div>
                     </div>
@@ -104,8 +104,8 @@ function digital({darkMode, setDarkMode}) {
                     <div className="inner-element">
                         <div className="digitalContent">
                             <img src={digitalIcon5} alt="img"/>
-                            <p>aglle software</p>
-                            <p>development</p>
+                            <p className={"diggitalText"}>aglle software</p>
+                            <p className={"diggitalText"}>development</p>
                         </div>
                     </div>
                 </Tilt>
@@ -123,7 +123,7 @@ function digital({darkMode, setDarkMode}) {
                     <div className="inner-element">
                         <div className="digitalContent digitalContentEven">
                             <img src={digitalIcon6} alt={"img"}/>
-                            <p>release</p>
+                            <p className={"diggitalText"}>release</p>
                             <br/>
                         </div>
                     </div>
@@ -141,7 +141,7 @@ function digital({darkMode, setDarkMode}) {
                     <div className="inner-element">
                         <div className="digitalContent digitalContentEven">
                             <img src={digitalIcon7} alt={"img"}/>
-                            <p>maintenance</p>
+                            <p className={"diggitalText"}>maintenance</p>
                             <br/>
                         </div>
                     </div>

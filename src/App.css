@@ -18,6 +18,9 @@
     line-height: 20px;
     font-family: "Montserrat", sans-serif;
     color: white; }
+  .header .links:hover {
+    color: #266bef;
+    transition: .2s; }
   .header .nav {
     width: 100%;
     height: 9vh;
@@ -60,9 +63,14 @@
       font-weight: normal;
       font-size: 16px;
       line-height: 20px;
-      /* identical to box height */
-      text-transform: uppercase;
-      color: #FFFFFF; }
+      text-transform: uppercase; }
+    .header .nav .contactButton:hover {
+      border: 1px solid white;
+      border-radius: 5px;
+      cursor: pointer;
+      background: black;
+      color: #0246C8;
+      transition: .3s; }
     .header .nav .socLinks {
       width: 65px;
       height: 18px;
@@ -177,6 +185,11 @@ Link:hover {
   text-transform: uppercase;
   color: #FFFFFF;
   cursor: pointer; }
+
+.getStartBtn:hover {
+  border: 1px solid;
+  border-radius: 25px;
+  transition: .3s; }
 
 .modalBox {
   position: absolute;
@@ -348,13 +361,11 @@ input[type='checkbox'].dmcheck {
 .digital {
   width: 100%;
   height: 38vh;
-  color: white;
   display: grid; }
   @media screen and (max-width: 1024px) {
     .digital {
       display: none; } }
   .digital h3 {
-    color: azure;
     margin: 0 auto;
     text-align: center;
     padding: 20px 0px 0px 0px;
@@ -364,8 +375,7 @@ input[type='checkbox'].dmcheck {
     font-size: 18px;
     line-height: 22px;
     text-align: center;
-    text-transform: capitalize;
-    color: #ffffff; }
+    text-transform: capitalize; }
   .digital .digitalContentsMain {
     display: flex;
     justify-content: space-evenly;
@@ -390,8 +400,7 @@ input[type='checkbox'].dmcheck {
         font-size: 15px;
         line-height: 20px;
         text-align: center;
-        text-transform: uppercase;
-        color: #ffffff; }
+        text-transform: uppercase; }
         @media (max-width: 1504px) {
           .digital .digitalContentsMain .digitalContent p {
             font-size: 14px; } }
@@ -415,6 +424,14 @@ input[type='checkbox'].dmcheck {
       .digital .digitalContentsMain .digitalContent img:hover {
         filter: invert(25%) sepia(96%) saturate(6441%) hue-rotate(215deg) brightness(87%) contrast(105%); }
 
+.diggitalText {
+  cursor: pointer; }
+  .diggitalText p {
+    cursor: pointer;
+    color: #0246C8; }
+  .diggitalText p:hover {
+    color: #0246C8; }
+
 /*mode*/
 .digital.dark-mode {
   background-color: #232323;
@@ -422,7 +439,7 @@ input[type='checkbox'].dmcheck {
   .digital.dark-mode .dark-mode-toggle > button {
     color: #999; }
     .digital.dark-mode .dark-mode-toggle > button:last-child {
-      color: #ffffff; }
+      color: black; }
 
 .parallax-effect-glare-scale {
   display: flex;
@@ -1241,6 +1258,8 @@ input[type='checkbox'].dmcheck {
     font-style: italic;
     color: white;
     transform: translateZ(60px); }
+  .parallax-effect-glare-scale :hover {
+    color: #0246C8; }
 
 .footer {
   width: 100%;
@@ -1355,6 +1374,33 @@ input[type='checkbox'].dmcheck {
 .footerTextItem {
   margin: 10px; }
 
+@media (max-width: 767px) {
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px; }
+
+  .header__burger span {
+    position: absolute;
+    background-color: white;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 10px; }
+
+  .header__burger:before {
+    top: 0; }
+
+  .header__burger:after {
+    bottom: 0; }
+
+  .header__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; } }
 * {
   padding: 0;
   margin: 0;

@@ -90,10 +90,11 @@ const Header = () => {
                                          key={l.id}>{l.name}</Link>
                         })}
                 </ul>
-                <div>
-                    <div onClick={handleClick} className="burgerBox">
-                        <i className={clicked ? "fas fa-bars" : "fas fa-times"}></i>
-                    </div>
+                <div className={""}>
+
+                    {/*<div onClick={handleClick} className="header__burger">*/}
+                    {/*    <i className={clicked ? "fas fa-bars" : "fas fa-times"}></i>*/}
+                    {/*</div>*/}
                 </div>
                 <Burger links={links}/>
                 <button className="contactButton"><a href='https://trainings.beeoncode.com/course/list'
