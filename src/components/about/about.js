@@ -3,9 +3,9 @@ import aboutImg from '../../assets/images/aboutUsImg.png'
 import arrow from '../../assets/images/arrow.png'
 import img from "../../assets/portfolioImages/1.png"
 import {Carousel} from '3d-react-carousal';
-import {useTranslation} from "react-i18next";
+// import {useTranslation} from "react-i18next";
 
-const About = ({darkMode, setDarkMode}) => {
+const About = () => {
     // const {t} = useTranslation()
 
     let slides = [

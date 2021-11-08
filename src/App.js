@@ -33,7 +33,6 @@ function App() {
             <section id="services" className="servicesSection">
                 <Services/>
             </section>
-                {/*<Toggle darkMode={darkMode} setDarkMode={setDarkMode}/>*/}
             {/* <section id="portfolio" className="portfolioSection">
                  <Slider slides={slideData} />
             </section> */}
@@ -43,7 +42,9 @@ function App() {
             <section id="team" className="teamSection">
                 <Team/>
             </section>
-            <Footer/>
+            <section id="contact">
+                <Footer/>
+            </section>
             <ScrollToTopBtn/>
         </div>
     );

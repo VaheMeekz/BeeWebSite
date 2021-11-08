@@ -24,7 +24,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background: black;
+    background: transparent;
     z-index: 10;
     position: fixed;
     border-radius: 5px; }
@@ -89,6 +89,11 @@
     display: flex;
     justify-content: space-between; }
 
+.nav.active {
+  transition: .4s;
+  background: black;
+  height: 5vh; }
+
 .links {
   list-style: none;
   padding: 0 10px 0 10px;
@@ -109,6 +114,30 @@ Link:hover {
   display: flex;
   background-color: salmon;
   padding: 20px; }
+
+.links {
+  list-style: none;
+  padding: 0 10px 0 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: white; }
+
+.aaa {
+  text-decoration: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  color: white;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase; }
 
 .content {
   padding: 20px 30px; }
@@ -153,10 +182,11 @@ Link:hover {
   position: absolute;
   height: 533px;
   width: 1166px;
-  top: -30%;
+  top: -50%;
   left: 22%;
   border-radius: 10px;
-  background: #35373B; }
+  background: #35373B;
+  z-index: 6000; }
 
 .closeBtn {
   position: absolute;
@@ -1333,7 +1363,7 @@ input[type='checkbox'].dmcheck {
 body::-webkit-scrollbar {
   width: 8px; }
 
-/*scrol*/
+/*scroll*/
 .scroll-to-top {
   position: fixed;
   bottom: 0.5rem;

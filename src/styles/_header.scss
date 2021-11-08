@@ -6,7 +6,6 @@
   position: relative;
   z-index: 10000;
 
-
   Link {
     list-style: none;
     padding: 0 10px 0 10px;
@@ -26,10 +25,11 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background: black;
+    background: transparent;
     z-index: 10;
     position: fixed;
     border-radius: 5px;
+
     .logo {
       width: 150px;
       height: 19.01px;
@@ -53,13 +53,13 @@
         font-weight: 400;
         color: white;
 
-      //   a {
-      //     @media(max-width:1420px) {
-      //       font-size: 14px;
-      //   }
-      // }
-        }
-  
+        //   a {
+        //     @media(max-width:1420px) {
+        //       font-size: 14px;
+        //   }
+        // }
+      }
+
 
       // li:hover {
       //   color: #0F3C92;
@@ -126,6 +126,12 @@
   }
 }
 
+.nav.active {
+  transition: .4s;
+  background: black;
+  height: 5vh;
+}
+
 .links {
   list-style: none;
   padding: 0 10px 0 10px;
@@ -138,7 +144,8 @@
   font-family: "Montserrat", sans-serif;
   color: white;
 }
-Link:hover{
+
+Link:hover {
   color: #0F3C92;
   transition: .3s;
 }
@@ -149,6 +156,32 @@ Link:hover{
   padding: 20px;
 }
 
+.links {
+  list-style: none;
+  padding: 0 10px 0 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+.aaa {
+  text-decoration: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  color: white;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
 .content {
   padding: 20px 30px;
 
@@ -170,7 +203,6 @@ Link:hover{
     font-size: 1.6rem;
   }
 }
-
 
 .caruselCheckBox {
   display: none;
@@ -203,10 +235,11 @@ Link:hover{
   position: absolute;
   height: 533px;
   width: 1166px;
-  top: -30%;
+  top: -50%;
   left: 22%;
   border-radius: 10px;
   background: #35373B;
+  z-index: 6000;
 }
 
 .closeBtn {
@@ -301,11 +334,11 @@ Link:hover{
 }
 
 
-
 /*mode*/
 .dark-mode-toggle {
   display: flex;
   margin: 0 auto;
+
   & > button {
     font-size: 1.2em;
     background: none;
@@ -313,6 +346,7 @@ Link:hover{
     color: #ffe600;
     cursor: pointer;
     transition: color 0.3s ease;
+
     &:last-child {
       color: #666;
     }
@@ -366,11 +400,12 @@ input[type='checkbox'].dmcheck {
   }
 }
 
-.order{
+.order {
   margin-top: 150px;
   margin-left: 150px;
   font-family: "Montserrat";
-  span{
+
+  span {
     margin-top: 2%;
     font-style: normal;
     font-weight: 600;
@@ -378,7 +413,8 @@ input[type='checkbox'].dmcheck {
     line-height: 37px;
     text-transform: uppercase;
   }
-  p{
+
+  p {
     margin-top: 1%;
     font-style: normal;
     font-weight: 300;
@@ -390,8 +426,8 @@ input[type='checkbox'].dmcheck {
 
 /*swiper*/
 
-.parallaxEffects{
-margin-top: 150px;
+.parallaxEffects {
+  margin-top: 150px;
   margin-right: 300px;
 }
 

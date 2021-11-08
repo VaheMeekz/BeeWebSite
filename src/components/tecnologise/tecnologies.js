@@ -5,7 +5,7 @@ import angular from '../../assets/images/Angular.png'
 import pyton from '../../assets/images/Python.png'
 import vue from '../../assets/images/Vue.png'
 
-const Tecnologies = ({darkMode, setDarkMode}) => {
+const Tecnologies = () => {
     return (
         <section class="section">
 		<div class="container">
@@ -95,9 +95,7 @@ const Tecnologies = ({darkMode, setDarkMode}) => {
 					<p class="row4_p">Python</p>
 				</div>
 			</div>
-		</div>	
-
-
+		</div>
 		</div>
 	</section>
     );

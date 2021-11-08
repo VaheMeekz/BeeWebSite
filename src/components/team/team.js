@@ -6,8 +6,7 @@ import Implement from "../../assets/images/implement.png"
 import {useTranslation} from "react-i18next";
 import Tilt from "react-parallax-tilt";
 
-
-const Team = ({darkMode, setDarkMode}) => {
+const Team = () => {
     const {t} = useTranslation()
 
     return (
@@ -37,7 +36,6 @@ const Team = ({darkMode, setDarkMode}) => {
                         </div>
                     </div>
                 </Tilt>
-
                 <Tilt
                     className="parallax-effect-glare-scale"
                     perspective={500}
@@ -53,7 +51,6 @@ const Team = ({darkMode, setDarkMode}) => {
                         </div>
                     </div>
                 </Tilt>
-
                 <Tilt
                     className="parallax-effect-glare-scale"
                     perspective={500}

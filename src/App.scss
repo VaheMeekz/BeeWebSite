@@ -8,6 +8,7 @@
 @import './styles/tecnologies';
 @import './styles/team';
 @import './styles/footer';
+@import 'styles/burger';
 
 // @import './styles/about';
 // @import './styles/blogs';
@@ -28,7 +29,7 @@ body::-webkit-scrollbar {
   width: 8px;
 }
 
-/*scrol*/
+/*scroll*/
 
 .scroll-to-top {
   position: fixed;

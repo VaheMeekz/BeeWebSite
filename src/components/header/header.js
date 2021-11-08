@@ -1,11 +1,10 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import logo from '../../assets/images/logo.png'
 import {NavLink} from "react-router-dom";
 import i18next from "i18next";
 import cookies from "js-cookie"
 import {Link} from 'react-scroll'
 import OrderModal from "./orderModal/OrderModal";
-import css from "./header.module.css"
 import Toggle from "../Toggle/Toggle";
 import useDarkMode from "../Mode/useDarkMode";
 import {useSelector} from "react-redux";
@@ -14,7 +13,7 @@ import ru from "../../assets/images/ru.png"
 import arm from "../../assets/images/arm.png"
 import {Button} from "@material-ui/core";
 import CaruselCube from "./carusel/carusel";
-
+import Burger from "../Burger/Burger";
 
 const Header = () => {
 
@@ -23,13 +22,38 @@ const Header = () => {
     const mode = useSelector(state => state.modeReducer.mode)
     console.log(mode)
 
-
     // modal
     const [showModal, setShowModal] = useState(false);
 
     const openModal = () => {
         setShowModal(prev => !prev);
     };
+
+    //navbar
+
+    const [navbar, setNavbar] = useState(false);
+
+    const changeBackground = () => {
+        // console.log(window.scrollY)
+        if (window.scrollY >= 80) {
+            setNavbar(true)
+        } else {
+            setNavbar(false)
+        }
+    }
+
+    window.addEventListener("scroll", changeBackground)
+
+    // Links
+
+    const links = [
+        {id: 1, to: "contact", name: "Contact", icon: "icon"},
+        {id: 2, to: "about", name: "About", icon: "icon"},
+        {id: 3, to: "services", name: "Services", icon: "icon"},
+        {id: 4, to: "portfolio", name: "Portfolio", icon: "icon"},
+        {id: 5, to: "tecnologies", name: "Tecnologise", icon: "icon"},
+        {id: 6, to: "team", name: "Team", icon: "icon"},
+    ];
 
     //languages
     const languages = [
@@ -46,25 +70,34 @@ const Header = () => {
         setActiveLang(lang)
     }
 
-    // useEffect(() => {
-    //     console.log(activeLang)
-    // }, [])
+    //burger
 
+    const [clicked, setClicked] = useState(false)
+    
+    const handleClick = () => {
+        setClicked(!clicked)
+    }
 
     return (
         <div className="header">
-            <div className="nav">
+            <div className={navbar ? "nav active" : "nav"}>
+                {/*<div className={"nav active"}>*/}
                 <div className="logo"><NavLink to={'/'}><img src={logo} alt={"img"}/></NavLink></div>
                 <ul>
-                    <Link to="#" className={css.links}>Contact</Link>
-                    <Link to="about" smooth={true} duration={1000} className={css.links}>About</Link>
-                    <Link to="services" smooth={true} duration={1000} className={css.links}>Services</Link>
-                    <Link to="portfolio" smooth={true} duration={1000} className={css.links}>Portfolio</Link>
-                    <Link to="tecnologies" smooth={true} duration={1000} className={css.links}>Tecnologise</Link>
-                    <Link to="team" smooth={true} duration={1000} className={css.links}>team</Link>
+                    {
+                        links.map(l => {
+                            return <Link smooth={true} duration={1000} className="links" to={l.to}
+                                         key={l.id}>{l.name}</Link>
+                        })}
                 </ul>
+                <div>
+                    <div onClick={handleClick} className="burgerBox">
+                        <i className={clicked ? "fas fa-bars" : "fas fa-times"}></i>
+                    </div>
+                </div>
+                <Burger links={links}/>
                 <button className="contactButton"><a href='https://trainings.beeoncode.com/course/list'
-                                                     className={css.aaa}>Trainigs</a></button>
+                                                     className="aaa">Trainigs</a></button>
                 <div className="socLinks">
                     <i class="fab fa-facebook-f"></i>
                     <i class="fab fa-instagram"></i>
@@ -74,13 +107,10 @@ const Header = () => {
                     {languages.map(({id, lang, img}) => {
                         return <Button
                             key={id}
-                            onClick={() => selectlanguages(lang, id)}
-                        >
+                            onClick={() => selectlanguages(lang, id)}>
                             {img}
                         </Button>
-
-                    })
-                    }
+                    })}
                 </ul>
                 <div>
                     <Toggle darkMode={darkMode} setDarkMode={setDarkMode}/>

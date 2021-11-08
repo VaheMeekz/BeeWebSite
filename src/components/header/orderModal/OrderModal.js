@@ -70,7 +70,7 @@ const OrderModal = ({showModal, setShowModal}) => {
                             </div>
                             <button className="closeBtn"
                                     onClick={() => setShowModal(prev => !prev)}
-                            ><img src={close} alt="close" color={"white"}/></button>
+                            ><img src={close} alt="close"/></button>
                         </div>
                     )
                     : null
