@@ -10,7 +10,6 @@ import arrowDigital from '../../assets/images/arrowDigital.svg'
 import Tilt from "react-parallax-tilt";
 
 
-
 function digital({darkMode, setDarkMode}) {
 
     // const [mode , setMode ] = useState(darkMode);
@@ -20,8 +19,6 @@ function digital({darkMode, setDarkMode}) {
         <div className="digital">
 
             <h3>digital inovation</h3>
-
-
 
 
             <div className="digitalContentsMain">
@@ -52,13 +49,12 @@ function digital({darkMode, setDarkMode}) {
                 >
                     <div className="inner-element">
                         <div className="digitalContent">
-                            <img src={digitalIcon2}  alt="img"/>
+                            <img src={digitalIcon2} alt="img"/>
                             <p>requirements</p>
                             <p>gathering</p>
                         </div>
                     </div>
                 </Tilt>
-
                 <div className="arrow"><img src={arrowDigital} alt={"img"}/></div>
                 <Tilt
                     className="parallax-effect-glare-scale"
@@ -70,7 +66,7 @@ function digital({darkMode, setDarkMode}) {
                 >
                     <div className="inner-element">
                         <div className="digitalContent">
-                            <img src={digitalIcon3}  alt="img"/>
+                            <img src={digitalIcon3} alt="img"/>
                             <p>concept and</p>
                             <p>documentation</p>
                         </div>

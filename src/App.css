@@ -1349,4 +1349,21 @@ body.dark-mode {
 .cubeBox {
   margin-top: 2%; }
 
+.scrollToTopBox {
+  position: absolute; }
+
+.scrollToTop {
+  position: relative;
+  animation-name: scroll-top;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-direction: alternate; }
+
+@keyframes scroll-top {
+  0% {
+    bottom: 0; }
+  100% {
+    bottom: 30px; } }
+
 /*# sourceMappingURL=App.css.map */
