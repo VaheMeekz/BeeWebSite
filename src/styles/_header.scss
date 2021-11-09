@@ -124,7 +124,6 @@
         font-style: normal;
         font-weight: normal;
         text-transform: uppercase;
-        color: #ffffff;
         cursor: pointer;
       }
     }
@@ -237,7 +236,6 @@ Link:hover {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #FFFFFF;
   cursor: pointer;
 }
 
@@ -277,7 +275,6 @@ Link:hover {
   font-size: 30px;
   line-height: 45px;
   text-transform: uppercase;
-  color: #FFFFFF;
 }
 
 .modealContentBox {
@@ -320,7 +317,6 @@ Link:hover {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #FFFFFF;
 }
 
 .modalInputs {
@@ -334,7 +330,6 @@ Link:hover {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  color: #FFFFFF;
   outline: 0;
 }
 
@@ -344,7 +339,6 @@ Link:hover {
   line-height: 1.5;
   border-radius: 5px;
   background: #3C3E42;
-  color: #FFFFFF;
   border: 1px solid gray;
   box-shadow: 1px 1px 1px #999;
   outline: 0;
@@ -446,4 +440,9 @@ input[type='checkbox'].dmcheck {
 .parallaxEffects {
   margin-top: 150px;
   margin-right: 300px;
+}
+
+/*language*/
+.activeLang{
+  border: 1px solid white;
 }

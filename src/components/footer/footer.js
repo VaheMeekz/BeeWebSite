@@ -37,7 +37,7 @@ const Footer = () => {
                     <div className="footerSearch">
                         <p className="footerZrtPrt">{t('subscribe')}</p>
                         <div>
-                            <input type={'text'} className="sendInp"  placeholder={t('mail')}/>
+                            <input type={'text'} className="sendInp" placeholder={t('mail')}/>
                             <button className="sendBtn">{t('send')}</button>
                         </div>
                         <p className="footerZrt">{t('subscri')}</p>
@@ -46,12 +46,18 @@ const Footer = () => {
             </div>
             <div className="footerDwn">
                 <div className="footerIcons">
-                   <div className="footerIcon"><a href="https://www.facebook.com/beeoncode"><img src={fb} alt={'socialIcons'}/></a></div>
-                    <div className="footerIcon"><a href="https://www.instagram.com/_beeoncode_/"><img src={insta} alt={'socialIcons'}/></a></div>
-                    <div className="footerIcon"><a href="https://am.linkedin.com/company/beeoncode-llc"><img src={linkedin} alt={'socialIcons'}/></a></div>
+                    <div className="footerIcon">
+                        <i className="fab fa-facebook-f fb"></i>
+                    </div>
+                    <div className="footerIcon">
+                        <i className="fab fa-instagram inst"></i>
+                   </div>
+                    <div className="footerIcon">
+                        <i className="fab fa-linkedin-in linke"></i>
+                  </div>
                 </div>
                 <div className="footerText">
-                    <div className="footerTextItem"><img src={local} alt={'img'}/></div>
+                    <div className="footerTextItem"><i className="fas fa-map-marker-alt location"></i></div>
                     <div className="footerTextItem">{t('hakobErkar')}</div>
                 </div>
                 <div>© 2015-2021 BeeOnCode</div>

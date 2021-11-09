@@ -1,0 +1,48 @@
+.motionBox {
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: -300px;
+  top: 100px;
+  z-index: 1;
+  margin-top: 20px;
+}
+
+.button {
+  font-size: 25px;
+  background-color: rgb(68, 109, 246);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.text {
+  font-size: 25px;
+  margin: 0 10px;
+}
+
+.page {
+  position: relative;
+}
+
+.pageBlock {
+  position: relative;
+  height: 333px;
+  width: 463px;
+
+  @media all and (max-width: 1500px){
+    margin-top: 50px;
+    height: 250px;
+    width: 350px;
+  }
+}

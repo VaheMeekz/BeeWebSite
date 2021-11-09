@@ -20,7 +20,6 @@ function App() {
     return (
         <div className="App">
             <Header/>
-
             <section id="digital" className="digitalSection">
                 <Digital/>
             </section>
@@ -31,11 +30,7 @@ function App() {
                 <Services/>
             </section>
             <section id="portfolio" className="portfolioSection">
-<<<<<<< HEAD
-                 <Portfolio />
-=======
-                 <Slider slides={slideData} />
->>>>>>> edb28f19e14f0e7da5303cc5ec8891699063fd4e
+                <Portfolio/>
             </section>
             <section id="tecnologies" className="tecnologiesSection">
                 <Tecnologies/>

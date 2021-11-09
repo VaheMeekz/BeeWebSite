@@ -21,8 +21,9 @@ class CaruselCube extends React.Component {
                     height={300}
                     direction={"horizontal"}
                     effect={"3d"}
+                    goToSlideDelay={200}
+                    autoPlay
                     index={0}
-                    className=""
                 >
                     <div style={{width: 300, height: 300}}>
                         <img src={img} alt={"img"} width={"300px"} height={"300px"}  style={{borderRadius:"4%"}}/>

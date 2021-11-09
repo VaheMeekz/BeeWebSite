@@ -11,7 +11,7 @@
     margin: 0 auto;
     text-align: center;
     padding: 20px 0px 0px 0px;
-    font-family: Montserrat;
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -42,7 +42,7 @@
       p {
         text-align: center;
         margin: 0 auto;
-        font-family: Montserrat;
+        font-family: "Montserrat";
         font-style: normal;
         font-weight: normal;
         font-size: 15px;
@@ -91,11 +91,10 @@
 
   p {
     cursor: pointer;
-    color: #0246C8;
   }
 
   p:hover {
-    color: #0246C8;
+    color: yellow;
   }
 }
 

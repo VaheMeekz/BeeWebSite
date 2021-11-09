@@ -4,7 +4,8 @@ import {NavLink} from "react-router-dom";
 import i18next from "i18next";
 import cookies from "js-cookie"
 import {Link} from 'react-scroll'
-import OrderModal from "./orderModal/OrderModal";
+// import OrderModal from "./orderModal/OrderModal";
+import {useHistory} from "react-router-dom";
 import Toggle from "../Toggle/Toggle";
 import useDarkMode from "../Mode/useDarkMode";
 import {useSelector} from "react-redux";
@@ -14,6 +15,8 @@ import arm from "../../assets/images/arm.png"
 import {Button} from "@material-ui/core";
 import CaruselCube from "./carusel/carusel";
 import Burger from "../Burger/Burger";
+import useQuery from "../../assets/hooks/useQuery";
+import MotionSlider from "../motionCarousel/motionCarousel";
 
 const Header = () => {
 
@@ -70,10 +73,15 @@ const Header = () => {
         setActiveLang(lang)
     }
 
+    const query = useQuery();
+    const history = useHistory()
+
+    const postQuery = query.get('language')
+
     //burger
 
     const [clicked, setClicked] = useState(false)
-    
+
     const handleClick = () => {
         setClicked(!clicked)
     }
@@ -91,7 +99,6 @@ const Header = () => {
                         })}
                 </ul>
                 <div className={""}>
-
                     {/*<div onClick={handleClick} className="header__burger">*/}
                     {/*    <i className={clicked ? "fas fa-bars" : "fas fa-times"}></i>*/}
                     {/*</div>*/}
@@ -100,15 +107,20 @@ const Header = () => {
                 <button className="contactButton"><a href='https://trainings.beeoncode.com/course/list'
                                                      className="aaa">Trainigs</a></button>
                 <div className="socLinks">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-linkedin-in"></i>
+                    <i class="fab fa-facebook-f fb"></i>
+                    <i class="fab fa-instagram inst"></i>
+                    <i class="fab fa-linkedin-in linke"></i>
                 </div>
                 <ul className="languages">
                     {languages.map(({id, lang, img}) => {
                         return <Button
                             key={id}
-                            onClick={() => selectlanguages(lang, id)}>
+                            onClick={() => {
+                                selectlanguages(lang, id);
+                                history.push(`${'/'}?language=${lang}`)
+                            }}
+                            className={postQuery === lang ? 'activeLang' : undefined}
+                                >
                             {img}
                         </Button>
                     })}
@@ -117,7 +129,6 @@ const Header = () => {
                     <Toggle darkMode={darkMode} setDarkMode={setDarkMode}/>
                 </div>
             </div>
-
             <div className="headerContent">
                 <div className="order">
                     <span>order your website </span><br/>
@@ -128,14 +139,13 @@ const Header = () => {
                     <br/>
                 </div>
                 <div className="parallaxEffects">
-                    <CaruselCube/>
+                    <MotionSlider/>
                 </div>
             </div>
             <div className="getStartBox">
                 <button onClick={openModal} className="getStartBtn">get started</button>
-                <OrderModal showModal={showModal} setShowModal={setShowModal}/>
+                {/*<OrderModal showModal={showModal} setShowModal={setShowModal}/>*/}
             </div>
-
         </div>
     );
 };

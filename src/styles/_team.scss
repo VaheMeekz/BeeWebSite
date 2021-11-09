@@ -1,12 +1,10 @@
 .team {
     width: 100%;
-    background: black;
     display: flex;
     justify-content: center;
     flex-direction: column;
 
     h2 {
-        color: white;
         font-family: Montserrat;
         font-style: normal;
         font-weight: 600;
@@ -38,7 +36,6 @@
         font-size: 30px;
         line-height: 37px;
         text-transform: capitalize;
-        color: #ffffff;
         margin: 0 auto;
         padding: 1.5%;
     }
@@ -50,7 +47,6 @@
         line-height: 24px;
         text-align: center;
         text-transform: capitalize;
-        color: #ffffff;
         margin-top: 15px;
     }
 
@@ -98,7 +94,6 @@
         align-items: center;
         font-size: 35px;
         font-style: italic;
-        color: white;
         transform: translateZ(60px);
     }
     :hover{

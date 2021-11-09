@@ -6,7 +6,6 @@
 .footerUp {
   width: 100%;
   height: 328px;
-  background: #202020;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,7 +20,6 @@
     font-size: 30px;
     line-height: 37px;
     text-transform: capitalize;
-    color: #ffffff;
   }
 }
 
@@ -48,7 +46,7 @@
 .sendInp {
   width: 275px;
   height: 32px;
-  border: 0;
+  border: 1px solid;
   border-radius: 5px 0 0 5px;
   font-size: 16px;
   padding: 5px 10px;
@@ -70,7 +68,6 @@
   padding: 5px 10px;
   outline: 0;
   cursor: pointer;
-  color: white;
 }
 
 .footerSearch {
@@ -96,13 +93,11 @@
 }
 
 .footerDwn {
-  background: #171717;
   height: 172px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: white;
 }
 
 .footerIcons {
@@ -127,4 +122,53 @@
 
 .footerTextItem {
   margin: 10px;
+}
+
+i {
+  width: 10px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.inst:hover{
+  color: #C234BD;
+  transition: .4s;
+}
+
+.linke:hover{
+  color: #65a0ff;
+  transition: .4s;
+}
+
+.fb:hover {
+  color: #428DFF;
+  transition: .4s;
+}
+
+.location:hover{
+  color: orangered;
+  transition: .4s;
+}
+
+@media screen and(max-width: 767px) {
+  .footer {
+    width: 100%;
+    height: 645px;
+  }
+  .footerInfoBox{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+.footerInfoBody{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+  .footerDwn{
+    flex-direction: column;
+  }
+  .footerText{
+
+  }
 }

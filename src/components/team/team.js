@@ -36,6 +36,7 @@ const Team = () => {
                         </div>
                     </div>
                 </Tilt>
+
                 <Tilt
                     className="parallax-effect-glare-scale"
                     perspective={500}
