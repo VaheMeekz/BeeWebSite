@@ -14,7 +14,6 @@ import ru from "../../assets/images/ru.png"
 import arm from "../../assets/images/arm.png"
 import {Button} from "@material-ui/core";
 import CaruselCube from "./carusel/carusel";
-import Burger from "../Burger/Burger";
 import useQuery from "../../assets/hooks/useQuery";
 import MotionSlider from "../motionCarousel/motionCarousel";
 
@@ -78,18 +77,9 @@ const Header = () => {
 
     const postQuery = query.get('language')
 
-    //burger
-
-    const [clicked, setClicked] = useState(false)
-
-    const handleClick = () => {
-        setClicked(!clicked)
-    }
-
     return (
         <div className="header">
             <div className={navbar ? "nav active" : "nav"}>
-                {/*<div className={"nav active"}>*/}
                 <div className="logo"><NavLink to={'/'}><img src={logo} alt={"img"}/></NavLink></div>
                 <ul>
                     {
@@ -99,11 +89,7 @@ const Header = () => {
                         })}
                 </ul>
                 <div className={""}>
-                    {/*<div onClick={handleClick} className="header__burger">*/}
-                    {/*    <i className={clicked ? "fas fa-bars" : "fas fa-times"}></i>*/}
-                    {/*</div>*/}
                 </div>
-                <Burger links={links}/>
                 <button className="contactButton"><a href='https://trainings.beeoncode.com/course/list'
                                                      className="aaa">Trainigs</a></button>
                 <div className="socLinks">
