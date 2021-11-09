@@ -19,6 +19,11 @@
     color: white;
   }
 
+  .links:hover {
+    color: #266bef;
+    transition: .2s;
+  }
+
   .nav {
     width: 100%;
     height: 9vh;
@@ -63,7 +68,7 @@
 
       // li:hover {
       //   color: #0F3C92;
-      //   transition: .3s;
+      //      //   transition: .3s;
       // }
     }
 
@@ -80,11 +85,16 @@
       font-weight: normal;
       font-size: 16px;
       line-height: 20px;
-      /* identical to box height */
-
       text-transform: uppercase;
+    }
 
-      color: #FFFFFF;
+    .contactButton:hover {
+      border: 1px solid white;
+      border-radius: 5px;
+      cursor: pointer;
+      background: black;
+      color: #0246C8;
+      transition: .3s;
     }
 
     .socLinks {
@@ -229,6 +239,13 @@ Link:hover {
   text-transform: uppercase;
   color: #FFFFFF;
   cursor: pointer;
+}
+
+.getStartBtn:hover {
+  border: 1px solid;
+  border-radius: 25px;
+  transition: .3s;
+
 }
 
 .modalBox {
@@ -430,4 +447,3 @@ input[type='checkbox'].dmcheck {
   margin-top: 150px;
   margin-right: 300px;
 }
-
