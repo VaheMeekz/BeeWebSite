@@ -1,79 +1,77 @@
-
-import React from 'react';
-import { Swiper, SwiperSlide } from "swiper/react";
-import image1 from '../../assets/images/aboutUsImg.png';
-import "swiper/swiper.scss";
-import "swiper/components/effect-coverflow/effect-coverflow.scss";
-import "swiper/components/pagination/pagination.scss";
-import "swiper/components/navigation/navigation.scss";
-// import "./styles.css";
-import SwiperCore, {
-  EffectCoverflow,
-  Pagination,
-  Navigation
-} from "swiper/core";
-
-SwiperCore.use([EffectCoverflow, Pagination, Navigation]);
+import React from "react"
 
 
 
+const Slide = (props) => {
+  const {currentIdx, idx} = props;
 
-const Portfolio = ({darkMode, setDarkMode}) => {
+  const classNames = [
+      'card',
+      idx === currentIdx && 'card--center',
+      idx === currentIdx - 1 && 'card--left-inner',
+      idx  <  currentIdx - 1 && 'card--left-outer',
+      idx === currentIdx + 1 && 'card--right-inner',
+      idx  >  currentIdx + 1 && 'card--right-outer',
+  ]
+      .filter(Boolean)
+      .join(' ');
 
-    return (
-        <div className="portfolio">
-            {/*<div className="port">*/}
-            {/*    <h1>Portfolio</h1>*/}
-            {/*</div>*/}
-            {/*<div className="caruselBox">*/}
-            {/*  <Carusel/>*/}
-            {/*</div>*/}
-            {/*<div className="portText">*/}
-            {/*    <p>*/}
-            {/*        {t('portfolio')}*/}
-            {/*    </p>*/}
-            {/*</div>*/}
-
-      {/*      <Swiper*/}
-      {/*  navigation={true}*/}
-      {/*  effect={"coverflow"}*/}
-      {/*  centeredSlides={true}*/}
-      {/*  slidesPerView={window.innerWidth < 768 ? 1 : "auto"}*/}
-      {/*  loop={true}*/}
-      {/*  coverflowEffect={{*/}
-      {/*    rotate: 50,*/}
-      {/*    stretch: 0,*/}
-      {/*    depth: 100,*/}
-      {/*    modifier: 1,*/}
-      {/*    slideShadows: true*/}
-      {/*  }}*/}
-      {/*  pagination={{*/}
-      {/*    clickable: true*/}
-      {/*  }}*/}
-      {/*  className="mySwiper"*/}
-      {/*>*/}
-      {/*  <SwiperSlide>*/}
-      {/*    <img src={image1} width={800} alt={"img"} />*/}
-      {/*  </SwiperSlide>*/}
-      {/*  <SwiperSlide>*/}
-      {/*    <img src={image1}  width={800} alt={"img"} />*/}
-      {/*  </SwiperSlide>*/}
-      {/*  <SwiperSlide>*/}
-      {/*    <img src={image1} width={800} alt={"img"} />*/}
-      {/*  </SwiperSlide>*/}
-      {/*  <SwiperSlide>*/}
-      {/*    <img src={image1} width={800} alt={"img"} />*/}
-      {/*  </SwiperSlide>*/}
-      {/*  <SwiperSlide>*/}
-      {/*    <img src={image1} width={800} alt={"img"} />*/}
-      {/*  </SwiperSlide>*/}
-      {/*  <SwiperSlide>*/}
-      {/*    <img src={image1} width={800}  alt={"img"}/>*/}
-      {/*  </SwiperSlide>*/}
-      {/*</Swiper>*/}
-        </div>
-    );
+  return (
+      <div class={classNames}>
+          <div class="card__face">
+              <div class="card__text">{idx + 1}</div>
+          </div>
+      </div>
+  );
 };
 
-export default Portfolio;
+const items = [60, 40, 20, 0, -20, -40, -60];
 
+const Portfolio = () => {
+  const [currentIdx, setCurrentIdx] = React.useState(Math.floor(items.length / 2));
+
+  const handlePrevClick = () => {
+      setCurrentIdx((prev) => (prev + (items.length - 1)) % items.length);
+  };
+
+  const handleNextClick = () => {
+      setCurrentIdx((prev) => (prev + 1) % items.length);
+  };
+
+  return (
+      <div className="app">
+          <div className="slider">
+              <div className="slider__track">
+                  <div
+                      className="slider__btn slider__btn--prev"
+                      onClick={handlePrevClick}>
+                      &#8592;
+                  </div>
+                  <ul
+                      className="slider__list"
+                      style={{
+                          transform: `translateX(${items[currentIdx]}rem)`,
+                      }}>
+                      {items.map((c, i) => (
+                          <li className="slider__item" key={i}>
+                              <Slide
+                                  idx={i}
+                                  idx={i}
+                                  currentIdx={currentIdx}
+                              />
+                          </li>
+                      ))}
+                  </ul>
+                  <div
+                      className="slider__btn slider__btn--next"
+                      onClick={handleNextClick}>
+                      &#8594;
+                  </div>
+              </div>
+          </div>
+      </div>
+  );
+};
+
+
+export default Portfolio

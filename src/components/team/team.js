@@ -1,8 +1,8 @@
 import React from "react";
 import teamImg from "../../assets/images/teamImg2.jpg";
-import identify from "../../assets/images/identify.png"
-import manage from "../../assets/images/manage.png"
-import Implement from "../../assets/images/implement.png"
+import identify from "../../assets/images/identify.svg"
+import manage from "../../assets/images/manage.svg"
+import Implement from "../../assets/images/implement.svg"
 import {useTranslation} from "react-i18next";
 import Tilt from "react-parallax-tilt";
 

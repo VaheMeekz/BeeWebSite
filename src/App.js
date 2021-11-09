@@ -2,16 +2,13 @@ import './App.css';
 import Header from "./components/header/header";
 import About from "./components/about/about";
 import Services from "./components/services/services";
-// import Portfolio from "./components/portfolio/portfolio";
 import Tecnologies from "./components/tecnologise/tecnologies";
 import Team from "./components/team/team";
 import Footer from "./components/footer/footer";
 import Digital from './components/digital/Digital';
 import React from "react";
 import ScrollToTopBtn from "./components/scrollToTop/ScrollToTop";
-import slideData from './components/portfolio/data/SlideData';
-// import Slide from './components/portfolio/Slide';
-import Slider from './components/portfolio/Slider';
+import Portfolio from './components/portfolio/portfolio';
 
 
 function App() {
@@ -33,9 +30,9 @@ function App() {
             <section id="services" className="servicesSection">
                 <Services/>
             </section>
-            {/* <section id="portfolio" className="portfolioSection">
-                 <Slider slides={slideData} />
-            </section> */}
+            <section id="portfolio" className="portfolioSection">
+                 <Portfolio />
+            </section>
             <section id="tecnologies" className="tecnologiesSection">
                 <Tecnologies/>
             </section>
