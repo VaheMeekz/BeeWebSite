@@ -22,7 +22,7 @@ const Team = () => {
             <p> {t('network')}</p>
             <div className="teamLogos">
                 <Tilt
-                    className="parallax-effect-glare-scale"
+                    className="parallax"
                     perspective={500}
                     glareEnable={true}
                     glareMaxOpacity={0.45}
@@ -38,7 +38,7 @@ const Team = () => {
                 </Tilt>
 
                 <Tilt
-                    className="parallax-effect-glare-scale"
+                    className="parallax"
                     perspective={500}
                     glareEnable={true}
                     glareMaxOpacity={0.45}
@@ -53,7 +53,7 @@ const Team = () => {
                     </div>
                 </Tilt>
                 <Tilt
-                    className="parallax-effect-glare-scale"
+                    className="parallax"
                     perspective={500}
                     glareEnable={true}
                     glareMaxOpacity={0.45}

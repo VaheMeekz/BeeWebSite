@@ -57,8 +57,8 @@ const Footer = () => {
                   </div>
                 </div>
                 <div className="footerText">
-                    <div className="footerTextItem"><i className="fas fa-map-marker-alt location"></i></div>
-                    <div className="footerTextItem">{t('hakobErkar')}</div>
+                    <div className="footerTextItem locat"><i className="fas fa-map-marker-alt location"></i></div>
+                    <div className="footerTextItem hasce">{t('hakobErkar')}</div>
                 </div>
                 <div>© 2015-2021 BeeOnCode</div>
             </div>

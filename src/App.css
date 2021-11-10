@@ -391,6 +391,7 @@ input[type='checkbox'].dmcheck {
     .digital .digitalContentsMain .digitalContent {
       text-align: center;
       display: grid;
+      cursor: pointer;
       align-content: center;
       justify-content: center;
       align-items: center;
@@ -399,7 +400,7 @@ input[type='checkbox'].dmcheck {
       .digital .digitalContentsMain .digitalContent p {
         text-align: center;
         margin: 0 auto;
-        font-family: "Montserrat";
+        font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
         font-size: 15px;
@@ -415,6 +416,7 @@ input[type='checkbox'].dmcheck {
         @media (max-width: 1313px) {
           .digital .digitalContentsMain .digitalContent p {
             font-size: 12px; } }
+<<<<<<< HEAD
         @media (max-width: 1209px) {
           .digital .digitalContentsMain .digitalContent p {
             font-size: 11px; } }
@@ -437,13 +439,27 @@ input[type='checkbox'].dmcheck {
             width: 45px; } }
       .digital .digitalContentsMain .digitalContent img:hover {
         filter: invert(25%) sepia(96%) saturate(6441%) hue-rotate(215deg) brightness(87%) contrast(105%); }
+=======
+      @media screen and (max-width: 1256px) {
+        .digital .digitalContentsMain .digitalContent {
+          width: 55px; } }
+      @media (max-width: 1249px) {
+        .digital .digitalContentsMain .digitalContent {
+          padding: 6%; } }
+      @media (max-width: 1193px) {
+        .digital .digitalContentsMain .digitalContent {
+          width: 50px; } }
+      @media screen and (max-width: 1114px) {
+        .digital .digitalContentsMain .digitalContent {
+          width: 45px; } }
+    .digital .digitalContentsMain img:hover {
+      filter: invert(25%) sepia(96%) saturate(6441%) hue-rotate(215deg) brightness(87%) contrast(105%); }
+>>>>>>> 49cc7a94f777b9500d92ca89031ca7cd45172644
 
 .diggitalText {
   cursor: pointer; }
   .diggitalText p {
     cursor: pointer; }
-  .diggitalText p:hover {
-    color: yellow; }
 
 /*mode*/
 .digital.dark-mode {
@@ -470,6 +486,7 @@ input[type='checkbox'].dmcheck {
       width: 180px !important;
       height: 180px !important; } }
   @media screen and (max-width: 1502px) {
+<<<<<<< HEAD
     .parallax-effect-glare-scale {
       width: 170px !important;
       height: 170px !important; } }
@@ -483,6 +500,21 @@ input[type='checkbox'].dmcheck {
       height: 140px !important; } }
   @media screen and (max-width: 1186px) {
     .parallax-effect-glare-scale {
+=======
+    .parallax-effect-glare-scale {
+      width: 170px !important;
+      height: 170px !important; } }
+  @media screen and (max-width: 1432px) {
+    .parallax-effect-glare-scale {
+      width: 150px !important;
+      height: 150px !important; } }
+  @media screen and (max-width: 1256px) {
+    .parallax-effect-glare-scale {
+      width: 140px !important;
+      height: 140px !important; } }
+  @media screen and (max-width: 1186px) {
+    .parallax-effect-glare-scale {
+>>>>>>> 49cc7a94f777b9500d92ca89031ca7cd45172644
       width: 130px !important;
       height: 130px !important; } }
   @media screen and (max-width: 1114px) {
@@ -656,6 +688,28 @@ input[type='checkbox'].dmcheck {
   img {
     width: 130% !important; } }
 
+.fba {
+  cursor: pointer;
+  position: relative;
+  /*animation*/
+  animation-name: none;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; }
+
+.fba:hover {
+  color: #DBC13C;
+  transition: .4s; }
+
+.arrowBox:hover .fba {
+  animation-name: about-arrow; }
+
+@keyframes about-arrow {
+  0% {
+    right: -30px; }
+  100% {
+    right: 30px; } }
 .services {
   width: 100%;
   height: 650px;
@@ -1253,15 +1307,42 @@ h3 {
       color: #888888;
       margin-top: 20px; }
 
-.parallax-effect-glare-scale {
+.parallax {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 210px;
-  height: 210px;
-  transform-style: preserve-3d; }
-  .parallax-effect-glare-scale .inner-element {
+  width: 190px !important;
+  height: 190px !important;
+  border: 2px solid;
+  border-radius: 20px;
+  transform-style: preserve-3d;
+  padding: 1%; }
+  @media screen and (max-width: 1547px) {
+    .parallax {
+      width: 180px !important;
+      height: 180px !important; } }
+  @media screen and (max-width: 1502px) {
+    .parallax {
+      width: 170px !important;
+      height: 170px !important; } }
+  @media screen and (max-width: 1432px) {
+    .parallax {
+      width: 150px !important;
+      height: 150px !important; } }
+  @media screen and (max-width: 1256px) {
+    .parallax {
+      width: 140px !important;
+      height: 140px !important; } }
+  @media screen and (max-width: 1186px) {
+    .parallax {
+      width: 130px !important;
+      height: 130px !important; } }
+  @media screen and (max-width: 1114px) {
+    .parallax {
+      width: 120px !important;
+      height: 120px !important; } }
+  .parallax .inner-element {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1269,9 +1350,22 @@ h3 {
     font-size: 35px;
     font-style: italic;
     transform: translateZ(60px); }
-  .parallax-effect-glare-scale :hover {
-    color: #0246C8; }
+  .parallax :hover {
+    color: #DBC13C; }
 
+@media screen and (max-width: 1440px) {
+  .team {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+
+  .outTeamImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 20vw; } }
 .footer {
   width: 100%;
   height: 500px; }
@@ -1404,7 +1498,14 @@ i {
 @media screen and (max-width: 767px) {
   .footer {
     width: 100%;
-    height: 645px; }
+    height: 630px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 25vh; }
+    .footer h2 {
+      font-size: 20px; }
 
   .footerInfoBox {
     flex-direction: column;
@@ -1417,7 +1518,88 @@ i {
     align-items: center; }
 
   .footerDwn {
-    flex-direction: column; } }
+    flex-direction: column;
+    margin-top: 10vw; }
+
+  .footerSearch {
+    display: none; }
+
+  .footerIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: -4vw;
+    margin-top: 3vh; }
+
+  .locat {
+    margin-left: 2vw; } }
+@media screen and (max-width: 1024px) {
+  .footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 10vh; }
+    .footer h2 {
+      font-size: 30px; }
+
+  .footerUp {
+    margin-top: 10vh; }
+
+  .footerSearch {
+    display: none; } }
+@media screen and (max-width: 425px) {
+  .footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 15vh; }
+    .footer h2 {
+      font-size: 20px; }
+
+  .footerDwn {
+    flex-direction: column;
+    margin-top: 15vh; }
+
+  .footerIcons .footerIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: -4vw;
+    margin-top: 15vh; }
+
+  .footerText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+
+  .locat {
+    margin-left: -0.9vw;
+    margin-top: 2vh; } }
+@media screen and (max-width: 320px) {
+  .footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 15vh; }
+    .footer h2 {
+      font-size: 15px;
+      margin-left: 10vw; }
+
+  .locat {
+    margin-top: 2vh; }
+
+  .hasce {
+    font-size: 12px;
+    margin-left: 10vw; } }
 @media (max-width: 767px) {
   .header__burger {
     display: block;
@@ -1445,6 +1627,17 @@ i {
     left: 0;
     width: 100%;
     height: 100%; } }
+.cubeBox {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  border: 1px solid; }
+
+.cube {
+  width: 145px;
+  height: 145px;
+  background: none; }
+
 * {
   padding: 0;
   margin: 0;
@@ -1461,6 +1654,77 @@ body::-webkit-scrollbar {
   animation: fadeIn 700ms ease-in-out 1s both;
   cursor: pointer; }
 
+.effect-1 {
+  width: 30px;
+  height: 30px;
+  border: 4px solid darkgreen;
+  float: right;
+  margin-right: 2%;
+  margin-top: 5%;
+  bottom: 10%;
+  animation: spin 10s linear infinite;
+  z-index: -2; }
+
+left {
+  width: 30px;
+  height: 30px;
+  float: right;
+  border: 4px solid #8a49ff;
+  right: 10%;
+  bottom: 10%;
+  animation: spin 10s linear infinite; }
+
+.effect-2 {
+  left: 5%;
+  bottom: 20%;
+  width: 40px;
+  display: flex;
+  float: left;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  animation: topBounce 3s ease-in-out infinite; }
+
+.effect-2 div {
+  height: 3px;
+  width: 3px;
+  background-color: #DBC13C;
+  margin: 0 3px 8px; }
+
+.effect-3 {
+  right: 5%;
+  bottom: 20%;
+  width: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  animation: topBounce 3s ease-in-out infinite; }
+
+.effect-3 div {
+  height: 3px;
+  width: 3px;
+  background-color: #DBC13C;
+  margin: 0 3px 8px; }
+
+.newEffect {
+  right: 5%;
+  bottom: 20%;
+  width: 40px;
+  display: flex;
+  float: right;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  animation: topBounce 3s ease-in-out infinite; }
+
+@keyframes topBounce {
+  0%, 100% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(25px); } }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
 .scrollToTop {
   display: flex;
   justify-content: center;
@@ -1556,5 +1820,17 @@ body.dark-mode {
     bottom: 0; }
   100% {
     bottom: 30px; } }
+@media screen and (max-width: 767px) {
+  .toTop {
+    display: none; } }
+@media screen and (max-width: 1024px) {
+  .toTop {
+    display: none; } }
+@media screen and (max-width: 425px) {
+  .toTop {
+    display: none; } }
+@media screen and (max-width: 320px) {
+  .toTop {
+    display: none; } }
 
 /*# sourceMappingURL=App.css.map */

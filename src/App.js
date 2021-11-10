@@ -13,37 +13,193 @@ import Portfolio from './components/portfolio/portfolio';
 
 function App() {
 
-    // const mode = useSelector(state => state.modeReducer.mode)
-    // const [darkMode, setDarkMode] = useState(mode)
-
-
     return (
         <div className="App">
-            <Header/>
-            <section id="digital" className="digitalSection">
-                <Digital/>
-            </section>
-            <section id="about" className="aboutSection">
-                <About/>
-            </section>
-            <section id="services" className="servicesSection">
-                <Services/>
-            </section>
-            <section id="portfolio" className="portfolioSection">
-                <Portfolio/>
-            </section>
-            <section id="tecnologies" className="tecnologiesSection">
-                <Tecnologies/>
-            </section>
+            {/*<Header/>*/}
+            {/*<section id="digital" className="digitalSection">*/}
+            {/*    <Digital/>*/}
+            {/*    <div className="effect effect-3 newEffect">*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*    </div>*/}
+            {/*</section>*/}
+            {/*<section id="about" className="aboutSection">*/}
+            {/*    <About/>*/}
+            {/*</section>*/}
+            {/*<section id="services" className="servicesSection">*/}
+            {/*    <Services/>*/}
+            {/*</section>*/}
+            {/*<div className="effect effect-1"></div>*/}
+            {/*<section id="portfolio" className="portfolioSection">*/}
+            {/*    <div className="effect effect-2">*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*    </div>*/}
+            {/*    <Portfolio/>*/}
+            {/*    <div className="effect effect-3 newEffect">*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*    </div>*/}
+            {/*</section>*/}
+            {/*<section id="tecnologies" className="tecnologiesSection">*/}
+            {/*    <Tecnologies/>*/}
+            {/*</section>*/}
             <section id="team" className="teamSection">
                 <Team/>
             </section>
+<<<<<<< HEAD
             <section id="contact">
                 <Footer/>
             </section>
              <ScrollToTopBtn/>
+=======
+            {/*<div className="effect effect-2">*/}
+            {/*    <div></div>*/}
+            {/*    <div></div>*/}
+            {/*    <div></div>*/}
+            {/*    <div></div>*/}
+            {/*    <div></div>*/}
+            {/*    <div></div>*/}
+            {/*    <div></div>*/}
+            {/*    <div></div>*/}
+            {/*    <div></div>*/}
+            {/*    <div></div>*/}
+            {/*    <div></div>*/}
+            {/*    <div></div>*/}
+            {/*    <div></div>*/}
+            {/*    <div></div>*/}
+            {/*    <div></div>*/}
+            {/*    <div></div>*/}
+            {/*    <div></div>*/}
+            {/*    <div></div>*/}
+            {/*    <div></div>*/}
+            {/*    <div></div>*/}
+            {/*    <div></div>*/}
+            {/*    <div></div>*/}
+            {/*    <div></div>*/}
+            {/*    <div></div>*/}
+            {/*    <div></div>*/}
+            {/*    <div></div>*/}
+            {/*    <div></div>*/}
+            {/*    <div></div>*/}
+            {/*</div>*/}
+            {/*<section id="contact">*/}
+            {/*    <div className="effect effect-3">*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*        <div></div>*/}
+            {/*    </div>*/}
+            {/*</section>*/}
+            {/*<Footer/>*/}
+            {/*<div className="toTop">*/}
+            {/*    <ScrollToTopBtn/>*/}
+            {/*</div>*/}
+
+>>>>>>> 49cc7a94f777b9500d92ca89031ca7cd45172644
         </div>
     );
 }
-
 export default App;

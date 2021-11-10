@@ -37,6 +37,7 @@
     .digitalContent {
       text-align: center;
       display: grid;
+      cursor: pointer;
       align-content: center;
       justify-content: center;
       align-items: center;
@@ -46,7 +47,7 @@
       p {
         text-align: center;
         margin: 0 auto;
-        font-family: "Montserrat";
+        font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
         font-size: 15px;
@@ -65,14 +66,10 @@
         @media (max-width: 1313px) {
           font-size: 12px;
         }
-
-        @media (max-width: 1209px) {
-          font-size: 11px;
         }
-      }
-
-      img {
-        padding-bottom: 10%;
+        @media screen and(max-width:1256px) {
+          width: 55px;
+        }
 
         @media screen and(max-width:1376px) {
           width: 60px;
@@ -98,17 +95,12 @@
       }
     }
   }
-}
+
 
 .diggitalText {
   cursor: pointer;
-
   p {
     cursor: pointer;
-  }
-
-  p:hover {
-    color: yellow;
   }
 }
 
