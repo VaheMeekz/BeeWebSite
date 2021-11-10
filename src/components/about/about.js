@@ -17,7 +17,6 @@ const About = () => {
     return (
         <div className="about">
             <div className="aboutImg">
-                {/*<img src={aboutImg} />*/}
                 <Carousel slides={slides}/>
             </div>
 
@@ -53,10 +52,7 @@ const About = () => {
                         </svg>
                     </span>
                 </div>
-
-
             </div>
-
         </div>
     );
 };

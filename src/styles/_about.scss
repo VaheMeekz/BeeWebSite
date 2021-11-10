@@ -195,7 +195,8 @@
   cursor: pointer;
   position: relative;
   /*animation*/
-  animation-name:about-arrow;
+
+  animation-name: none;
   animation-duration: 3s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
@@ -207,7 +208,8 @@
 }
 
 .arrowBox:hover .fba{
-  animation-play-state: paused;
+  //animation-play-state: paused;
+  animation-name:about-arrow;
 }
 
 @keyframes about-arrow{

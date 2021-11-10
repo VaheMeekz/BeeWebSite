@@ -4,7 +4,6 @@ import {NavLink} from "react-router-dom";
 import i18next from "i18next";
 import cookies from "js-cookie"
 import {Link} from 'react-scroll'
-// import OrderModal from "./orderModal/OrderModal";
 import {useHistory} from "react-router-dom";
 import Toggle from "../Toggle/Toggle";
 import useDarkMode from "../Mode/useDarkMode";
@@ -13,7 +12,6 @@ import uk from "../../assets/images/ukukpng.png"
 import ru from "../../assets/images/ru.png"
 import arm from "../../assets/images/arm.png"
 import {Button} from "@material-ui/core";
-import CaruselCube from "./carusel/carusel";
 import useQuery from "../../assets/hooks/useQuery";
 import MotionSlider from "../motionCarousel/motionCarousel";
 

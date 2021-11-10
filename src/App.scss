@@ -257,4 +257,25 @@ body.dark-mode {
     bottom: 30px;
   }
 }
+@media screen and(max-width: 767px){
+  .toTop{
+    display: none;
+  }
+}
+@media screen and(max-width: 1024px) {
+  .toTop{
+    display: none;
+  }
+}
 
+@media screen and(max-width: 425px) {
+  .toTop{
+    display: none;
+  }
+}
+
+@media screen and(max-width: 320px) {
+  .toTop{
+    display: none;
+  }
+}

@@ -1,104 +1,152 @@
 .team {
-    width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  h2 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2%;
+  }
+
+  .outTeamImg {
+    width: 1166px;
+    height: 398px;
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    margin: 0 auto;
 
-    h2 {
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 29px;
-        text-transform: uppercase;
-        align-items: center;
-        margin: 0 auto;
-        padding: 2%;
-    }
-
-    .outTeamImg {
-        width: 1166px;
+    img {
+      @media(max-width: 1238px) {
+        width: 900px;
         height: 398px;
-        display: flex;
-        justify-content: center;
-        margin: 0 auto;
-       img {
-        @media(max-width:1238px){
-            width:900px;
-            height:398px;
-        }
-       }
+      }
     }
-    h3 {
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 30px;
-        line-height: 37px;
-        text-transform: capitalize;
-        margin: 0 auto;
-        padding: 1.5%;
-    }
-    p {
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 24px;
-        text-align: center;
-        text-transform: capitalize;
-        margin-top: 15px;
+  }
+
+  h3 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    text-transform: capitalize;
+    margin: 0 auto;
+    padding: 1.5%;
+  }
+
+  p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 15px;
+  }
+
+  .teamLogos {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5%;
+
+    .teamLogo {
+      display: grid;
+      justify-items: center;
+
+      img {
+        width: 80px;
+      }
     }
 
-    .teamLogos {
-        display: flex;
-        justify-content: space-evenly;
-        padding: 5%;
-
-        .teamLogo {
-            display: grid;
-            justify-items: center;
-
-            img {
-                width: 80px;
-            }
-        }
-
-        span {
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 20px;
-            text-transform: uppercase;
-            color: #888888;
-            margin-top: 20px;
-        }
+    span {
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      text-transform: uppercase;
+      color: #888888;
+      margin-top: 20px;
     }
+  }
 }
 
+.parallax {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 190px !important;
+  height: 190px !important;
+  border: 2px solid;
+  border-radius: 20px;
+  transform-style: preserve-3d;
+  padding: 1%;
 
-.parallax-effect-glare-scale {
+  @media screen and(max-width: 1547px) {
+    width: 180px !important;
+    height: 180px !important;
+  }
+  @media screen and(max-width: 1502px) {
+    width: 170px !important;
+    height: 170px !important;
+  }
+  @media screen and(max-width: 1432px) {
+    width: 150px !important;
+    height: 150px !important;
+  }
+
+  @media screen and(max-width: 1256px) {
+    width: 140px !important;
+    height: 140px !important;
+  }
+  @media screen and(max-width: 1186px) {
+    width: 130px !important;
+    height: 130px !important;
+  }
+  @media screen and(max-width: 1114px) {
+    width: 120px !important;
+    height: 120px !important;
+  }
+
+  .inner-element {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 210px;
-    height: 210px;
-    transform-style: preserve-3d;
+    font-size: 35px;
+    font-style: italic;
+    transform: translateZ(60px);
+  }
 
-    .inner-element {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-size: 35px;
-        font-style: italic;
-        transform: translateZ(60px);
-    }
-    :hover{
-        color: #DBC13C;
-    }
+  :hover {
+    color: #DBC13C;
+  }
+}
+
+@media screen and(max-width: 1440px) {
+  .team {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .outTeamImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 20vw;
+  }
 }
 
 

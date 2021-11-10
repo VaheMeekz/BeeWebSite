@@ -651,7 +651,7 @@ input[type='checkbox'].dmcheck {
   cursor: pointer;
   position: relative;
   /*animation*/
-  animation-name: about-arrow;
+  animation-name: none;
   animation-duration: 3s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
@@ -662,7 +662,7 @@ input[type='checkbox'].dmcheck {
   transition: .4s; }
 
 .arrowBox:hover .fba {
-  animation-play-state: paused; }
+  animation-name: about-arrow; }
 
 @keyframes about-arrow {
   0% {
@@ -1205,15 +1205,42 @@ h3 {
       color: #888888;
       margin-top: 20px; }
 
-.parallax-effect-glare-scale {
+.parallax {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 210px;
-  height: 210px;
-  transform-style: preserve-3d; }
-  .parallax-effect-glare-scale .inner-element {
+  width: 190px !important;
+  height: 190px !important;
+  border: 2px solid;
+  border-radius: 20px;
+  transform-style: preserve-3d;
+  padding: 1%; }
+  @media screen and (max-width: 1547px) {
+    .parallax {
+      width: 180px !important;
+      height: 180px !important; } }
+  @media screen and (max-width: 1502px) {
+    .parallax {
+      width: 170px !important;
+      height: 170px !important; } }
+  @media screen and (max-width: 1432px) {
+    .parallax {
+      width: 150px !important;
+      height: 150px !important; } }
+  @media screen and (max-width: 1256px) {
+    .parallax {
+      width: 140px !important;
+      height: 140px !important; } }
+  @media screen and (max-width: 1186px) {
+    .parallax {
+      width: 130px !important;
+      height: 130px !important; } }
+  @media screen and (max-width: 1114px) {
+    .parallax {
+      width: 120px !important;
+      height: 120px !important; } }
+  .parallax .inner-element {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1221,9 +1248,22 @@ h3 {
     font-size: 35px;
     font-style: italic;
     transform: translateZ(60px); }
-  .parallax-effect-glare-scale :hover {
+  .parallax :hover {
     color: #DBC13C; }
 
+@media screen and (max-width: 1440px) {
+  .team {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+
+  .outTeamImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 20vw; } }
 .footer {
   width: 100%;
   height: 500px; }
@@ -1356,7 +1396,14 @@ i {
 @media screen and (max-width: 767px) {
   .footer {
     width: 100%;
-    height: 645px; }
+    height: 630px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 25vh; }
+    .footer h2 {
+      font-size: 20px; }
 
   .footerInfoBox {
     flex-direction: column;
@@ -1369,7 +1416,88 @@ i {
     align-items: center; }
 
   .footerDwn {
-    flex-direction: column; } }
+    flex-direction: column;
+    margin-top: 10vw; }
+
+  .footerSearch {
+    display: none; }
+
+  .footerIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: -4vw;
+    margin-top: 3vh; }
+
+  .locat {
+    margin-left: 2vw; } }
+@media screen and (max-width: 1024px) {
+  .footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 10vh; }
+    .footer h2 {
+      font-size: 30px; }
+
+  .footerUp {
+    margin-top: 10vh; }
+
+  .footerSearch {
+    display: none; } }
+@media screen and (max-width: 425px) {
+  .footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 15vh; }
+    .footer h2 {
+      font-size: 20px; }
+
+  .footerDwn {
+    flex-direction: column;
+    margin-top: 15vh; }
+
+  .footerIcons .footerIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: -4vw;
+    margin-top: 15vh; }
+
+  .footerText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+
+  .locat {
+    margin-left: -0.9vw;
+    margin-top: 2vh; } }
+@media screen and (max-width: 320px) {
+  .footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 15vh; }
+    .footer h2 {
+      font-size: 15px;
+      margin-left: 10vw; }
+
+  .locat {
+    margin-top: 2vh; }
+
+  .hasce {
+    font-size: 12px;
+    margin-left: 10vw; } }
 @media (max-width: 767px) {
   .header__burger {
     display: block;
@@ -1590,5 +1718,17 @@ body.dark-mode {
     bottom: 0; }
   100% {
     bottom: 30px; } }
+@media screen and (max-width: 767px) {
+  .toTop {
+    display: none; } }
+@media screen and (max-width: 1024px) {
+  .toTop {
+    display: none; } }
+@media screen and (max-width: 425px) {
+  .toTop {
+    display: none; } }
+@media screen and (max-width: 320px) {
+  .toTop {
+    display: none; } }
 
 /*# sourceMappingURL=App.css.map */
