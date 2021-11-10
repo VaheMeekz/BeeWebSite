@@ -4,20 +4,56 @@ $dark: #16141a;
 $card_height: 25rem;
 $card_width: 20rem;
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
+.portfolio {
+  height: 55vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-family: "Montserrat";
-}
 
-.app {
-  margin-top: 3rem;
+  @media screen and(max-width:425px) {
+    height: 55vh;
+  }
+
+  @media screen and(max-width:768px) {
+    height: 55vh;
+  }
+
+  @media screen and (max-width: 1024px) {
+    height: 75vh;
+  }
+  @media screen and (max-width:1440px) {
+    height: 60vh;
+  }
+
+  .react-3d-carousel .slider-container {
+    @media screen and(max-width:320px) {
+      width: 92% !important;
+      margin: 100px auto 0px -45% !important;
+    }
+
+    @media screen and(max-width:380px) {
+      width: 92% !important;
+      margin: 100px auto 0px -45% !important;
+    }
+
+    @media screen and(max-width:425px) {
+      width: 92% !important;
+      margin: 100px auto 0px -45% !important;
+    }
+    @media screen and(max-width:768px) {
+      width: 90% !important;
+      margin: 17px auto 0px -45% !important;
+    }
+    @media screen and(max-width:1024px) {
+      width: 85% !important;
+      margin: 17px auto 0px -45% !important;
+    }
+
+    @media screen and(max-width:1440px) {
+      width: 100%;
+      margin: 30px auto 0px -51%;
+    }
+  }
 }
 
 .slider {
@@ -128,5 +164,43 @@ h3 {
   text-transform: capitalize;
   margin: 0 auto;
   text-align: center;
-  padding: 3%;
+  padding-bottom: 2.2%;
+
+  @media screen and(max-width:320px) {
+    font-size: 35px;
+    padding: 4.2%;
+  }
+
+  @media screen and(max-width:380px) {
+    font-size: 35px;
+    padding: 4.2%;
+  }
+  @media screen and(max-width:420px) {
+    font-size: 35px;
+    padding: 5.2%;
+  }
+}
+
+.react-3d-carousel .slider-container .slider-left div {
+  @media screen and(max-width:320px) {
+    margin-top: 0 !important;
+  }
+  @media screen and(max-width:380px) {
+    margin-top: 0 !important;
+  }
+  @media screen and(max-width:420px) {
+    margin-top: 0 !important;
+  }
+}
+
+.react-3d-carousel .slider-container .slider-right div {
+  @media screen and(max-width:320px) {
+    margin-top: 0 !important;
+  }
+  @media screen and(max-width:380px) {
+    margin-top: 0 !important;
+  }
+  @media screen and(max-width:420px) {
+    margin-top: 0 !important;
+  }
 }

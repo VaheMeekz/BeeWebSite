@@ -41,7 +41,7 @@ function App() {
             <section id="contact">
                 <Footer/>
             </section>
-            <ScrollToTopBtn/>
+             <ScrollToTopBtn/>
         </div>
     );
 }

@@ -6,17 +6,25 @@
   position: relative;
   z-index: 10000;
 
-  Link {
+  .links {
     list-style: none;
     padding: 0 10px 0 10px;
     cursor: pointer;
     text-transform: uppercase;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 20px;
     font-family: "Montserrat", sans-serif;
     color: white;
+
+    @media screen and(max-width:1300px) {
+      font-size: 13px;
+    }
+
+    @media screen and(max-width:1240px) {
+      font-size: 12px;
+    }
   }
 
   .links:hover {
@@ -57,6 +65,7 @@
         font-family: "Montserrat", sans-serif;
         font-weight: 400;
         color: white;
+
 
         //   a {
         //     @media(max-width:1420px) {
@@ -232,8 +241,9 @@ Link:hover {
   border: 1px solid #0246C8;
   font-family: "Montserrat";
   font-style: normal;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 16px;
+  color: white;
   line-height: 20px;
   text-transform: uppercase;
   cursor: pointer;

@@ -104,7 +104,7 @@ function digital({darkMode, setDarkMode}) {
                     <div className="inner-element">
                         <div className="digitalContent">
                             <img src={digitalIcon5} alt="img"/>
-                            <p className={"diggitalText"}>aglle software</p>
+                            <p className={"diggitalText"}>software</p>
                             <p className={"diggitalText"}>development</p>
                         </div>
                     </div>

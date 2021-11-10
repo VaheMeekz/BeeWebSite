@@ -12,7 +12,7 @@ const Portfolio = () => {
     ];
 
   return (
-      <div className="app">
+      <div className="portfolio">
           <div>
               <h3>Portfolio</h3>
           </div>
