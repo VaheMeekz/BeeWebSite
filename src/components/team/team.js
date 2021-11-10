@@ -36,8 +36,9 @@ const Team = () => {
                         </div>
                     </div>
                 </Tilt>
-
                 <Tilt
+                    img
+                    MANAGE
                     className="parallax"
                     perspective={500}
                     glareEnable={true}

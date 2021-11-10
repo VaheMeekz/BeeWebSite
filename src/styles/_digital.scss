@@ -156,6 +156,11 @@
     width: 120px !important;
     height: 120px !important;
   }
+  @media screen and(max-width: 1024px) {
+    width: 110px !important;
+    height: 110px !important;
+    padding: 6%;
+  }
 
   .inner-element {
     display: flex;

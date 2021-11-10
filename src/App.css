@@ -176,7 +176,7 @@ Link:hover {
 .getStartBtn {
   position: absolute;
   left: 158px;
-  top: 20%;
+  bottom: 50px;
   height: 40px;
   width: 220px;
   border-radius: 25px;
@@ -416,30 +416,12 @@ input[type='checkbox'].dmcheck {
         @media (max-width: 1313px) {
           .digital .digitalContentsMain .digitalContent p {
             font-size: 12px; } }
-<<<<<<< HEAD
-        @media (max-width: 1209px) {
-          .digital .digitalContentsMain .digitalContent p {
-            font-size: 11px; } }
-      .digital .digitalContentsMain .digitalContent img {
-        padding-bottom: 10%; }
-        @media screen and (max-width: 1376px) {
-          .digital .digitalContentsMain .digitalContent img {
-            width: 60px; } }
-        @media screen and (max-width: 1256px) {
-          .digital .digitalContentsMain .digitalContent img {
-            width: 55px; } }
-        @media (max-width: 1249px) {
-          .digital .digitalContentsMain .digitalContent img {
-            padding: 6%; } }
-        @media (max-width: 1193px) {
-          .digital .digitalContentsMain .digitalContent img {
-            width: 50px; } }
-        @media screen and (max-width: 1114px) {
-          .digital .digitalContentsMain .digitalContent img {
-            width: 45px; } }
-      .digital .digitalContentsMain .digitalContent img:hover {
-        filter: invert(25%) sepia(96%) saturate(6441%) hue-rotate(215deg) brightness(87%) contrast(105%); }
-=======
+      @media screen and (max-width: 1256px) {
+        .digital .digitalContentsMain .digitalContent {
+          width: 55px; } }
+      @media screen and (max-width: 1376px) {
+        .digital .digitalContentsMain .digitalContent {
+          width: 60px; } }
       @media screen and (max-width: 1256px) {
         .digital .digitalContentsMain .digitalContent {
           width: 55px; } }
@@ -454,7 +436,6 @@ input[type='checkbox'].dmcheck {
           width: 45px; } }
     .digital .digitalContentsMain img:hover {
       filter: invert(25%) sepia(96%) saturate(6441%) hue-rotate(215deg) brightness(87%) contrast(105%); }
->>>>>>> 49cc7a94f777b9500d92ca89031ca7cd45172644
 
 .diggitalText {
   cursor: pointer; }
@@ -486,7 +467,6 @@ input[type='checkbox'].dmcheck {
       width: 180px !important;
       height: 180px !important; } }
   @media screen and (max-width: 1502px) {
-<<<<<<< HEAD
     .parallax-effect-glare-scale {
       width: 170px !important;
       height: 170px !important; } }
@@ -500,27 +480,17 @@ input[type='checkbox'].dmcheck {
       height: 140px !important; } }
   @media screen and (max-width: 1186px) {
     .parallax-effect-glare-scale {
-=======
-    .parallax-effect-glare-scale {
-      width: 170px !important;
-      height: 170px !important; } }
-  @media screen and (max-width: 1432px) {
-    .parallax-effect-glare-scale {
-      width: 150px !important;
-      height: 150px !important; } }
-  @media screen and (max-width: 1256px) {
-    .parallax-effect-glare-scale {
-      width: 140px !important;
-      height: 140px !important; } }
-  @media screen and (max-width: 1186px) {
-    .parallax-effect-glare-scale {
->>>>>>> 49cc7a94f777b9500d92ca89031ca7cd45172644
       width: 130px !important;
       height: 130px !important; } }
   @media screen and (max-width: 1114px) {
     .parallax-effect-glare-scale {
       width: 120px !important;
       height: 120px !important; } }
+  @media screen and (max-width: 1024px) {
+    .parallax-effect-glare-scale {
+      width: 110px !important;
+      height: 110px !important;
+      padding: 6%; } }
   .parallax-effect-glare-scale .inner-element {
     display: flex;
     flex-direction: column;
@@ -1261,14 +1231,13 @@ h3 {
     margin: 0 auto;
     padding: 2%; }
   .team .outTeamImg {
-    width: 1166px;
     height: 398px;
     display: flex;
     justify-content: center;
     margin: 0 auto; }
     @media (max-width: 1238px) {
       .team .outTeamImg img {
-        width: 900px;
+        width: 80%;
         height: 398px; } }
   .team h3 {
     font-family: Montserrat;
@@ -1342,6 +1311,11 @@ h3 {
     .parallax {
       width: 120px !important;
       height: 120px !important; } }
+  @media screen and (max-width: 1024px) {
+    .parallax {
+      width: 110px !important;
+      height: 110px !important;
+      padding: 6%; } }
   .parallax .inner-element {
     display: flex;
     flex-direction: column;
@@ -1366,6 +1340,40 @@ h3 {
     align-items: center;
     flex-direction: column;
     margin-left: 20vw; } }
+@media screen and (max-width: 1024px) {
+  .team {
+    width: 100%;
+    height: 488px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20vh; }
+
+  .outTeamImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .outTeamImg img {
+      width: 80%; } }
+@media screen and (max-width: 768px) {
+  .team {
+    width: 100%;
+    height: 488px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20vh; }
+
+  .outTeamImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .outTeamImg img {
+      width: 40%; } }
 .footer {
   width: 100%;
   height: 500px; }
@@ -1503,7 +1511,7 @@ i {
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    margin-top: 25vh; }
+    margin-top: 50vh; }
     .footer h2 {
       font-size: 20px; }
 
@@ -1541,7 +1549,7 @@ i {
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    margin-top: 10vh; }
+    margin-top: 15vh; }
     .footer h2 {
       font-size: 30px; }
 
@@ -1557,7 +1565,7 @@ i {
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    margin-top: 15vh; }
+    margin-top: 35vh; }
     .footer h2 {
       font-size: 20px; }
 
@@ -1684,11 +1692,12 @@ left {
   justify-content: space-between;
   animation: topBounce 3s ease-in-out infinite; }
 
-.effect-2 div {
+.effect-2 {
   height: 3px;
   width: 3px;
   background-color: #DBC13C;
-  margin: 0 3px 8px; }
+  margin: 0 3px 8px;
+  margin-top: +5%; }
 
 .effect-3 {
   right: 5%;

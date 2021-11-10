@@ -127,7 +127,8 @@ const Header = () => {
                 </div>
             </div>
             <div className="getStartBox">
-                {/*<button onClick={openModal} className="getStartBtn">get started</button>*/}
+                <button
+                    onClick={openModal} className="getStartBtn">get started</button>
                 {/*<OrderModal showModal={showModal} setShowModal={setShowModal}/>*/}
             </div>
         </div>
