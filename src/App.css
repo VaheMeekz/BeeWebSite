@@ -93,7 +93,7 @@
     .header .nav .languages span {
       width: 36px;
       height: 20px;
-      font-family: Montserrat;
+      font-family: "Montserrat";
       font-style: normal;
       font-weight: normal;
       text-transform: uppercase;
@@ -331,7 +331,6 @@ input[type='checkbox'].dmcheck {
     cursor: pointer;
     position: absolute;
     left: 2px;
-    background: #fff;
     opacity: 0.9;
     background-color: #f6f6f6; }
 
@@ -416,30 +415,12 @@ input[type='checkbox'].dmcheck {
         @media (max-width: 1313px) {
           .digital .digitalContentsMain .digitalContent p {
             font-size: 12px; } }
-<<<<<<< HEAD
-        @media (max-width: 1209px) {
-          .digital .digitalContentsMain .digitalContent p {
-            font-size: 11px; } }
-      .digital .digitalContentsMain .digitalContent img {
-        padding-bottom: 10%; }
-        @media screen and (max-width: 1376px) {
-          .digital .digitalContentsMain .digitalContent img {
-            width: 60px; } }
-        @media screen and (max-width: 1256px) {
-          .digital .digitalContentsMain .digitalContent img {
-            width: 55px; } }
-        @media (max-width: 1249px) {
-          .digital .digitalContentsMain .digitalContent img {
-            padding: 6%; } }
-        @media (max-width: 1193px) {
-          .digital .digitalContentsMain .digitalContent img {
-            width: 50px; } }
-        @media screen and (max-width: 1114px) {
-          .digital .digitalContentsMain .digitalContent img {
-            width: 45px; } }
-      .digital .digitalContentsMain .digitalContent img:hover {
-        filter: invert(25%) sepia(96%) saturate(6441%) hue-rotate(215deg) brightness(87%) contrast(105%); }
-=======
+      @media screen and (max-width: 1256px) {
+        .digital .digitalContentsMain .digitalContent {
+          width: 55px; } }
+      @media screen and (max-width: 1376px) {
+        .digital .digitalContentsMain .digitalContent {
+          width: 60px; } }
       @media screen and (max-width: 1256px) {
         .digital .digitalContentsMain .digitalContent {
           width: 55px; } }
@@ -454,7 +435,6 @@ input[type='checkbox'].dmcheck {
           width: 45px; } }
     .digital .digitalContentsMain img:hover {
       filter: invert(25%) sepia(96%) saturate(6441%) hue-rotate(215deg) brightness(87%) contrast(105%); }
->>>>>>> 49cc7a94f777b9500d92ca89031ca7cd45172644
 
 .diggitalText {
   cursor: pointer; }
@@ -486,7 +466,6 @@ input[type='checkbox'].dmcheck {
       width: 180px !important;
       height: 180px !important; } }
   @media screen and (max-width: 1502px) {
-<<<<<<< HEAD
     .parallax-effect-glare-scale {
       width: 170px !important;
       height: 170px !important; } }
@@ -500,21 +479,6 @@ input[type='checkbox'].dmcheck {
       height: 140px !important; } }
   @media screen and (max-width: 1186px) {
     .parallax-effect-glare-scale {
-=======
-    .parallax-effect-glare-scale {
-      width: 170px !important;
-      height: 170px !important; } }
-  @media screen and (max-width: 1432px) {
-    .parallax-effect-glare-scale {
-      width: 150px !important;
-      height: 150px !important; } }
-  @media screen and (max-width: 1256px) {
-    .parallax-effect-glare-scale {
-      width: 140px !important;
-      height: 140px !important; } }
-  @media screen and (max-width: 1186px) {
-    .parallax-effect-glare-scale {
->>>>>>> 49cc7a94f777b9500d92ca89031ca7cd45172644
       width: 130px !important;
       height: 130px !important; } }
   @media screen and (max-width: 1114px) {

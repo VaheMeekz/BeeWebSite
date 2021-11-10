@@ -129,7 +129,7 @@
       span {
         width: 36px;
         height: 20px;
-        font-family: Montserrat;
+        font-family: "Montserrat";
         font-style: normal;
         font-weight: normal;
         text-transform: uppercase;
@@ -415,7 +415,6 @@ input[type='checkbox'].dmcheck {
     cursor: pointer;
     position: absolute;
     left: 2px;
-    background: #fff;
     opacity: 0.9;
     background-color: #f6f6f6;
   }
