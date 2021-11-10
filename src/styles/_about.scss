@@ -190,3 +190,31 @@
     width: 130% !important;
   }
 }
+
+.fba {
+  cursor: pointer;
+  position: relative;
+  /*animation*/
+  animation-name:about-arrow;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.fba:hover {
+  color:#DBC13C;
+  transition: .4s;
+}
+
+.arrowBox:hover .fba{
+  animation-play-state: paused;
+}
+
+@keyframes about-arrow{
+  0%{
+    right: -30px;
+  }
+  100%{
+    right: 30px;
+  }
+}

@@ -26,6 +26,10 @@
     align-items: center;
     height: 22vh;
 
+    // .arrow {
+    //   padding: 8px;
+    // }
+
     .digitalContentEven {
       margin-top: 40%;
     }
@@ -33,6 +37,7 @@
     .digitalContent {
       text-align: center;
       display: grid;
+      cursor: pointer;
       align-content: center;
       justify-content: center;
       align-items: center;
@@ -42,7 +47,7 @@
       p {
         text-align: center;
         margin: 0 auto;
-        font-family: "Montserrat";
+        font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
         font-size: 15px;
@@ -61,21 +66,20 @@
         @media (max-width: 1313px) {
           font-size: 12px;
         }
-
-        @media (max-width: 1209px) {
-          font-size: 11px;
         }
-      }
-
-      img {
-        padding-bottom: 10%;
+        @media screen and(max-width:1256px) {
+          width: 55px;
+        }
 
         @media (max-width: 1249px) {
           padding: 6%;
         }
 
         @media (max-width: 1193px) {
-          width: 70px;
+          width: 50px;
+        }
+        @media screen and(max-width:1114px) {
+          width: 45px;
         }
       }
 
@@ -84,17 +88,12 @@
       }
     }
   }
-}
+
 
 .diggitalText {
   cursor: pointer;
-
   p {
     cursor: pointer;
-  }
-
-  p:hover {
-    color: yellow;
   }
 }
 
@@ -118,22 +117,37 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 150px;
-  height: 150px;
+  width: 190px !important;
+  height: 190px !important;
   border: 2px solid;
   border-radius: 20px;
   transform-style: preserve-3d;
   padding: 1%;
 
-  @media screen and(max-width: 1546px) {
-    width: 11% !important;
+  @media screen and(max-width: 1547px) {
+    width: 180px !important;
+    height: 180px !important;
   }
-  @media screen and(max-width: 1209px) {
-    height: 20vh !important;
+  @media screen and(max-width:1502px) {
+    width: 170px !important;
+    height: 170px !important;
   }
-
-  @media screen and(max-width: 1193px) {
-    height: 17vh !important;
+  @media  screen and(max-width:1432px){
+    width: 150px !important;
+    height: 150px !important;
+  }
+  
+  @media screen and(max-width:1256px) {
+    width: 140px !important;
+    height: 140px !important;
+  }
+  @media screen and(max-width:1186px) {
+    width: 130px !important;
+    height: 130px !important;
+  }
+  @media screen and(max-width:1114px) {
+    width: 120px !important;
+    height: 120px !important;
   }
 
   .inner-element {
@@ -146,3 +160,4 @@
     transform: translateZ(60px);
   }
 }
+ 

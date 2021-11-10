@@ -59,9 +59,9 @@ const Header = () => {
 
     //languages
     const languages = [
-        {id: 1, lang: 'en', img: <img src={uk} alt={"flag"} width={'50px'} height={'20px'}/>},
-        {id: 2, lang: 'am', img: <img src={arm} alt={"flag"} width={'50px'} height={'20px'}/>},
-        {id: 3, lang: 'ru', img: <img src={ru} alt={"flag"} width={'50px'} height={'20px'}/>}
+        {id: 1, lang: 'en', img: <img src={uk} alt={"flag"} width={'25px'} height={'10px'}/>},
+        {id: 2, lang: 'am', img: <img src={arm} alt={"flag"} width={'25px'} height={'10px'}/>},
+        {id: 3, lang: 'ru', img: <img src={ru} alt={"flag"} width={'25px'} height={'10px'}/>}
     ]
 
     const currentLang = cookies.get('i18next')
@@ -129,7 +129,7 @@ const Header = () => {
                 </div>
             </div>
             <div className="getStartBox">
-                <button onClick={openModal} className="getStartBtn">get started</button>
+                {/*<button onClick={openModal} className="getStartBtn">get started</button>*/}
                 {/*<OrderModal showModal={showModal} setShowModal={setShowModal}/>*/}
             </div>
         </div>
