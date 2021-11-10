@@ -73,6 +73,7 @@ const Header = () => {
     const query = useQuery();
     const history = useHistory()
 
+    const sectionQuery = query.get('section')
     const postQuery = query.get('language')
 
     return (
@@ -83,6 +84,8 @@ const Header = () => {
                     {
                         links.map(l => {
                             return <Link smooth={true} duration={1000} className="links" to={l.to}
+                                         onClick={()=>{ history.push(`${'/'}${l.name}/lang/${postQuery}`)}}
+                                        // history.push(`${POSTS_PAGE}?post=${postQuery}&comment=${name}`)
                                          key={l.id}>{l.name}</Link>
                         })}
                 </ul>
@@ -101,7 +104,7 @@ const Header = () => {
                             key={id}
                             onClick={() => {
                                 selectlanguages(lang, id);
-                                history.push(`${'/'}?language=${lang}`)
+                                history.push(`${'/'}lang/${lang}`)
                             }}
                             className={postQuery === lang ? 'activeLang' : undefined}
                                 >
