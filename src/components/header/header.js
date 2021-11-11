@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import logo from '../../assets/images/logo.png'
 import {NavLink} from "react-router-dom";
 import i18next from "i18next";
@@ -14,8 +14,21 @@ import arm from "../../assets/images/arm.png"
 import {Button} from "@material-ui/core";
 import useQuery from "../../assets/hooks/useQuery";
 import MotionSlider from "../motionCarousel/motionCarousel";
+import ReactTooltip from "react-tooltip";
+
+
 
 const Header = () => {
+
+
+
+    //constants
+    let query = useQuery();
+    const history = useHistory()
+
+    const sectionQuery = query.get('section')
+    const languageQuery = query.get('language')
+
 
     //mode
     const [darkMode, setDarkMode] = useDarkMode();
@@ -57,9 +70,21 @@ const Header = () => {
 
     //languages
     const languages = [
-        {id: 1, lang: 'en', img: <img src={uk} alt={"flag"} width={'25px'} height={'10px'}/>},
-        {id: 2, lang: 'am', img: <img src={arm} alt={"flag"} width={'25px'} height={'10px'}/>},
-        {id: 3, lang: 'ru', img: <img src={ru} alt={"flag"} width={'25px'} height={'10px'}/>}
+        {
+            id: 1,
+            lang: 'en',
+            img: uk
+        },
+        {
+            id: 2,
+            lang: 'am',
+            img: arm
+        },
+        {
+            id: 3,
+            lang: 'ru',
+            img: ru
+        }
     ]
 
     const currentLang = cookies.get('i18next')
@@ -70,11 +95,13 @@ const Header = () => {
         setActiveLang(lang)
     }
 
-    const query = useQuery();
-    const history = useHistory()
-
-    const sectionQuery = query.get('section')
-    const postQuery = query.get('language')
+    //hover
+    const mappleConfig = {
+        direction: 'bottom',
+        shadow: true,
+        float: true,
+        borderRadius: 5
+    }
 
     return (
         <div className="header">
@@ -84,8 +111,10 @@ const Header = () => {
                     {
                         links.map(l => {
                             return <Link smooth={true} duration={1000} className="links" to={l.to}
-                                         onClick={()=>{ history.push(`${'/'}${l.name}/lang/${postQuery}`)}}
-                                        // history.push(`${POSTS_PAGE}?post=${postQuery}&comment=${name}`)
+                                         onClick={() => {
+                                             history.push(`/?section=${l.name}&language=${languageQuery}`)
+                                         }}
+                                         className={sectionQuery === l.name ? "activeLink" : undefined}
                                          key={l.id}>{l.name}</Link>
                         })}
                 </ul>
@@ -100,18 +129,32 @@ const Header = () => {
                 </div>
                 <ul className="languages">
                     {languages.map(({id, lang, img}) => {
-                        return <Button
+                        return <>
+                        <Button
                             key={id}
                             onClick={() => {
                                 selectlanguages(lang, id);
-                                history.push(`${'/'}lang/${lang}`)
+                                history.push(`/?section=${sectionQuery}&language=${lang}`)
                             }}
-                            className={postQuery === lang ? 'activeLang' : undefined}
-                                >
-                            {img}
+                            data-tip data-for={lang}
+                        >
+                                    <img src={img} alt={lang} className={languageQuery === lang ? "activeLang lang" : "lang"}/>
                         </Button>
+                        {/*<ReactTooltip id={id} place="top" effect="solid">*/}
+                        {/*      ara*/}
+                        {/*</ReactTooltip>*/}
+                        </>
                     })}
                 </ul>
+                <ReactTooltip id={"en"} place="top" effect="solid">
+                    english
+                </ReactTooltip>
+                <ReactTooltip id={"am"} place="top" effect="solid">
+                    armenian
+                </ReactTooltip>
+                <ReactTooltip id={"ru"} place="top" effect="solid">
+                    russian
+                </ReactTooltip>
                 <div>
                     <Toggle darkMode={darkMode} setDarkMode={setDarkMode}/>
                 </div>
@@ -131,7 +174,8 @@ const Header = () => {
             </div>
             <div className="getStartBox">
                 <button
-                    onClick={openModal} className="getStartBtn">get started</button>
+                    onClick={openModal} className="getStartBtn">get started
+                </button>
                 {/*<OrderModal showModal={showModal} setShowModal={setShowModal}/>*/}
             </div>
         </div>

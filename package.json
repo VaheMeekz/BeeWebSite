@@ -33,6 +33,7 @@
     "react-spring": "^9.3.0",
     "react-spring-3d-carousel": "^1.2.1",
     "react-thunk": "^1.0.0",
+    "react-tooltip": "^4.2.21",
     "redux": "^4.1.2",
     "swiper": "^6.0.2",
     "uuid": "^8.3.2",

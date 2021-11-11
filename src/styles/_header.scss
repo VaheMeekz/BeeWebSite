@@ -18,11 +18,11 @@
     font-family: "Montserrat", sans-serif;
     color: white;
 
-    @media screen and(max-width:1300px) {
+    @media screen and(max-width: 1300px) {
       font-size: 13px;
     }
 
-    @media screen and(max-width:1240px) {
+    @media screen and(max-width: 1240px) {
       font-size: 12px;
     }
   }
@@ -161,6 +161,7 @@
   line-height: 20px;
   font-family: "Montserrat", sans-serif;
   color: white;
+  margin-left: 10px;
 }
 
 Link:hover {
@@ -233,7 +234,7 @@ Link:hover {
 .getStartBtn {
   position: absolute;
   left: 158px;
-bottom: 50px;
+  bottom: 50px;
   height: 40px;
   width: 220px;
   border-radius: 25px;
@@ -452,7 +453,50 @@ input[type='checkbox'].dmcheck {
   margin-right: 300px;
 }
 
-/*language*/
-.activeLang{
-  border: 1px solid white;
+.activeLink {
+    color: #397dff;
+    list-style: none;
+    padding: 0 10px 0 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Montserrat", sans-serif;
 }
+
+.lang{
+  width:30px;
+  height:15px;
+}
+
+.activeLang{
+border: 2px solid white;
+}
+[data-tooltip] {
+  position: relative; /* Относительное позиционирование */
+  z-index: 6000;
+}
+[data-tooltip]::after {
+  content: attr(data-tooltip); /* Выводим текст */
+  position: absolute; /* Абсолютное позиционирование */
+  width: 300px; /* Ширина подсказки */
+  left: 0; top: 0; /* Положение подсказки */
+  background: #3989c9; /* Синий цвет фона */
+  color: #fff; /* Цвет текста */
+  padding: 0.5em; /* Поля вокруг текста */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Параметры тени */
+  pointer-events: none; /* Подсказка */
+  opacity: 0; /* Подсказка невидима */
+  transition: 1s; /* Время появления подсказки */
+}
+[data-tooltip]:hover::after {
+  opacity: 1; /* Показываем подсказку */
+  top: 2em; /* Положение подсказки */
+}
+
+//
+//nav < ul < li < img:hover {
+//
+//}
