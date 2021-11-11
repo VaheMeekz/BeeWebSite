@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import logo from '../../assets/images/logo.png'
 import {NavLink} from "react-router-dom";
 import i18next from "i18next";
@@ -15,6 +15,7 @@ import {Button} from "@material-ui/core";
 import useQuery from "../../assets/hooks/useQuery";
 import MotionSlider from "../motionCarousel/motionCarousel";
 import ReactTooltip from "react-tooltip";
+
 
 
 
@@ -60,12 +61,12 @@ const Header = () => {
     // Links
 
     const links = [
-        {id: 1, to: "contact", name: "Contact", icon: "icon"},
-        {id: 2, to: "about", name: "About", icon: "icon"},
-        {id: 3, to: "services", name: "Services", icon: "icon"},
-        {id: 4, to: "portfolio", name: "Portfolio", icon: "icon"},
-        {id: 5, to: "tecnologies", name: "Tecnologise", icon: "icon"},
-        {id: 6, to: "team", name: "Team", icon: "icon"},
+        {id: 1, to: "about", name: "About", icon: "icon"},
+        {id: 2, to: "services", name: "Services", icon: "icon"},
+        {id: 3, to: "portfolio", name: "Portfolio", icon: "icon"},
+        {id: 4, to: "tecnologies", name: "Tecnologise", icon: "icon"},
+        {id: 5, to: "team", name: "Team", icon: "icon"},
+        {id: 6, to: "contact", name: "Contact", icon: "icon"}
     ];
 
     //languages
@@ -105,6 +106,7 @@ const Header = () => {
 
     return (
         <div className="header">
+
             <div className={navbar ? "nav active" : "nav"}>
                 <div className="logo"><NavLink to={'/'}><img src={logo} alt={"img"}/></NavLink></div>
                 <ul>
@@ -112,7 +114,8 @@ const Header = () => {
                         links.map(l => {
                             return <Link smooth={true} duration={1000} className="links" to={l.to}
                                          onClick={() => {
-                                             history.push(`/?section=${l.name}&language=${languageQuery}`)
+                                              history.push(`/${l.name}/${activeLang}`)
+                                             //  history.push(`/?section=${l.name}&language=${languageQuery}`)
                                          }}
                                          className={sectionQuery === l.name ? "activeLink" : "links"}
                                          key={l.id}>{l.name}</Link>
@@ -134,7 +137,7 @@ const Header = () => {
                             key={id}
                             onClick={() => {
                                 selectlanguages(lang, id);
-                                history.push(`/?section=${sectionQuery}&language=${lang}`)
+                                // history.push(`/${sectionQuery}${activeLang}`)
                             }}
                             data-tip data-for={lang}
                         >

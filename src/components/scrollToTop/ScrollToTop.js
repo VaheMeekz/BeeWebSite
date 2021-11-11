@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import scroll from "../../assets/images/scroll.svg"
+import {useHistory} from "react-router-dom";
 
 export default function ScrollToTop() {
     const [isVisible, setIsVisible] = useState(false);
@@ -13,6 +14,8 @@ export default function ScrollToTop() {
         }
     };
 
+    const history = useHistory()
+
     // Set the top cordinate to 0
     // make scrolling smooth
     const scrollToTop = () => {
@@ -20,6 +23,7 @@ export default function ScrollToTop() {
             top: 0,
             behavior: "smooth"
         });
+        history.push('/')
     };
 
     useEffect(() => {

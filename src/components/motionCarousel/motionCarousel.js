@@ -30,7 +30,8 @@ const variants = {
     }
 };
 
-const TestComp = ({ bg }) => (
+const TestComp = ({ bg,text }) => (
+    <>
     <MotionBox
         variants={variants}
         initial="enter"
@@ -42,9 +43,9 @@ const TestComp = ({ bg }) => (
             backgroundSize: "cover"
         }}
     />
+        <p>{text}</p>
+    </>
 );
-
-
 
 const MotionSlider = () => {
     const [[page, direction], setPage] = useState([0, 0]);
@@ -53,12 +54,11 @@ const MotionSlider = () => {
     };
 
     const slides = [
-        {id: 1, img: img},
-        {id: 2, img: img1},
-        {id: 3, img: img2},
-        {id: 4, img: img3},
+        {id: 1, img: img2,text:"text1"},
+        {id: 2, img: img1,text:"text2"},
+        {id: 3, img: img2,text:"text3"},
+        {id: 4, img: img1,text:"text4"},
     ]
-
 
     useInterval(() => {
         if(page < slides.length - 1){
@@ -73,8 +73,8 @@ const MotionSlider = () => {
             <div className={css.pageBlock}>
                 <AnimatePresence initial={false} custom={direction}>
                     {
-                        slides.map(({id, img}, index) => {
-                            return page === index && <TestComp key={index} bg={`url(${img})`}/>
+                        slides.map(({id, img,text}, index) => {
+                            return page === index && <TestComp key={index} bg={`url(${img})`} text={text}/>
                         })
                     }
                 </AnimatePresence>
