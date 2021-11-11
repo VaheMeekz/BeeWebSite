@@ -2,9 +2,9 @@ import React, {useEffect, useRef} from "react";
 import {AnimatePresence} from "framer-motion";
 import { useState } from "react";
 import img from "../../assets/images/aboutUsImg.png"
-import img1 from "../../assets/images/girl1.jpg"
-import img2 from "../../assets/images/girl2.jpg"
-import img3 from "../../assets/images/girl3.jpg"
+import img1 from "../../assets/images/parallax1.png"
+import img2 from "../../assets/images/parallax2.png"
+import img3 from "../../assets/images/teamImg2.jpg"
 import MotionBox from "./motionBox";
 import useInterval from "../../assets/hooks/useInterval";
 import css from './motion.module.scss'

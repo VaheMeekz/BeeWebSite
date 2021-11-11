@@ -3,10 +3,7 @@ import {useTranslation} from "react-i18next";
 import call from '../../assets/images/footerIcon1.svg'
 import mail from '../../assets/images/footerIcon2.svg'
 import location from '../../assets/images/footerIcon3.svg'
-import fb from "../../assets/images/fb.png"
-import insta from "../../assets/images/insta.png"
-import linkedin from "../../assets/images/linkedin.png"
-import local from "../../assets/images/local.png"
+import Iframe from "react-iframe";
 
 const Footer = () => {
     const {t} = useTranslation()
@@ -32,6 +29,16 @@ const Footer = () => {
                             <img src={location} alt="img"/>
                             <p>{t('location')}</p>
                             <p>{t('hakoob')}</p>
+                        </div>
+                        <div className="footerInfo map">
+                            <Iframe url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3047.405406946073!2d44.488959315644045!3d40.20004407671282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abd6bc6cf96ef%3A0x6932662afc4c86ff!2sBeeOnCode!5e0!3m2!1sen!2s!4v1636632487448!5m2!1sen!2s"
+                                    width="300"
+                                    height="250"
+                                    loading="lazy"
+                                    id="myId"
+                                    className="myClassname"
+                                    display="initial"
+                                    position="relative"/>
                         </div>
                     </div>
                     <div className="footerSearch">

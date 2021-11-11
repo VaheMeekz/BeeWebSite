@@ -43,7 +43,7 @@ body::-webkit-scrollbar {
 .effect-1 {
   width: 30px;
   height: 30px;
-  border: 4px solid darkgreen;
+  border: 4px solid yellow;
   float: right;
   margin-right: 2%;
   margin-top: 5%;
@@ -214,7 +214,7 @@ input[type='checkbox'].dmcheck {
 }
 
 body {
-  background-color: white;
+  background-color: rgba(255, 246, 246, 0.87);
   color: black;
   transition: background-color 0.3s ease;
 }

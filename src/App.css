@@ -453,7 +453,7 @@ input[type='checkbox'].dmcheck {
       .digital .digitalContentsMain .digitalContent p {
         text-align: center;
         margin: 0 auto;
-        font-family: Montserrat;
+        font-family: "Montserrat";
         font-style: normal;
         font-weight: normal;
         font-size: 15px;
@@ -497,7 +497,7 @@ input[type='checkbox'].dmcheck {
 
 /*mode*/
 .digital.dark-mode {
-  background-color: #232323;
+  background-color: black;
   color: #dfdfdf; }
   .digital.dark-mode .dark-mode-toggle > button {
     color: #999; }
@@ -556,14 +556,12 @@ input[type='checkbox'].dmcheck {
 .about {
   width: 100%;
   height: 450px;
-  background: black;
   display: flex;
   justify-content: space-evenly;
   align-items: center; }
   @media screen and (max-width: 1024px) {
     .about {
       height: 700px;
-      background: black;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
@@ -944,7 +942,6 @@ h3 {
   padding: 0; }
 
 .section {
-  background: #282828;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1580,7 +1577,7 @@ i {
 
   .footerDwn {
     flex-direction: column;
-    margin-top: 10vw; }
+    margin-top: 25vw; }
 
   .footerSearch {
     display: none; }
@@ -1624,7 +1621,7 @@ i {
 
   .footerDwn {
     flex-direction: column;
-    margin-top: 15vh; }
+    margin-top: 30vh; }
 
   .footerIcons .footerIcons {
     display: flex;
@@ -1642,7 +1639,10 @@ i {
 
   .locat {
     margin-left: -0.9vw;
-    margin-top: 2vh; } }
+    margin-top: 2vh; }
+
+  .map {
+    display: none; } }
 @media screen and (max-width: 320px) {
   .footer {
     width: 100%;
@@ -1660,7 +1660,14 @@ i {
 
   .hasce {
     font-size: 12px;
-    margin-left: 10vw; } }
+    margin-left: 10vw; }
+
+  .footerDwn {
+    flex-direction: column;
+    margin-top: 30vh; }
+
+  .map {
+    display: none; } }
 @media (max-width: 767px) {
   .header__burger {
     display: block;
@@ -1718,7 +1725,7 @@ body::-webkit-scrollbar {
 .effect-1 {
   width: 30px;
   height: 30px;
-  border: 4px solid darkgreen;
+  border: 4px solid yellow;
   float: right;
   margin-right: 2%;
   margin-top: 5%;
@@ -1851,7 +1858,7 @@ input[type='checkbox'].dmcheck {
     background-color: #f6f6f6; }
 
 body {
-  background-color: white;
+  background-color: rgba(255, 246, 246, 0.87);
   color: black;
   transition: background-color 0.3s ease; }
 

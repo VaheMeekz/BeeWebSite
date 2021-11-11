@@ -178,7 +178,7 @@ i {
   }
   .footerDwn {
     flex-direction: column;
-    margin-top: 10vw;
+    margin-top: 25vw;
   }
   .footerSearch {
     display: none;
@@ -233,7 +233,7 @@ i {
   }
   .footerDwn {
     flex-direction: column;
-    margin-top: 15vh;
+    margin-top: 30vh;
   }
   .footerIcons {
     .footerIcons {
@@ -255,6 +255,9 @@ i {
   .locat{
     margin-left: -0.9vw;
     margin-top: 2vh;
+  }
+  .map{
+    display: none;
   }
 }
 
@@ -278,5 +281,12 @@ i {
   .hasce{
     font-size: 12px;
     margin-left: 10vw;
+  }
+  .footerDwn {
+    flex-direction: column;
+    margin-top: 30vh;
+  }
+  .map{
+    display: none;
   }
 }

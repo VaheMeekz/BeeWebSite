@@ -3,12 +3,12 @@ import Header from "./components/header/header";
 import About from "./components/about/about";
 import Services from "./components/services/services";
 import Tecnologies from "./components/tecnologise/tecnologies";
-import Team from "./components/team/team";
 import Footer from "./components/footer/footer";
 import Digital from './components/digital/Digital';
 import React from "react";
 import ScrollToTopBtn from "./components/scrollToTop/ScrollToTop";
 import Portfolio from './components/portfolio/portfolio';
+import Team from "./components/team/team";
 
 
 function App() {
@@ -33,7 +33,7 @@ function App() {
                 <Tecnologies/>
             </section>
             <section id="team" className="teamSection">
-                <Team/>
+               <Team/>
             </section>
             <section id="contact">
                 <Footer/>

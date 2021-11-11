@@ -114,7 +114,7 @@ const Header = () => {
                                          onClick={() => {
                                              history.push(`/?section=${l.name}&language=${languageQuery}`)
                                          }}
-                                         className={sectionQuery === l.name ? "activeLink" : undefined}
+                                         className={sectionQuery === l.name ? "activeLink" : "links"}
                                          key={l.id}>{l.name}</Link>
                         })}
                 </ul>

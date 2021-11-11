@@ -1,12 +1,6 @@
 import React from 'react'
-import digitalIcon1 from '../../assets/images/digitalIcon1.svg'
-import digitalIcon2 from '../../assets/images/digitalIcon2.svg'
-import digitalIcon3 from '../../assets/images/digitalIcon3.svg'
-import digitalIcon4 from '../../assets/images/digitalIcon4.svg'
-import digitalIcon5 from '../../assets/images/digitalIcon5.svg'
-import digitalIcon6 from '../../assets/images/digitalIcon6.svg'
-import digitalIcon7 from '../../assets/images/digitalIcon7.svg'
-import arrowDigital from '../../assets/images/arrowDigital.svg'
+import img1 from "../../assets/images/digitalSvg1.svg"
+import arrowDigital from "../../assets/images/digitalArrow.svg"
 import Tilt from "react-parallax-tilt";
 
 
@@ -32,7 +26,7 @@ function digital({darkMode, setDarkMode}) {
                 >
                     <div className="inner-element">
                         <div className="digitalContent digitalContentEven">
-                            <img src={digitalIcon1} alt={"img"}/>
+                            <img src={img1} alt={"img"}/>
                             <p className={"diggitalText"}>Strategy</p>
                             <br/>
                         </div>
@@ -49,7 +43,7 @@ function digital({darkMode, setDarkMode}) {
                 >
                     <div className="inner-element">
                         <div className="digitalContent">
-                            <img src={digitalIcon2} alt="img"/>
+                            <img src={img1} alt="img"/>
                             <p className={"diggitalText"}>requirements</p>
                             <p className={"diggitalText"}>gathering</p>
                         </div>
@@ -66,7 +60,7 @@ function digital({darkMode, setDarkMode}) {
                 >
                     <div className="inner-element">
                         <div className="digitalContent">
-                            <img src={digitalIcon3} alt="img"/>
+                            <img src={img1} alt="img"/>
                             <p className={"diggitalText"}>concept and</p>
                             <p className={"diggitalText"}>documentation</p>
                         </div>
@@ -84,7 +78,7 @@ function digital({darkMode, setDarkMode}) {
                 >
                     <div className="inner-element">
                         <div className="digitalContent digitalContentEven">
-                            <img src={digitalIcon4} alt="img"/>
+                            <img src={img1} alt="img"/>
                             <p className={"diggitalText"}>planing</p>
                             <br/>
                         </div>
@@ -103,7 +97,7 @@ function digital({darkMode, setDarkMode}) {
                 >
                     <div className="inner-element">
                         <div className="digitalContent">
-                            <img src={digitalIcon5} alt="img"/>
+                            <img src={img1} alt="img"/>
                             <p className={"diggitalText"}>software</p>
                             <p className={"diggitalText"}>development</p>
                         </div>
@@ -122,7 +116,7 @@ function digital({darkMode, setDarkMode}) {
                 >
                     <div className="inner-element">
                         <div className="digitalContent digitalContentEven">
-                            <img src={digitalIcon6} alt={"img"}/>
+                            <img src={img1} alt={"img"}/>
                             <p className={"diggitalText"}>release</p>
                             <br/>
                         </div>
@@ -140,7 +134,7 @@ function digital({darkMode, setDarkMode}) {
                 >
                     <div className="inner-element">
                         <div className="digitalContent digitalContentEven">
-                            <img src={digitalIcon7} alt={"img"}/>
+                            <img src={img1} alt={"img"}/>
                             <p className={"diggitalText"}>maintenance</p>
                             <br/>
                         </div>
