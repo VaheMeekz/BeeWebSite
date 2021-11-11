@@ -140,20 +140,23 @@ const Header = () => {
                         >
                                     <img src={img} alt={lang} className={languageQuery === lang ? "activeLang lang" : "lang"}/>
                         </Button>
-                        {/*<ReactTooltip id={id} place="top" effect="solid">*/}
-                        {/*      ara*/}
-                        {/*</ReactTooltip>*/}
                         </>
                     })}
                 </ul>
                 <ReactTooltip id={"en"} place="top" effect="solid">
-                    english
+                    {activeLang === "en" ? "English" : null}
+                    {activeLang === "ru" ? "Английский" : null}
+                    {activeLang === "am" ? "Անգլերեն" : null}
                 </ReactTooltip>
                 <ReactTooltip id={"am"} place="top" effect="solid">
-                    armenian
+                    {activeLang === "en" ? "Armenian" : null}
+                    {activeLang === "ru" ? "Армянский" : null}
+                    {activeLang === "am" ? "Հայերեն" : null}
                 </ReactTooltip>
                 <ReactTooltip id={"ru"} place="top" effect="solid">
-                    russian
+                    {activeLang === "en" ? "Russian" : null}
+                    {activeLang === "ru" ? "Русский" : null}
+                    {activeLang === "am" ? "Ռուսերեն" : null}
                 </ReactTooltip>
                 <div>
                     <Toggle darkMode={darkMode} setDarkMode={setDarkMode}/>
