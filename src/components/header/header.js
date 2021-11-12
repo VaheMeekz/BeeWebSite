@@ -122,16 +122,14 @@ const Header = () => {
         }
     }, [pathname])
 
-
     return (
         <div className="header">
-
             <div className={navbar ? "nav active" : "nav"}>
                 <div className="logo" onClick={scrollToTop}><NavLink to={'/'}><img src={logo} alt={"img"}/></NavLink></div>
                 <ul>
                     {
                         links.map(l => {
-                            console.log(pathname, l.name, ">>>>>>>>>>>>>>>>>>>>")
+                            console.log(pathname, l.name, ">>>>>>>>>")
                             return <Link smooth={true} duration={1000} to={l.to}
                              onClick={() => {history.push(`/${l.name}`)}}
                                          className={pathname === `/${l.name}` ? css[avt] : "links"}

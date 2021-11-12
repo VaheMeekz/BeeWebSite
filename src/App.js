@@ -22,7 +22,7 @@ function App() {
                     <Digital/>
                 </section>
             </ScrollableSection>
-            <ScrollableSection  hash={'About'} affectHistory={true}>
+            <ScrollableSection  name={'About'} affectHistory={true}>
                 <section id="about" className="aboutSection">
                     <About/>
                 </section>
