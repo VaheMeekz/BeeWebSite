@@ -15,23 +15,23 @@ function App() {
 
     return (
         <div className="App">
-            <Header/>
-            <section id="digital" className="digitalSection">
-                <Digital/>
-            </section>
-            <section id="about" className="aboutSection">
-                <About/>
-            </section>
-            <section id="services" className="servicesSection">
-                <Services/>
-            </section>
-            <div className="effect effect-1"></div>
-            <section id="portfolio" className="portfolioSection">
-                <Portfolio/>
-            </section>
-            <section id="tecnologies" className="tecnologiesSection">
-                <Tecnologies/>
-            </section>
+            {/*<Header/>*/}
+            {/*<section id="digital" className="digitalSection">*/}
+            {/*    <Digital/>*/}
+            {/*</section>*/}
+            {/*<section id="about" className="aboutSection">*/}
+            {/*    <About/>*/}
+            {/*</section>*/}
+            {/*<section id="services" className="servicesSection">*/}
+            {/*    <Services/>*/}
+            {/*</section>*/}
+            {/*<div className="effect effect-1"></div>*/}
+            {/*<section id="portfolio" className="portfolioSection">*/}
+            {/*    <Portfolio/>*/}
+            {/*</section>*/}
+            {/*<section id="tecnologies" className="tecnologiesSection">*/}
+            {/*    <Tecnologies/>*/}
+            {/*</section>*/}
             <section id="team" className="teamSection">
                <Team/>
             </section>

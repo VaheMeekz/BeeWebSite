@@ -139,6 +139,9 @@ const Header = () => {
                                 // history.push(`/${sectionQuery}${activeLang}`)
                             }}
                             data-tip data-for={lang}
+                            style={{border: lang === currentLang ? "1px solid white" : null }}
+                            // style={{border: lang === "ru" ? "1px solid white" : null}}
+                            // style={{border: lang === "am" ? "1px solid white" : null}}
                         >
                                     <img src={img} alt={lang} className={languageQuery === lang ? "activeLang lang" : "lang"}/>
                         </Button>
