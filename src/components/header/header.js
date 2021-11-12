@@ -15,13 +15,12 @@ import {Button} from "@material-ui/core";
 import useQuery from "../../assets/hooks/useQuery";
 import MotionSlider from "../motionCarousel/motionCarousel";
 import ReactTooltip from "react-tooltip";
+import OrderModal from "./orderModal/OrderModal";
 
 
 
 
 const Header = () => {
-
-
 
     //constants
     let query = useQuery();
@@ -182,7 +181,7 @@ const Header = () => {
                 <button
                     onClick={openModal} className="getStartBtn">get started
                 </button>
-                {/*<OrderModal showModal={showModal} setShowModal={setShowModal}/>*/}
+                <OrderModal showModal={showModal} setShowModal={setShowModal}/>
             </div>
         </div>
     );

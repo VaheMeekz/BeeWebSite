@@ -56,10 +56,10 @@ const OrderModal = ({showModal, setShowModal}) => {
                                                 <input type={"text"} placeholder={"name"} className="modalInputs"/>
                                             </div>
                                         </div>
-                                        <div>
+                                        <div className="textAreaBox">
                                             <textarea className="modalTextArea" rows="4" cols="50"/>
                                         </div>
-                                        <div>
+                                        <div className="modealSendBtnBox">
                                             <button className="modealSendBtn">talk to our team</button>
                                         </div>
                                     </div>

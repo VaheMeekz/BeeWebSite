@@ -2,7 +2,7 @@ import React from 'react';
 import css from './motion.module.scss'
 import { motion } from "framer-motion";
 
-const MotionBox = ({variants, initial, exit, style, animate}) => {
+const MotionBox = ({variants, initial, exit, style, animate, children}) => {
 
     return (
         <motion.div
@@ -12,7 +12,9 @@ const MotionBox = ({variants, initial, exit, style, animate}) => {
             exit={exit}
             style={style}
             animate={animate}
-        />
+        >
+            {children}
+        </motion.div>
     );
 };
 

@@ -261,11 +261,12 @@ Link:hover {
   position: absolute;
   height: 533px;
   width: 1166px;
-  top: -50%;
+  top: -250px;
   left: 22%;
   border-radius: 10px;
   background: #35373B;
   z-index: 6000;
+  font-size: 16px;
 }
 
 .closeBtn {
@@ -310,6 +311,14 @@ Link:hover {
   justify-content: space-around;
   flex-direction: row;
   padding: 3%;
+
+  div {
+    padding: 10px;
+  }
+}
+
+.textAreaBox{
+  margin-left:5% ;
 }
 
 .modealSendBtn {
@@ -332,9 +341,9 @@ Link:hover {
 
 .modalInputs {
   height: 32px;
-  width: 250px;
+  width: 200px;
   border-radius: 5px;
-  margin: 3%;
+  margin:5%;
   background: #3C3E42;
   border: 1px solid gray;
   padding: 2%;
@@ -342,6 +351,7 @@ Link:hover {
   font-weight: 400;
   font-size: 16px;
   outline: 0;
+  color: white;
 }
 
 .modalTextArea {
@@ -353,6 +363,7 @@ Link:hover {
   border: 1px solid gray;
   box-shadow: 1px 1px 1px #999;
   outline: 0;
+  color: white;
 }
 
 

@@ -43,13 +43,12 @@ const TestComp = ({ bg,text }) => (
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover"
                 }}
-            />
+            >
+                <div style={{marginTop:"30px"}}>
+                    <h3>{text}</h3>
+                </div>
+            </MotionBox>
         </div>
-
-        <div style={{marginBottom:"3vh"}}>
-            <h3>{text}</h3>
-        </div>
-
     </div>
 );
 
@@ -63,7 +62,7 @@ const MotionSlider = () => {
         {id: 1, img: img2,text:"BeeOnCode"},
         {id: 2, img: img1,text:"BeeOnCode Trainigs"},
         {id: 3, img: img2,text:"BeeOnCode Studio"},
-        {id: 4, img: img1,text:"BeeOnCode Trainigs Trainigs"},
+        {id: 4, img: img1,text:"BeeOnCode Trainigs "},
     ]
 
     useInterval(() => {
