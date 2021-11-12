@@ -28,6 +28,9 @@
   .header .links:hover {
     color: #266bef;
     transition: .2s; }
+  .header .links:focus {
+    color: #266bef;
+    transition: .2s; }
   .header .nav {
     width: 100%;
     height: 9vh;
@@ -141,6 +144,9 @@ Link:hover {
   line-height: 20px;
   font-family: "Montserrat", sans-serif;
   color: white; }
+
+.links:focus {
+  color: #0246C8; }
 
 .aaa {
   text-decoration: none;
@@ -724,7 +730,7 @@ input[type='checkbox'].dmcheck {
   animation-name: none;
   animation-duration: 3s;
   animation-timing-function: linear;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
   animation-direction: alternate; }
 
 .fba:hover {
@@ -736,7 +742,7 @@ input[type='checkbox'].dmcheck {
 
 @keyframes about-arrow {
   0% {
-    right: -10px; }
+    right: -2px; }
   100% {
     right: 0; } }
 .services {
@@ -1273,6 +1279,41 @@ h3 {
     content: "";
     border: 1px solid #9e9e9e;
     width: 100%; } }
+.flip-card {
+  background-color: transparent;
+  width: 150px;
+  height: 100px;
+  perspective: 1000px;
+  cursor: pointer; }
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg); }
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #282828;
+  color: white; }
+
 .team {
   width: 100%;
   display: flex;
@@ -1913,6 +1954,9 @@ body.dark-mode {
   animation-iteration-count: infinite;
   animation-play-state: running;
   animation-direction: alternate; }
+
+.avt {
+  color: red; }
 
 @keyframes scroll-top {
   0% {

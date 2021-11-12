@@ -18,12 +18,33 @@ const Tecnologies = () => {
 		<div class="container_row3_row4">
 			<div class="row3">
 				<span class="row3_span"></span>
+
+
 				<div class="row3_div1">
 					<div class="row3_div_img">
 						<img src={php} alt={"img"} />
 					</div>
 					<p class="row3_p">PHP</p>
 				</div>
+
+
+				{/*<div className="flip-card">*/}
+				{/*	<div className="flip-card-inner">*/}
+				{/*		<div className="flip-card-front">*/}
+				{/*			<img src={php} alt={"img"} />*/}
+				{/*		</div>*/}
+				{/*		<div className="flip-card-back">*/}
+				{/*			<h1>PHP</h1>*/}
+				{/*		</div>*/}
+				{/*	</div>*/}
+				{/*</div>*/}
+
+
+
+
+
+
+
 				<div class="row3_div2">
 					<div class="row3_div_img">
 						<img src={javascript} alt={"img"} />

@@ -197,7 +197,7 @@
   animation-name: none;
   animation-duration: 3s;
   animation-timing-function: linear;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
   animation-direction: alternate;
 }
 .fba:hover {
@@ -212,7 +212,7 @@
 
 @keyframes about-arrow{
   0%{
-    right: -10px;
+    right: -2px;
   }
   100%{
     right: 0;

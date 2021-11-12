@@ -1,0 +1,11 @@
+.avt{
+    color: #266bef;
+    transition: .2s;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: "Montserrat", sans-serif;
+}

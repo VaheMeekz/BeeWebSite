@@ -1,6 +1,6 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import logo from '../../assets/images/logo.png'
-import {NavLink} from "react-router-dom";
+import {NavLink, useLocation} from "react-router-dom";
 import i18next from "i18next";
 import cookies from "js-cookie"
 import {Link} from 'react-scroll'
@@ -16,6 +16,7 @@ import useQuery from "../../assets/hooks/useQuery";
 import MotionSlider from "../motionCarousel/motionCarousel";
 import ReactTooltip from "react-tooltip";
 import OrderModal from "./orderModal/OrderModal";
+import css from '../../styles/header.module.css'
 
 
 
@@ -25,10 +26,11 @@ const Header = () => {
     //constants
     let query = useQuery();
     const history = useHistory()
+    const {pathname} = useLocation()
+    console.log(pathname, 'lklkl')
 
     const sectionQuery = query.get('section')
     const languageQuery = query.get('language')
-
 
     //mode
     const [darkMode, setDarkMode] = useDarkMode();
@@ -43,7 +45,6 @@ const Header = () => {
     };
 
     //navbar
-
     const [navbar, setNavbar] = useState(false);
 
     const changeBackground = () => {
@@ -103,20 +104,37 @@ const Header = () => {
         borderRadius: 5
     }
 
+
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+        history.push('/')
+    };
+
+
+    const [avt, setAvt] = useState('')
+    useEffect(() => {
+        if(pathname){
+            setAvt('avt')
+        }
+    }, [pathname])
+
+
     return (
         <div className="header">
 
             <div className={navbar ? "nav active" : "nav"}>
-                <div className="logo"><NavLink to={'/'}><img src={logo} alt={"img"}/></NavLink></div>
+                <div className="logo" onClick={scrollToTop}><NavLink to={'/'}><img src={logo} alt={"img"}/></NavLink></div>
                 <ul>
                     {
                         links.map(l => {
-                            return <Link smooth={true} duration={1000} className="links" to={l.to}
-                                         onClick={() => {
-                                              history.push(`/${l.name}/${activeLang}`)
-                                             //  history.push(`/?section=${l.name}&language=${languageQuery}`)
-                                         }}
-                                         className={sectionQuery === l.name ? "activeLink" : "links"}
+                            console.log(pathname, l.name, ">>>>>>>>>>>>>>>>>>>>")
+                            return <Link smooth={true} duration={1000} to={l.to}
+                             onClick={() => {history.push(`/${l.name}`)}}
+                                         className={pathname === `/${l.name}` ? css[avt] : "links"}
                                          key={l.id}>{l.name}</Link>
                         })}
                 </ul>
@@ -136,12 +154,10 @@ const Header = () => {
                             key={id}
                             onClick={() => {
                                 selectlanguages(lang, id);
-                                // history.push(`/${sectionQuery}${activeLang}`)
+                                history.push(`/${sectionQuery}`)
                             }}
                             data-tip data-for={lang}
                             style={{border: lang === currentLang ? "1px solid white" : null }}
-                            // style={{border: lang === "ru" ? "1px solid white" : null}}
-                            // style={{border: lang === "am" ? "1px solid white" : null}}
                         >
                                     <img src={img} alt={lang} className={languageQuery === lang ? "activeLang lang" : "lang"}/>
                         </Button>

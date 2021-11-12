@@ -32,6 +32,11 @@
     transition: .2s;
   }
 
+  .links:focus{
+    color: #266bef;
+    transition: .2s;
+  }
+
   .nav {
     width: 100%;
     height: 9vh;
@@ -186,6 +191,10 @@ Link:hover {
   line-height: 20px;
   font-family: "Montserrat", sans-serif;
   color: white;
+}
+
+.links:focus{
+  color: #0246C8;
 }
 
 .aaa {
