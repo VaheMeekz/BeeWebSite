@@ -31,20 +31,26 @@ const variants = {
 };
 
 const TestComp = ({ bg,text }) => (
-    <>
-    <MotionBox
-        variants={variants}
-        initial="enter"
-        animate="center"
-        exit="exit"
-        style={{
-            background: bg,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover"
-        }}
-    />
-        <p>{text}</p>
-    </>
+    <div>
+        <div>
+            <MotionBox
+                variants={variants}
+                initial="enter"
+                animate="center"
+                exit="exit"
+                style={{
+                    background: bg,
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "cover"
+                }}
+            />
+        </div>
+
+        <div style={{marginBottom:"3vh"}}>
+            <h3>{text}</h3>
+        </div>
+
+    </div>
 );
 
 const MotionSlider = () => {
@@ -54,10 +60,10 @@ const MotionSlider = () => {
     };
 
     const slides = [
-        {id: 1, img: img2,text:"text1"},
-        {id: 2, img: img1,text:"text2"},
-        {id: 3, img: img2,text:"text3"},
-        {id: 4, img: img1,text:"text4"},
+        {id: 1, img: img2,text:"BeeOnCode"},
+        {id: 2, img: img1,text:"BeeOnCode Trainigs"},
+        {id: 3, img: img2,text:"BeeOnCode Studio"},
+        {id: 4, img: img1,text:"BeeOnCode Trainigs Trainigs"},
     ]
 
     useInterval(() => {

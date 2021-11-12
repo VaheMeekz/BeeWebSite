@@ -1,6 +1,5 @@
 import React from 'react';
 import aboutImg from '../../assets/images/aboutUsImg.png'
-import arrow from '../../assets/arrow.svg'
 import img from "../../assets/portfolioImages/1.png"
 import {Carousel} from '3d-react-carousal';
 // import {useTranslation} from "react-i18next";
