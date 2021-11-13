@@ -1,0 +1,28 @@
+.links{
+  list-style: none;
+  padding: 0 10px 0 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: white;
+}
+
+.aaa{
+  text-decoration: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  color: white;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+}
