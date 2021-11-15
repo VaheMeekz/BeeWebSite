@@ -16,6 +16,7 @@ const Portfolio = () => {
           <div>
               <h3>Portfolio</h3>
           </div>
+          <div className="effect effect-1"></div>
           <Carousel slides={slides}/>
       </div>
   );

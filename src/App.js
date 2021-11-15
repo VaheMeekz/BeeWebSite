@@ -19,16 +19,16 @@ function App() {
     return (
         <div className="App">
             <Header/>
-            <ScrollableSection name={'Digital'} affectHistory={true}>
+            {/*<ScrollableSection name={'Digital'} affectHistory={true}>*/}
                 <section id="digital" className="digitalSection">
                     <Digital/>
                 </section>
-            </ScrollableSection>
-            <ScrollableSection name={'About'} affectHistory={true}>
+            {/*</ScrollableSection>*/}
+            {/*<ScrollableSection name={'About'} affectHistory={true}>*/}
                 <section id="about" className="aboutSection">
                     <About/>
                 </section>
-            </ScrollableSection>
+            {/*</ScrollableSection>*/}
             <section className="container">
                 <div>
                     <div>
@@ -53,20 +53,21 @@ function App() {
                     </div>
                 </div>
             </section>
-            <ScrollableSection name={'Services'} affectHistory={true}>
+            {/*<ScrollableSection name={'Services'} affectHistory={true}>*/}
                 <section id="services" className="servicesSection">
                     <Services/>
                 </section>
-            </ScrollableSection>
+            {/*</ScrollableSection>*/}
+            {/*<ScrollableSection name={'Achivement'} affectHistory={true}>*/}
             <section id={"achivement"}>
                 <Achievement/>
             </section>
-            <div className="effect effect-1"></div>
-            <ScrollableSection name={'Portfolio'} affectHistory={true}>
+            {/*</ScrollableSection>*/}
+            {/*<ScrollableSection name={'Portfolio'} affectHistory={true}>*/}
                 <section id="portfolio" className="portfolioSection">
                     <Portfolio/>
                 </section>
-            </ScrollableSection>
+            {/*</ScrollableSection>*/}
             <section className="container">
                 <div>
                     <div>
@@ -91,16 +92,16 @@ function App() {
                     </div>
                 </div>
             </section>
-            <ScrollableSection name={'Tecnologies'} affectHistory={true}>
-                <section id="tecnologies" className="tecnologiesSection">
-                    <Tecnologies/>
-                </section>
-            </ScrollableSection>
-            <ScrollableSection name={'Team'} affectHistory={true}>
+            {/*<ScrollableSection name={'Tecnologies'} affectHistory={true}>*/}
+            {/*    <section id="tecnologies" className="tecnologiesSection">*/}
+            {/*        <Tecnologies/>*/}
+            {/*    </section>*/}
+            {/*</ScrollableSection>*/}
+            {/*<ScrollableSection name={'Team'} affectHistory={true}>*/}
                 <section id="team" className="teamSection">
                     <Team/>
                 </section>
-            </ScrollableSection>
+            {/*</ScrollableSection>*/}
             <section className="container">
                 <div>
                     <div>
@@ -125,16 +126,17 @@ function App() {
                     </div>
                 </div>
             </section>
-            <ScrollableSection name={'Contact'} affectHistory={true}>
+            {/*<ScrollableSection name={'Contact'} affectHistory={true}>*/}
                 <section id="contact">
                     <Contact/>
                 </section>
-            </ScrollableSection>
+            {/*</ScrollableSection>*/}
             <Footer/>
             <section className="toTop">
                 <ScrollToTopBtn/>
             </section>
         </div>
+
     );
 }
 

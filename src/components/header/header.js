@@ -17,6 +17,7 @@ import MotionSlider from "../motionCarousel/motionCarousel";
 import ReactTooltip from "react-tooltip";
 import OrderModal from "./orderModal/OrderModal";
 import css from '../../styles/header.module.css'
+import Scrollspy from "react-scrollspy";
 
 
 
@@ -31,7 +32,7 @@ const Header = () => {
     let query = useQuery();
     const history = useHistory()
     const {pathname} = useLocation()
-    console.log(pathname, 'lklkl')
+    // console.log(pathname, 'lklkl')
 
     const sectionQuery = query.get('section')
     const languageQuery = query.get('language')
@@ -68,9 +69,9 @@ const Header = () => {
         {id: 1, to: "about", name: "About", icon: "icon"},
         {id: 2, to: "services", name: "Services", icon: "icon"},
         {id: 3, to: "portfolio", name: "Portfolio", icon: "icon"},
-        {id: 4, to: "tecnologies", name: "Tecnologise", icon: "icon"},
-        {id: 5, to: "team", name: "Team", icon: "icon"},
-        {id: 6, to: "contact", name: "Contact", icon: "icon"}
+        // {id: 4, to: "tecnologies", name: "Tecnologise", icon: "icon"},
+        {id: 4, to: "team", name: "Team", icon: "icon"},
+        {id: 5, to: "contact", name: "Contact", icon: "icon"}
     ];
 
     //languages
@@ -130,22 +131,53 @@ const Header = () => {
         <div className="header">
             <div className={navbar ? "nav active" : "nav"}>
                 <div className="logo" onClick={scrollToTop}><NavLink to={'/'}><img src={logo} alt={"img"}/></NavLink></div>
-                <ul  onClick={() => setIsMobile(false)} className={isMobile ? "nav-links-mobile" : "nav-links"}>
+                <Scrollspy
+                    items={["about", "services", "portfolio","team","contact"]}
+                    currentClassName="is-current"
+                    style={{ top: "2",left:"2" , backgroundColor: "none" }}
+                    onClick={() => setIsMobile(false)} className={isMobile ? "nav-links-mobile" : "nav-links"}
+                >
                     {
                         links.map(l => {
-                            console.log(pathname, l.name, ">>>>>>>>>")
-                            return <Link
-                                smooth={true} duration={300}
-                                to={l.to}
-                             onClick={() => {history.push(`/${l.name}`)}}
-                                         className={pathname === `/${l.name}` ? css[avt] : "links"}
-                                         key={l.id}>{l.name}</Link>
+                            // console.log(pathname, l.name, ">>>>>>>>>")
+                            return <li className={`css.links ${l.name}`}><a href={`#${l.to}`}
+
+                             // onClick={() => {history.push(`/${l.name}`)}}
+                             //             className={pathname === `/${l.name}` ? css[avt] : "links"}
+                                      >{l.name}</a></li>
                         })}
-                </ul>
+                </Scrollspy>
+
+                {/*<Scrollspy*/}
+                {/*    items={["about", "services", "portfolio","tecnologies","team","contact"]}*/}
+                {/*    currentClassName="is-current"*/}
+                {/*    style={{ position: "fixed ", top: "0", backgroundColor: "none" }}*/}
+                {/*    onClick={() => setIsMobile(false)} className={isMobile ? "nav-links-mobile" : "nav-links"}*/}
+                {/*>*/}
+                {/*    <li onClick={() => {history.push(`/about`)}}>*/}
+                {/*        <a href="#about" smooth={true} duration={300}>About</a>*/}
+                {/*    </li>*/}
+                {/*    <li onClick={() => {history.push(`/services`)}}>*/}
+                {/*        <a href="#services" smooth={true} duration={300}>Services</a>*/}
+                {/*    </li>*/}
+                {/*    <li onClick={() => {history.push(`/portfolio`)}}>*/}
+                {/*        <a href="#portfolio" smooth={true} duration={300}>Portfolio</a>*/}
+                {/*    </li>*/}
+                {/*    <li onClick={() => {history.push(`/tecnologies`)}}>*/}
+                {/*        <a href="#tecnologies" smooth={true} duration={300}>Tecnologies</a>*/}
+                {/*    </li>*/}
+                {/*    <li onClick={() => {history.push(`/team`)}}>*/}
+                {/*        <a href="#team" smooth={true} duration={300}>Team</a>*/}
+                {/*    </li>*/}
+                {/*    <li onClick={() => {history.push(`/contact`)}}>*/}
+                {/*        <a href="#contact" smooth={true} duration={300}>Contact</a>*/}
+                {/*    </li>*/}
+
+                {/*</Scrollspy>*/}
                 <div className={""}>
                 </div>
                 <button className="contactButton"><a href='https://trainings.beeoncode.com/course/list'
-                                                     className="aaa">Trainigs</a></button>
+                                                     className="aaa">Trainings</a></button>
                 <div className="socLinks">
                     <i class="fab fa-facebook-f fb"></i>
                     <i class="fab fa-instagram inst"></i>

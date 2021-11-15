@@ -25,12 +25,15 @@
     @media screen and (max-width: 1240px) {
       .header .links {
         font-size: 12px; } }
+    @media only screen and (max-width: 1130px) {
+      .header .links {
+        font-size: 10px; } }
   .header .links:hover {
     color: #ffff00;
-    transition: .2s; }
+    transition: 0.2s; }
   .header .links:focus {
     color: #266bef;
-    transition: .3s; }
+    transition: 0.3s; }
   .header .nav {
     width: 100%;
     height: 9vh;
@@ -60,6 +63,12 @@
         font-family: "Montserrat", sans-serif;
         font-weight: 400;
         color: white; }
+        @media only screen and (max-width: 1307px) {
+          .header .nav ul li {
+            font-size: 13px; } }
+        @media (max-width: 1086px) {
+          .header .nav ul li {
+            font-size: 11px; } }
     .header .nav .contactButton {
       width: 160px;
       height: 32px;
@@ -74,13 +83,19 @@
       font-size: 16px;
       line-height: 20px;
       text-transform: uppercase; }
+      @media only screen and (max-width: 1307px) {
+        .header .nav .contactButton {
+          width: 120px; } }
+      @media only screen and (max-width: 1171px) {
+        .header .nav .contactButton {
+          width: 88px; } }
     .header .nav .contactButton:hover {
       border: 1px solid white;
       border-radius: 5px;
       cursor: pointer;
       background: black;
-      color: #0246C8;
-      transition: .3s; }
+      color: #0246c8;
+      transition: 0.3s; }
     .header .nav .socLinks {
       width: 65px;
       height: 18px;
@@ -92,8 +107,8 @@
         color: white;
         cursor: pointer; }
       .header .nav .socLinks i:hover {
-        color: #428DFF;
-        transition: .4s; }
+        color: #428dff;
+        transition: 0.4s; }
     .header .nav .languages span {
       width: 36px;
       height: 20px;
@@ -107,7 +122,7 @@
     justify-content: space-between; }
 
 .nav.active {
-  transition: .4s;
+  transition: 0.4s;
   background: black;
   height: 5vh; }
 
@@ -125,8 +140,8 @@
   margin-left: 10px; }
 
 Link:hover {
-  color: #0F3C92;
-  transition: .3s; }
+  color: #0f3c92;
+  transition: 0.3s; }
 
 .navbar {
   display: flex;
@@ -140,13 +155,13 @@ Link:hover {
   text-transform: uppercase;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
   font-family: "Montserrat", sans-serif;
   color: white; }
 
 .links:focus {
-  color: #0246C8; }
+  color: #0246c8; }
 
 .aaa {
   text-decoration: none;
@@ -159,6 +174,12 @@ Link:hover {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase; }
+  @media only screen and (max-width: 1307px) {
+    .aaa {
+      font-size: 14px; } }
+  @media only screen and (max-width: 1197px) {
+    .aaa {
+      font-size: 13px; } }
 
 .content {
   padding: 20px 30px; }
@@ -183,13 +204,13 @@ Link:hover {
 
 .getStartBtn {
   position: absolute;
-  left: 158px;
+  left: 11%;
   bottom: 50px;
   height: 40px;
   width: 220px;
   border-radius: 25px;
-  background: #0246C8;
-  border: 1px solid #0246C8;
+  background: #0246c8;
+  border: 1px solid #0246c8;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: bold;
@@ -202,7 +223,7 @@ Link:hover {
 .getStartBtn:hover {
   border: 1px solid;
   border-radius: 25px;
-  transition: .3s; }
+  transition: 0.3s; }
 
 .modalBox {
   position: absolute;
@@ -211,7 +232,7 @@ Link:hover {
   top: -250px;
   left: 22%;
   border-radius: 10px;
-  background: #35373B;
+  background: #35373b;
   z-index: 6000;
   font-size: 16px; }
 
@@ -265,7 +286,7 @@ Link:hover {
   top: 648px;
   margin: 2%;
   border-radius: 25px;
-  background: #0246C8;
+  background: #0246c8;
   outline: 0;
   cursor: pointer;
   border: 0;
@@ -280,7 +301,7 @@ Link:hover {
   width: 200px;
   border-radius: 5px;
   margin: 5%;
-  background: #3C3E42;
+  background: #3c3e42;
   border: 1px solid gray;
   padding: 2%;
   font-style: normal;
@@ -294,7 +315,7 @@ Link:hover {
   max-width: 100%;
   line-height: 1.5;
   border-radius: 5px;
-  background: #3C3E42;
+  background: #3c3e42;
   border: 1px solid gray;
   box-shadow: 1px 1px 1px #999;
   outline: 0;
@@ -322,7 +343,7 @@ Link:hover {
   display: flex;
   align-items: center; }
 
-input[type='checkbox'].dmcheck {
+input[type="checkbox"].dmcheck {
   width: 40px;
   height: 10px;
   background: #555;
@@ -334,11 +355,11 @@ input[type='checkbox'].dmcheck {
   cursor: pointer;
   vertical-align: 2px;
   outline: none; }
-  input[type='checkbox'].dmcheck:checked + label {
+  input[type="checkbox"].dmcheck:checked + label {
     left: 30px; }
-  input[type='checkbox'].dmcheck:focus-visible {
+  input[type="checkbox"].dmcheck:focus-visible {
     outline: solid 2px white; }
-  input[type='checkbox'].dmcheck + label {
+  input[type="checkbox"].dmcheck + label {
     display: inline-block;
     width: 18px;
     height: 18px;
@@ -352,8 +373,9 @@ input[type='checkbox'].dmcheck {
     background-color: #f6f6f6; }
 
 .order {
-  margin-top: 150px;
-  margin-left: 150px;
+  position: sticky;
+  margin-top: 8%;
+  margin-left: 11%;
   font-family: "Montserrat"; }
   .order span {
     margin-top: 2%;
@@ -372,8 +394,8 @@ input[type='checkbox'].dmcheck {
 
 /*swiper*/
 .parallaxEffects {
-  margin-top: 150px;
-  margin-right: 300px; }
+  margin-top: 6%;
+  margin-right: 6%; }
 
 .activeLink {
   color: #397dff;
@@ -405,7 +427,7 @@ input[type='checkbox'].dmcheck {
 
 @media (max-width: 1024px) {
   .header .links {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: normal;
     font-size: 21px;
@@ -416,7 +438,7 @@ input[type='checkbox'].dmcheck {
     display: none !important; }
 
   .header .nav ul {
-    height: 40vh;
+    height: 50vh;
     margin: 0 auto;
     text-align: center; }
 
@@ -430,7 +452,6 @@ input[type='checkbox'].dmcheck {
     position: absolute !important;
     display: block !important;
     list-style: none !important;
-    background-color: #7e989e !important;
     left: 0 !important;
     top: 75px !important;
     transition: all 0.5s ease-out !important;
@@ -440,12 +461,14 @@ input[type='checkbox'].dmcheck {
   .About,
   .Services,
   .Portfolio,
-  .Tecnologies,
+  .Tecnologise,
   .Team,
   .Contact {
     text-align: center !important;
-    padding: 32px !important;
-    width: 100% !important;
+    margin: 0 auto !important;
+    padding: 20px !important;
+    font-size: 18px !important;
+    width: 40% !important;
     transition: all 0.5s ease !important;
     width: 30%; }
 
@@ -460,7 +483,7 @@ input[type='checkbox'].dmcheck {
     outline: none !important;
     top: 15px !important;
     right: 25px !important;
-    color: wheat;
+    color: white;
     background: transparent; } }
 .digital {
   width: 100%;
