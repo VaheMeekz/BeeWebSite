@@ -23,7 +23,7 @@
     margin: 0 auto;
 
     img {
-      @media(max-width: 1238px) {
+      @media (max-width: 1238px) {
         width: 80%;
         height: 398px;
       }
@@ -56,13 +56,23 @@
     display: flex;
     justify-content: space-evenly;
     padding: 5%;
+    @media (max-width: 1024px) {
+      grid-gap: 90px;
+    }
 
     .teamLogo {
       display: grid;
       justify-items: center;
 
       img {
-        width: 80px;
+        width: 65px;
+
+        @media (max-width: 1115px) {
+          width: 55px;
+        }
+        @media(max-width:1024px) {
+          width: 50px;
+        }
       }
     }
 
@@ -75,6 +85,13 @@
       text-transform: uppercase;
       color: #888888;
       margin-top: 20px;
+
+      @media (max-width: 1181px) {
+        font-size: 12px;
+      }
+      @media(max-width:1024px) {
+        font-size: 10px;
+      }
     }
   }
 }
@@ -148,7 +165,7 @@
   }
 
   :hover {
-    color: #DBC13C;
+    color: #dbc13c;
   }
 }
 
@@ -159,7 +176,7 @@
     justify-content: center;
     flex-direction: column;
   }
-  .outTeamImg{
+  .outTeamImg {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -179,16 +196,16 @@
     margin-top: 20vh;
   }
 
-  .outTeamImg{
+  .outTeamImg {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    img{
+    img {
       width: 80%;
     }
   }
-  }
+}
 
 @media screen and(max-width: 768px) {
   .team {
@@ -200,26 +217,20 @@
     margin-top: 20vh;
   }
 
-  .outTeamImg{
+  .outTeamImg {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    img{
+    img {
       width: 40%;
     }
   }
 }
 
 @media screen and(max-width: 1024px) {
-  .team{
+  .team {
     width: 100%;
     font-size: 8px;
   }
 }
-
-
-
-
-
-

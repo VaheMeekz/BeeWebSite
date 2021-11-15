@@ -44,6 +44,10 @@
       justify-items: center;
       width: 13%;
 
+      img {
+        width: 65px;
+      }
+
       p {
         text-align: center;
         margin: 0 auto;
@@ -117,6 +121,10 @@
       color: black;
     }
   }
+}
+
+.glare-wrapper {
+  border-radius: 10px !important;
 }
 
 .parallax-effect-glare-scale {

@@ -8,8 +8,10 @@ import Digital from './components/digital/Digital';
 import React from "react";
 import ScrollToTopBtn from "./components/scrollToTop/ScrollToTop";
 import Portfolio from './components/portfolio/portfolio';
-import ScrollableSection, { ScrollableLink } from 'react-update-url-on-scroll';
+import ScrollableSection, {ScrollableLink} from 'react-update-url-on-scroll';
 import Team from "./components/team/team";
+import Contact from './components/contact/Contact';
+import Achievement from './components/Achievement/Achievement';
 
 
 function App() {
@@ -17,12 +19,12 @@ function App() {
     return (
         <div className="App">
             <Header/>
-            <ScrollableSection  hash={'Digital'} affectHistory={true}>
+            <ScrollableSection name={'Digital'} affectHistory={true}>
                 <section id="digital" className="digitalSection">
                     <Digital/>
                 </section>
             </ScrollableSection>
-            <ScrollableSection  name={'About'} affectHistory={true}>
+            <ScrollableSection name={'About'} affectHistory={true}>
                 <section id="about" className="aboutSection">
                     <About/>
                 </section>
@@ -51,13 +53,16 @@ function App() {
                     </div>
                 </div>
             </section>
-            <ScrollableSection  name={'Services'} affectHistory={true}>
+            <ScrollableSection name={'Services'} affectHistory={true}>
                 <section id="services" className="servicesSection">
                     <Services/>
                 </section>
             </ScrollableSection>
+            <section id={"achivement"}>
+                <Achievement/>
+            </section>
             <div className="effect effect-1"></div>
-            <ScrollableSection  name={'Portfolio'} affectHistory={true}>
+            <ScrollableSection name={'Portfolio'} affectHistory={true}>
                 <section id="portfolio" className="portfolioSection">
                     <Portfolio/>
                 </section>
@@ -86,14 +91,14 @@ function App() {
                     </div>
                 </div>
             </section>
-            <ScrollableSection  name={'Tecnologies'} affectHistory={true}>
+            <ScrollableSection name={'Tecnologies'} affectHistory={true}>
                 <section id="tecnologies" className="tecnologiesSection">
                     <Tecnologies/>
                 </section>
             </ScrollableSection>
-            <ScrollableSection  name={'Team'} affectHistory={true}>
+            <ScrollableSection name={'Team'} affectHistory={true}>
                 <section id="team" className="teamSection">
-                   <Team/>
+                    <Team/>
                 </section>
             </ScrollableSection>
             <section className="container">
@@ -120,14 +125,15 @@ function App() {
                     </div>
                 </div>
             </section>
-            <ScrollableSection  name={'Contact'} affectHistory={true}>
+            <ScrollableSection name={'Contact'} affectHistory={true}>
                 <section id="contact">
-                    <Footer/>
+                    <Contact/>
                 </section>
             </ScrollableSection>
-                <section className="toTop">
-                    <ScrollToTopBtn/>
-                </section>
+            <Footer/>
+            <section className="toTop">
+                <ScrollToTopBtn/>
+            </section>
         </div>
     );
 }

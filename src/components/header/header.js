@@ -23,6 +23,10 @@ import css from '../../styles/header.module.css'
 
 const Header = () => {
 
+    // respones nav state
+    const [isMobile,setIsMobile] = useState(false)
+    const [closeMenu,setCloseMEnu] = useState(false)
+
     //constants
     let query = useQuery();
     const history = useHistory()
@@ -126,11 +130,13 @@ const Header = () => {
         <div className="header">
             <div className={navbar ? "nav active" : "nav"}>
                 <div className="logo" onClick={scrollToTop}><NavLink to={'/'}><img src={logo} alt={"img"}/></NavLink></div>
-                <ul>
+                <ul  onClick={() => setIsMobile(false)} className={isMobile ? "nav-links-mobile" : "nav-links"}>
                     {
                         links.map(l => {
                             console.log(pathname, l.name, ">>>>>>>>>")
-                            return <Link smooth={true} duration={1000} to={l.to}
+                            return <Link
+                                smooth={true} duration={300}
+                                to={l.to}
                              onClick={() => {history.push(`/${l.name}`)}}
                                          className={pathname === `/${l.name}` ? css[avt] : "links"}
                                          key={l.id}>{l.name}</Link>
@@ -180,6 +186,15 @@ const Header = () => {
                 <div>
                     <Toggle darkMode={darkMode} setDarkMode={setDarkMode}/>
                 </div>
+                <button
+                    onClick={() => {
+                        setIsMobile(!isMobile);
+                        setCloseMEnu(true);
+                    }}
+                    className="mobile-menu-icon">
+                   {/*style={{display: closeMenu ? "none" : null}}*/}
+                    {isMobile ? <i className="fas fa-times"></i> : <i className="fas fa-bars"></i>}
+                </button>
             </div>
             <div className="headerContent">
                 <div className="order">

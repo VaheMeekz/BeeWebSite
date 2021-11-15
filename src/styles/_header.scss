@@ -494,29 +494,82 @@ input[type='checkbox'].dmcheck {
 .activeLang{
 border: 2px solid white;
 }
-[data-tooltip] {
-  position: relative; /* Относительное позиционирование */
-  z-index: 6000;
-}
-[data-tooltip]::after {
-  content: attr(data-tooltip); /* Выводим текст */
-  position: absolute; /* Абсолютное позиционирование */
-  width: 300px; /* Ширина подсказки */
-  left: 0; top: 0; /* Положение подсказки */
-  background: #3989c9; /* Синий цвет фона */
-  color: #fff; /* Цвет текста */
-  padding: 0.5em; /* Поля вокруг текста */
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Параметры тени */
-  pointer-events: none; /* Подсказка */
-  opacity: 0; /* Подсказка невидима */
-  transition: 1s; /* Время появления подсказки */
-}
-[data-tooltip]:hover::after {
-  opacity: 1; /* Показываем подсказку */
-  top: 2em; /* Положение подсказки */
+
+.mobile-menu-icon {
+  display: none;
 }
 
-//
-//nav < ul < li < img:hover {
-//
-//}
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  width: 45%;
+}
+
+@media (max-width: 1024px) {
+  .header .links {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 17px;
+    text-transform: uppercase;
+  }
+
+  .languages {
+    display: none !important;
+  }
+
+  .header .nav ul {
+    height: 40vh;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .socLinks {
+    display: none !important;
+  }
+  .nav-links {
+    display: none !important;
+  }
+  .nav-links-mobile {
+    position: absolute !important;
+    display: block !important;
+    list-style: none !important;
+    background-color: #7e989e !important;
+    left: 0 !important;
+    top: 75px !important;
+    transition: all 0.5s ease-out !important;
+    width: 100% !important;
+    background: #282828 !important;
+
+  }
+
+  .About,
+  .Services,
+  .Portfolio,
+  .Tecnologies,
+  .Team,
+  .Contact {
+    text-align: center !important;
+    padding: 32px !important;
+    width: 100% !important;
+    transition: all 0.5s ease !important;
+    width: 30%;
+  }
+  .About:hover {
+    color: #0f3c92;
+  }
+
+
+  .mobile-menu-icon {
+    display: block !important;
+    position: absolute !important;
+    font-size: 30px !important;
+    border: none !important;
+    outline: none !important;
+    top: 15px !important;
+    right: 25px !important;
+    color: wheat;
+    background: transparent;
+  }
+}

@@ -104,7 +104,7 @@ function digital({darkMode, setDarkMode}) {
                     </div>
                 </Tilt>
 
-                <div className="arrow"><img src={arrowDigital} alt={"img"}/></div>
+                {/* <div className="arrow"><img src={arrowDigital} alt={"img"}/></div>
 
                 <Tilt
                     className="parallax-effect-glare-scale"
@@ -121,7 +121,7 @@ function digital({darkMode, setDarkMode}) {
                             <br/>
                         </div>
                     </div>
-                </Tilt>
+                </Tilt> */}
 
                 <div className="arrow"><img src={arrowDigital} alt={"img"}/></div>
                 <Tilt
