@@ -15,6 +15,7 @@ const Services = ({darkMode, setDarkMode}) => {
             <h3>Software Development Services</h3>
 
             <div className="servicesAll">
+                <div className="servicesAllResp">
                 <div className="servicesBox">
                     <img src={servicesIcon1}  alt="img"/>
                     <p>WEB APPLICATION</p>
@@ -25,6 +26,8 @@ const Services = ({darkMode, setDarkMode}) => {
                     <p>MOBILE APPLICATION</p>
                     <p>DEVELOPMENT</p>
                 </div>
+                </div>
+                <div className="servicesAllResp">
                 <div className="servicesBox">
                 <img src={servicesIcon3} alt="img" />
                     <p>CUSTOM SOFTWARE</p>
@@ -34,11 +37,13 @@ const Services = ({darkMode, setDarkMode}) => {
                 <img src={servicesIcon4}  alt="img"/>
                     <p>AI & ML</p>
                 </div>
+                </div>
             </div>
 
             {/* տակի մասը */}
 
             <div className="servicesAll">
+            <div className="servicesAllResp">
                 <div className="servicesBox">
                     <img src={servicesIcon5} alt="img" />
                     <p>SAAS</p>
@@ -49,6 +54,9 @@ const Services = ({darkMode, setDarkMode}) => {
                     <p>IT</p>
                     <p>CONSULTING</p>
                 </div>
+                </div>
+
+                <div className="servicesAllResp">
                 <div className="servicesBox">
                 <img src={servicesIcon7} alt="img" />
                     <p>BIG DATA</p>
@@ -58,6 +66,7 @@ const Services = ({darkMode, setDarkMode}) => {
                 <img src={servicesIcon8} alt="img" />
                     <p>DEDICATED TEAM &</p>
                     <p>OUT-STAFFING</p>
+                </div>
                 </div>
             </div>
 

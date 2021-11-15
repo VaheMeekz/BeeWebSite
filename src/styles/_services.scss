@@ -4,6 +4,9 @@
   // background: #000000B2;
   background-image: url(./assets/images/services.png);
   background-size: cover;
+  @media(max-width:768px) {
+    height: 800px;
+  }
 
   h3 {
     font-family: Montserrat;
@@ -20,8 +23,24 @@
 
   .servicesAll {
     display: flex;
-    justify-content: space-around;
-    padding: 1%;
+    justify-content: center;
+    // padding: 1%;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+
+    .servicesAllResp {
+      display: flex;
+      padding: 10px;
+      @media (max-width: 1024px) {
+        padding: 0px;
+      }
+      @media (max-width: 768px) {
+        display: flex;
+        justify-content: center;
+      }
+    }
 
     .servicesBox {
       width: 215px;
@@ -31,6 +50,16 @@
       border-radius: 10px;
       align-items: center;
       flex-direction: column;
+      margin: 0px 50px 50px 0px;
+      @media (max-width: 1024px) {
+        margin: 0 0 0 0;
+      }
+      @media (max-width: 802px) {
+        width: 210px;
+      }
+      @media (max-width: 768px) {
+        margin: 0px 15px 0 15px;
+      }
 
       img {
         padding: 20px;
@@ -46,12 +75,15 @@
         text-align: center;
         text-transform: uppercase;
         color: #ffffff;
+        @media (max-width: 802px) {
+          font-size: 13px;
+        }
       }
     }
     .servicesBox:hover {
       background: rgba(196, 196, 196, 0.2);
       border-radius: 10px;
-      transition: .2s;
+      transition: 0.2s;
     }
   }
 }
