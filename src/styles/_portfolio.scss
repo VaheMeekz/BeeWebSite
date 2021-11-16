@@ -5,10 +5,11 @@ $card_height: 25rem;
 $card_width: 20rem;
 
 .portfolio {
-  height: 55vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
 
   @media screen and(max-width:425px) {
     height: 55vh;
@@ -156,7 +157,7 @@ $card_width: 20rem;
 }
 
 h3 {
-  font-family: Montserrat;
+  font-family: inherit;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;

@@ -1,10 +1,8 @@
-import React, {useEffect, useRef} from "react";
+import React from "react";
 import {AnimatePresence} from "framer-motion";
 import { useState } from "react";
-import img from "../../assets/images/aboutUsImg.png"
 import img1 from "../../assets/images/parallax1.png"
 import img2 from "../../assets/images/parallax2.png"
-import img3 from "../../assets/images/teamImg2.jpg"
 import MotionBox from "./motionBox";
 import useInterval from "../../assets/hooks/useInterval";
 import css from './motion.module.scss'
@@ -44,9 +42,9 @@ const TestComp = ({ bg,text }) => (
                     backgroundSize: "cover"
                 }}
             >
-                {/*<div style={{marginTop:"30px",fontSize:"40px",marginLeft:"-350px"}}>*/}
-                {/*    <h3>{text}</h3>*/}
-                {/*</div>*/}
+                <div style={{marginTop:"30px",fontSize:"40px",marginLeft:"-350px"}}>
+                    <h3>{text}</h3>
+                </div>
             </MotionBox>
         </div>
     </div>

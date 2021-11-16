@@ -7,11 +7,12 @@ import Iframe from "react-iframe";
 
 const Footer = () => {
     const {t} = useTranslation()
+    const date = new Date().getFullYear()
     return (
         <div className='footer'>
             <div className="footerUp">
                 <div>
-                    <h2>{t('footerHelp')}</h2>
+                    {/*<h2>{t('footerHelp')}</h2>*/}
                 </div>
                 <div className="footerInfoBox">
                     <div className="footerInfoBody">
@@ -66,7 +67,7 @@ const Footer = () => {
                     <div className="footerTextItem locat"><i className="fas fa-map-marker-alt location"></i></div>
                     <div className="footerTextItem hasce">{t('hakobErkar')}</div>
                 </div>
-                <div>© 2015-2021 BeeOnCode</div>
+                <div>© 2015 - {date} BeeOnCode</div>
             </div>
         </div>
     )

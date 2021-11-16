@@ -3,11 +3,9 @@ import logo from '../../assets/images/logo.png'
 import {NavLink, useLocation} from "react-router-dom";
 import i18next from "i18next";
 import cookies from "js-cookie"
-import {Link} from 'react-scroll'
 import {useHistory} from "react-router-dom";
 import Toggle from "../Toggle/Toggle";
 import useDarkMode from "../Mode/useDarkMode";
-import {useSelector} from "react-redux";
 import uk from "../../assets/images/ukukpng.png"
 import ru from "../../assets/images/ru.png"
 import arm from "../../assets/images/arm.png"
@@ -26,21 +24,19 @@ const Header = () => {
 
     // respones nav state
     const [isMobile,setIsMobile] = useState(false)
-    const [closeMenu,setCloseMEnu] = useState(false)
+    // const [closeMenu,setCloseMEnu] = useState(false)
 
     //constants
     let query = useQuery();
     const history = useHistory()
     const {pathname} = useLocation()
-    // console.log(pathname, 'lklkl')
 
-    const sectionQuery = query.get('section')
     const languageQuery = query.get('language')
 
     //mode
     const [darkMode, setDarkMode] = useDarkMode();
-    const mode = useSelector(state => state.modeReducer.mode)
-    console.log(mode)
+    // const mode = useSelector(state => state.modeReducer.mode)
+
 
     // modal
     const [showModal, setShowModal] = useState(false);
@@ -102,12 +98,7 @@ const Header = () => {
     }
 
     //hover
-    const mappleConfig = {
-        direction: 'bottom',
-        shadow: true,
-        float: true,
-        borderRadius: 5
-    }
+
 
 
 
@@ -139,45 +130,15 @@ const Header = () => {
                 >
                     {
                         links.map(l => {
-                            // console.log(pathname, l.name, ">>>>>>>>>")
-                            return <li className={`css.links ${l.name}`}><a href={`#${l.to}`}
-
-                             // onClick={() => {history.push(`/${l.name}`)}}
-                             //             className={pathname === `/${l.name}` ? css[avt] : "links"}
+                            return <li className={`css.links ${l.name}`} key={l.id}><a href={`#${l.to}`} className={css.linksa}
                                       >{l.name}</a></li>
                         })}
                 </Scrollspy>
 
-                {/*<Scrollspy*/}
-                {/*    items={["about", "services", "portfolio","tecnologies","team","contact"]}*/}
-                {/*    currentClassName="is-current"*/}
-                {/*    style={{ position: "fixed ", top: "0", backgroundColor: "none" }}*/}
-                {/*    onClick={() => setIsMobile(false)} className={isMobile ? "nav-links-mobile" : "nav-links"}*/}
-                {/*>*/}
-                {/*    <li onClick={() => {history.push(`/about`)}}>*/}
-                {/*        <a href="#about" smooth={true} duration={300}>About</a>*/}
-                {/*    </li>*/}
-                {/*    <li onClick={() => {history.push(`/services`)}}>*/}
-                {/*        <a href="#services" smooth={true} duration={300}>Services</a>*/}
-                {/*    </li>*/}
-                {/*    <li onClick={() => {history.push(`/portfolio`)}}>*/}
-                {/*        <a href="#portfolio" smooth={true} duration={300}>Portfolio</a>*/}
-                {/*    </li>*/}
-                {/*    <li onClick={() => {history.push(`/tecnologies`)}}>*/}
-                {/*        <a href="#tecnologies" smooth={true} duration={300}>Tecnologies</a>*/}
-                {/*    </li>*/}
-                {/*    <li onClick={() => {history.push(`/team`)}}>*/}
-                {/*        <a href="#team" smooth={true} duration={300}>Team</a>*/}
-                {/*    </li>*/}
-                {/*    <li onClick={() => {history.push(`/contact`)}}>*/}
-                {/*        <a href="#contact" smooth={true} duration={300}>Contact</a>*/}
-                {/*    </li>*/}
-
-                {/*</Scrollspy>*/}
                 <div className={""}>
                 </div>
                 <button className="contactButton"><a href='https://trainings.beeoncode.com/course/list'
-                                                     className="aaa">Trainings</a></button>
+                                                     className="aaa"><img src={logo} alt={"logo"}/>trainigs</a></button>
                 <div className="socLinks">
                     <i class="fab fa-facebook-f fb"></i>
                     <i class="fab fa-instagram inst"></i>
@@ -190,12 +151,11 @@ const Header = () => {
                             key={id}
                             onClick={() => {
                                 selectlanguages(lang, id);
-                                history.push(`/${sectionQuery}`)
                             }}
                             data-tip data-for={lang}
                             style={{border: lang === currentLang ? "1px solid white" : null }}
                         >
-                                    <img src={img} alt={lang} className={languageQuery === lang ? "activeLang lang" : "lang"}/>
+                            <span> <img src={img} alt={lang} className={languageQuery === lang ? "activeLang lang" : "lang"}/></span>
                         </Button>
                         </>
                     })}
@@ -218,15 +178,17 @@ const Header = () => {
                 <div>
                     <Toggle darkMode={darkMode} setDarkMode={setDarkMode}/>
                 </div>
+                <div>
                 <button
                     onClick={() => {
-                        setIsMobile(!isMobile);
-                        setCloseMEnu(true);
+                        setIsMobile(!isMobile)
+
                     }}
                     className="mobile-menu-icon">
                    {/*style={{display: closeMenu ? "none" : null}}*/}
                     {isMobile ? <i className="fas fa-times"></i> : <i className="fas fa-bars"></i>}
                 </button>
+                </div>
             </div>
             <div className="headerContent">
                 <div className="order">

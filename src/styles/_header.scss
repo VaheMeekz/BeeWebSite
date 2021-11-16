@@ -15,7 +15,7 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 20px;
-    font-family: "Montserrat", sans-serif;
+    font-family:inherit, sans-serif;
     color: white;
 
     @media screen and(max-width: 1300px) {
@@ -70,7 +70,7 @@
         font-weight: normal;
         font-size: 16px;
         line-height: 20px;
-        font-family: "Montserrat", sans-serif;
+        font-family: inherit, sans-serif;
         font-weight: 400;
         color: white;
         @media only screen and(max-width: 1307px) {
@@ -94,14 +94,15 @@
     }
 
     .contactButton {
-      width: 160px;
-      height: 32px;
-      border: 1px solid #428dff;
+      width: 180px;
+      height: 50px;
+      border: 1px solid #eaea2d;
       box-sizing: border-box;
+      padding: 5px;
       border-radius: 5px;
       cursor: pointer;
       background: black;
-      font-family: "Montserrat";
+      font-family: inherit;
       font-style: normal;
       font-weight: normal;
       font-size: 16px;
@@ -120,8 +121,11 @@
       border-radius: 5px;
       cursor: pointer;
       background: black;
-      color: #0246c8;
+      color: #eaea2d;
       transition: 0.3s;
+      a{
+        color:#eaea2d !important; ;
+      }
     }
 
     .socLinks {
@@ -147,7 +151,7 @@
       span {
         width: 36px;
         height: 20px;
-        font-family: Montserrat;
+        font-family: inherit;
         font-style: normal;
         font-weight: normal;
         text-transform: uppercase;
@@ -160,12 +164,34 @@
     display: flex;
     justify-content: space-between;
   }
+
+
+}
+
+@media screen and(max-width: 888px) {
+  .headerContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 16px;
+
+  }
+  .getStartBox{
+    display: none;
+  }
+  .order{
+    margin-top: 10vh;
+  }
+  .parallaxEffects{
+    margin-bottom: 10vh;
+  }
 }
 
 .nav.active {
   transition: 0.4s;
   background: black;
-  height: 5vh;
+  height: 6vh;
 }
 
 .links {
@@ -177,7 +203,7 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
-  font-family: "Montserrat", sans-serif;
+  font-family:inherit, sans-serif;
   color: white;
   margin-left: 10px;
 }
@@ -202,7 +228,7 @@ Link:hover {
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
-  font-family: "Montserrat", sans-serif;
+  font-family: inherit, sans-serif;
   color: white;
 }
 
@@ -215,7 +241,7 @@ Link:hover {
   box-sizing: border-box;
   cursor: pointer;
   color: white;
-  font-family: "Montserrat";
+  font-family: inherit;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -269,7 +295,7 @@ Link:hover {
   border-radius: 25px;
   background: #0246c8;
   border: 1px solid #0246c8;
-  font-family: "Montserrat";
+  font-family: inherit;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -357,6 +383,7 @@ Link:hover {
   margin: 2%;
   border-radius: 25px;
   background: #0246c8;
+  color: white;
   outline: 0;
   cursor: pointer;
   border: 0;
@@ -464,7 +491,7 @@ input[type="checkbox"].dmcheck {
   position: sticky;
   margin-top: 8%;
   margin-left: 11%;
-  font-family: "Montserrat";
+  font-family:inherit;
 
   span {
     margin-top: 2%;
@@ -502,7 +529,7 @@ input[type="checkbox"].dmcheck {
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
-  font-family: "Montserrat", sans-serif;
+  font-family: inherit, sans-serif;
 }
 
 .lang {
@@ -511,7 +538,7 @@ input[type="checkbox"].dmcheck {
 }
 
 .activeLang {
-  border: 2px solid white;
+  border: 2px solid yellow;
 }
 
 .mobile-menu-icon {
@@ -527,7 +554,7 @@ input[type="checkbox"].dmcheck {
 
 @media (max-width: 1024px) {
   .header .links {
-    font-family: "Montserrat";
+    font-family: inherit;
     font-style: normal;
     font-weight: normal;
     font-size: 21px;

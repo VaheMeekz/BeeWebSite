@@ -2,10 +2,12 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  height: 135vh;
   flex-direction: column;
 
+
   h2 {
-    font-family: "Montserrat";
+    font-family:inherit;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -25,13 +27,13 @@
     img {
       @media (max-width: 1238px) {
         width: 80%;
-        height: 398px;
+        height: 100%;
       }
     }
   }
 
   h3 {
-    font-family: "Montserrat";
+    font-family: inherit;
     font-style: normal;
     font-weight: 500;
     font-size: 30px;
@@ -42,7 +44,7 @@
   }
 
   p {
-    font-family: "Montserrat";
+    font-family:inherit;
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
@@ -77,7 +79,7 @@
     }
 
     span {
-      font-family: "Montserrat";
+      font-family:inherit;
       font-style: normal;
       font-weight: 500;
       font-size: 14px;
@@ -95,6 +97,7 @@
     }
   }
 }
+
 
 .parallax {
   display: flex;
@@ -140,18 +143,18 @@
     padding: 6%;
   }
   @media screen and(max-width: 768px) {
-    width: 90px !important;
-    height: 90px !important;
-    padding: 3%;
+    width: 110px !important;
+    height: 110px !important;
+    padding: 6%;
   }
   @media screen and(max-width: 425px) {
-    width: 70px !important;
-    height: 70px !important;
-    padding: 8%;
+    width: 110px !important;
+    height: 110px !important;
+    padding: 6%;
   }
   @media screen and(max-width: 375px) {
-    width: 60px !important;
-    height: 60px !important;
+    width: 110px !important;
+    height: 110px !important;
     padding: 6%;
   }
   .inner-element {
