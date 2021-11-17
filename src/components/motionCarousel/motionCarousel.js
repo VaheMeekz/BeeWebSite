@@ -42,8 +42,8 @@ const TestComp = ({ bg,text }) => (
                     backgroundSize: "cover"
                 }}
             >
-                <div style={{marginTop:"30px",fontSize:"40px",marginLeft:"-350px"}}>
-                    <h3>{text}</h3>
+                <div style={{marginTop:"90px",marginLeft:"-550px",textShadow:"-5px -10px 5px rgba(247,202,24,1)"}}>
+                    <h3 style={{fontSize:"60px"}}>{text}</h3>
                 </div>
             </MotionBox>
         </div>

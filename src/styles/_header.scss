@@ -96,14 +96,13 @@
     .contactButton {
       width: 180px;
       height: 50px;
-      border: 1px solid #eaea2d;
-      box-sizing: border-box;
       padding: 5px;
-      border-radius: 5px;
       cursor: pointer;
-      background: black;
+      outline: 0;
+      background: none;
       font-family: inherit;
       font-style: normal;
+      border: 0;
       font-weight: normal;
       font-size: 16px;
       line-height: 20px;
@@ -117,11 +116,10 @@
     }
 
     .contactButton:hover {
-      border: 1px solid white;
-      border-radius: 5px;
+      background: none;
       cursor: pointer;
-      background: black;
       color: #eaea2d;
+      margin-top: 5px;
       transition: 0.3s;
       a{
         color:#eaea2d !important; ;
@@ -191,7 +189,7 @@
 .nav.active {
   transition: 0.4s;
   background: black;
-  height: 6vh;
+  height: 56px;
 }
 
 .links {
@@ -209,7 +207,7 @@
 }
 
 Link:hover {
-  color: #0f3c92;
+  color: yellow;
   transition: 0.3s;
 }
 
@@ -233,7 +231,7 @@ Link:hover {
 }
 
 .links:focus {
-  color: #0246c8;
+  color: yellow;
 }
 
 .aaa {
@@ -373,39 +371,29 @@ Link:hover {
 
 .textAreaBox {
   margin-left: 5%;
+  margin-top: 40px;
+}
+
+.modealSendBtnBox{
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
 .modealSendBtn {
   height: 40px;
   width: 346px;
-  left: 243px;
+  left: 250px;
   top: 648px;
   margin: 2%;
-  border-radius: 25px;
-  background: #0246c8;
   color: white;
-  outline: 0;
-  cursor: pointer;
-  border: 0;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
 }
 
 .modalInputs {
   height: 32px;
   width: 200px;
-  border-radius: 5px;
-  margin: 5%;
-  background: #3c3e42;
-  border: 1px solid gray;
-  padding: 2%;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  outline: 0;
   color: white;
 }
 
@@ -567,9 +555,10 @@ input[type="checkbox"].dmcheck {
   }
 
   .header .nav ul {
-    height: 50vh;
+    height: fit-content;
     margin: 0 auto;
     text-align: center;
+    opacity: 0.97;
   }
   .socLinks {
     display: none !important;
@@ -609,7 +598,6 @@ input[type="checkbox"].dmcheck {
 
   .mobile-menu-icon {
     display: block !important;
-    position: absolute !important;
     font-size: 30px !important;
     border: none !important;
     outline: none !important;

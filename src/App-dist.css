@@ -37,13 +37,13 @@
 }
 
 .header .links:hover {
-    color: #266bef;
+    color: yellow;
     -webkit-transition: .2s;
     transition: .2s
 }
 
 .header .links:focus {
-    color: #266bef;
+    color: yellow;
     -webkit-transition: .2s;
     transition: .2s
 }
@@ -97,12 +97,10 @@
 .header .nav .contactButton {
     width: 160px;
     height: 32px;
-    border: 1px solid #428dff;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border-radius: 5px;
     cursor: pointer;
-    background: black;
     font-family: "Montserrat";
     font-style: normal;
     font-weight: normal;
@@ -391,16 +389,10 @@ Link:hover {
 .modalInputs {
     height: 32px;
     width: 200px;
-    border-radius: 5px;
-    margin: 5%;
-    background: #3C3E42;
-    border: 1px solid gray;
-    padding: 2%;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    outline: 0;
-    color: white
+    color: white;
 }
 
 .modalTextArea {
@@ -519,7 +511,7 @@ input[type=checkbox].dmcheck + label {
 }
 
 .activeLink {
-    color: #397dff;
+    color: yellow;
     list-style: none;
     padding: 0 10px 0 10px;
     cursor: pointer;

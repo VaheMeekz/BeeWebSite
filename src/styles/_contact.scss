@@ -91,6 +91,7 @@
   .section-title {
     width: 100%;
     padding: 0 15px;
+    margin-top: 50px;
     margin-bottom: 60px;
   }
   
@@ -120,23 +121,21 @@
     height: 45px;
     width: 100%;
     display: block;
-    margin-bottom: 30px;
-    padding: 0 15px;
     border-radius: 30px;
     border: 1px solid transparent;
     font-size: 16px;
-   color: black;
     font-family: inherit;
     font-weight: 300;
     transition: all 0.5s ease;
   }
-  
-  .form-control::placeholder {
-    color: black;
-  }
-  
+
   .form-control:focus {
     border-color: yellow;
+  }
+
+  .input-group{
+    margin: 25px;
+
   }
   
 

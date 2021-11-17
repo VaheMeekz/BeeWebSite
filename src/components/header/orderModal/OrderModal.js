@@ -2,8 +2,22 @@ import React, {useCallback, useEffect, useRef, useState} from 'react';
 import close from "../../../assets/images/x.svg"
 import img from "../../../assets/images/modalImg.png"
 import emailjs from 'emailjs-com';
+import useForm from "../../../assets/hooks/useForm";
+import {Button, TextField} from "@material-ui/core";
 
 const OrderModal = ({showModal, setShowModal}) => {
+
+    //regex
+    const email = useForm(
+        '',
+        'email',
+        {isEmpty: true, isEmail: false}
+    )
+
+    const onSubmit = (e) => {
+        e.preventDefault()
+        return null
+    }
 
     //modal
 
@@ -57,58 +71,31 @@ const OrderModal = ({showModal, setShowModal}) => {
 
                                                 <div className="nameSur">
                                                     <div>
-                                                        <label>Name</label>
-                                                        <input type={"text"} name={"name"}  className={"modalInputs"} placeholder={"name"}/>
+                                                        {/*<input type={"text"} name={"name"}  className={"modalInputs"} placeholder={"name"}/>*/}
+                                                        <TextField id="standard-basic" label="Name" variant="standard" name={"name"} className={"modalInputs"}/>
                                                     </div>
                                                     <div>
-                                                        <label>Surname</label>
-                                                        <input type={"text"} name={"surnamename"}  className={"modalInputs"} placeholder={"surname"}/>
+                                                        {/*<input type={"text"} name={"surnamename"}  className={"modalInputs"} placeholder={"surname"}/>*/}
+                                                        <TextField id="standard-basic" label="Surname" variant="standard" name={"surnamename"} className={"modalInputs"}/>
                                                     </div>
                                                 </div>
                                                 <div className="nameSur">
                                                     <div>
-                                                        <label>Email</label>
-                                                        <input type={"text"} name={"email"}  className={"modalInputs"} placeholder={"email"}/>
+                                                        {/*<input type={"text"} name={"email"}  className={"modalInputs"} placeholder={"email"}/>*/}
+                                                        <TextField id="standard-basic" label="Email" variant="standard" name={"email"} className={"modalInputs"}/>
                                                     </div>
                                                     <div>
-                                                        <label>Phone</label>
-                                                        <input type={"text"} name={"number"} className={"modalInputs"} placeholder={"number"}/>
+                                                        {/*<input type={"text"} name={"number"} className={"modalInputs"} placeholder={"number"}/>*/}
+                                                        <TextField id="standard-basic" label="Number" variant="standard" name={"number"} className={"modalInputs"}/>
                                                     </div>
                                                 </div>
                                                     <div className="textAreaBox">
                                                         <textarea className="modalTextArea" name={"message"} placeholder={"message"} rows="4" cols="50"/>
                                                     </div>
                                                     <div className="modealSendBtnBox">
-                                                        <input className="modealSendBtn" type={"submit"}  value={"talk to our team"}/>
+                                                        {/*<input className="modealSendBtn" type={"submit"}  value={"talk to our team"}/>*/}
+                                                        <Button variant="contained"  type={"submit"} type={"submit"}>talk to our team</Button>
                                                     </div>
-
-
-
-                                                {/*<div className="nameSur">*/}
-                                                {/*    <div>*/}
-                                                {/*                <input type={"text"} name={"name"}  className={"modalInputs"} placeholder={"name"}/>*/}
-                                                {/*            </div>*/}
-                                                {/*            <div>*/}
-                                                {/*                <input type={"text"} name={"surnamename"}  className={"modalInputs"} placeholder={"name"}/>*/}
-                                                {/*            </div>*/}
-                                                {/*</div>*/}
-                                                {/*<div className="nameSur">*/}
-                                                {/*    <div>*/}
-                                                {/*        <input type={"text"} placeholder={"email"} value={curEmail} onChange={e => setCurEmail(e.target.value)} className={"modalInputs"}/>*/}
-                                                {/*    </div>*/}
-                                                {/*    <div>*/}
-                                                {/*        <input type={"text"} placeholder={"phone"} value={curNumb} onChange={e => setCurNumb(e.target.value)}   className={"modalInputs"}/>*/}
-                                                {/*    </div>*/}
-                                                {/*</div>*/}
-
-                                                {/*<div className="textAreaBox">*/}
-                                                {/*    <textarea className="modalTextArea"  rows="4" cols="50"/>*/}
-                                                {/*</div>*/}
-                                                {/*<div className="modealSendBtnBox">*/}
-                                                {/*    <button className="modealSendBtn"   onClick={() =>  setShowModal(prev => !prev)}>talk to our team</button>*/}
-                                                {/*</div>*/}
-
-
                                             </form>
                                     </div>
                                 </div>

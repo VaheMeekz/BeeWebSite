@@ -1,5 +1,5 @@
 .avt{
-    color: #4584f6;
+    color: yellow;
     transition: .2s;
     cursor: pointer;
     text-transform: uppercase;
@@ -17,12 +17,12 @@
 
 a{
     text-decoration: none;
-    color: white;
+    color: yellow;
 }
 
 a:hover{
     transition: 0.3s;
-    color: #397dff;
+    color: yellow;
 }
 
 .links {
@@ -46,7 +46,8 @@ a:hover{
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
+    font-weight: 600;
     line-height: 20px;
     font-family: inherit, sans-serif;
-    color: #ffff4e;
+    color: white;
 }

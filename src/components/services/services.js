@@ -12,61 +12,64 @@ const Services = ({darkMode, setDarkMode}) => {
     return (
 
         <div className="services">
-            <h3>Software Development Services</h3>
+            <div className={"h2h2h2Box"}>
+                <h3 className={"h2h2h2"}>Software Development Services</h3>
+            </div>
+
 
             <div className="servicesAll">
                 <div className="servicesAllResp">
-                <div className="servicesBox">
-                    <img src={servicesIcon1}  alt="img"/>
-                    <p>WEB APPLICATION</p>
-                    <p>DEVELOPMENT</p>
-                </div>
-                <div className="servicesBox">
-                <img src={servicesIcon2}  alt="img"/>
-                    <p>MOBILE APPLICATION</p>
-                    <p>DEVELOPMENT</p>
-                </div>
+                    <div className="servicesBox">
+                        <img src={servicesIcon1} alt="img"/>
+                        <p>WEB APPLICATION</p>
+                        <p>DEVELOPMENT</p>
+                    </div>
+                    <div className="servicesBox">
+                        <img src={servicesIcon2} alt="img"/>
+                        <p>MOBILE APPLICATION</p>
+                        <p>DEVELOPMENT</p>
+                    </div>
                 </div>
                 <div className="servicesAllResp">
-                <div className="servicesBox">
-                <img src={servicesIcon3} alt="img" />
-                    <p>CUSTOM SOFTWARE</p>
-                    <p>DEVELOPMENT</p>
-                </div>
-                <div className="servicesBox">
-                <img src={servicesIcon4}  alt="img"/>
-                    <p>AI & ML</p>
-                </div>
+                    <div className="servicesBox">
+                        <img src={servicesIcon3} alt="img"/>
+                        <p>CUSTOM SOFTWARE</p>
+                        <p>DEVELOPMENT</p>
+                    </div>
+                    <div className="servicesBox">
+                        <img src={servicesIcon4} alt="img"/>
+                        <p>AI & ML</p>
+                    </div>
                 </div>
             </div>
 
             {/* տակի մասը */}
 
             <div className="servicesAll">
-            <div className="servicesAllResp">
-                <div className="servicesBox">
-                    <img src={servicesIcon5} alt="img" />
-                    <p>SAAS</p>
-                    <p>PLATFORMS</p>
-                </div>
-                <div className="servicesBox">
-                <img src={servicesIcon6} alt="img" />
-                    <p>IT</p>
-                    <p>CONSULTING</p>
-                </div>
+                <div className="servicesAllResp">
+                    <div className="servicesBox">
+                        <img src={servicesIcon5} alt="img"/>
+                        <p>SAAS</p>
+                        <p>PLATFORMS</p>
+                    </div>
+                    <div className="servicesBox">
+                        <img src={servicesIcon6} alt="img"/>
+                        <p>IT</p>
+                        <p>CONSULTING</p>
+                    </div>
                 </div>
 
                 <div className="servicesAllResp">
-                <div className="servicesBox">
-                <img src={servicesIcon7} alt="img" />
-                    <p>BIG DATA</p>
-                    <p>MANAGEMENT</p>
-                </div>
-                <div className="servicesBox">
-                <img src={servicesIcon8} alt="img" />
-                    <p>DEDICATED TEAM &</p>
-                    <p>OUT-STAFFING</p>
-                </div>
+                    <div className="servicesBox">
+                        <img src={servicesIcon7} alt="img"/>
+                        <p>BIG DATA</p>
+                        <p>MANAGEMENT</p>
+                    </div>
+                    <div className="servicesBox">
+                        <img src={servicesIcon8} alt="img"/>
+                        <p>DEDICATED TEAM &</p>
+                        <p>OUT-STAFFING</p>
+                    </div>
                 </div>
             </div>
 

@@ -14,7 +14,7 @@
     font-family: inherit;
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 35px;
     line-height: 22px;
     text-align: center;
     text-transform: capitalize;
@@ -100,12 +100,18 @@
     }
   }
 
-
+.h2h2{
+  font-size: 35px;
+}
 .diggitalText {
   cursor: pointer;
   p {
     cursor: pointer;
   }
+}
+
+.diggitalText:hover{
+  color: yellow;
 }
 
 
@@ -177,6 +183,9 @@
     font-size: 35px;
     font-style: italic;
     transform: translateZ(60px);
+  }
+  .inner-element:hover{
+    color: yellow;
   }
 }
  

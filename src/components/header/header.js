@@ -153,7 +153,7 @@ const Header = () => {
                                 selectlanguages(lang, id);
                             }}
                             data-tip data-for={lang}
-                            style={{border: lang === currentLang ? "1px solid white" : null }}
+                            style={{borderBottom: lang === currentLang ? "2px solid yellow" : null }}
                         >
                             <span> <img src={img} alt={lang} className={languageQuery === lang ? "activeLang lang" : "lang"}/></span>
                         </Button>

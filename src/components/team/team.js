@@ -11,7 +11,10 @@ const Team = () => {
 
     return (
         <div className="team">
-            <h2>{t('team')}</h2>
+            <div className={"PortfolioBox"}>
+                <h2>{t('team')}</h2>
+            </div>
+
             <div className="outTeamImg">
                 <img src={teamImg} alt="img"/>
             </div>

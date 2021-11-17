@@ -12,7 +12,7 @@ function digital({darkMode, setDarkMode}) {
     return (
         <div className="digital">
 
-            <h3>digital inovation</h3>
+            <h3 className={"h2h2"}>digital inovation</h3>
 
 
             <div className="digitalContentsMain">
